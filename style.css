@@ -1,0 +1,726 @@
+/*
+Natalie Clarius - Personal Website
+(C) 2022 Natalie Clarius <natalie_clarius@yahoo.de>
+*/
+
+
+/*
+=======================
+root
+=======================
+*/
+
+:root.light {
+    --white: #ffffff;
+    --lightgray: #d3d3d3;
+    --middlegray: #808080;
+    --darkgray: #3c3c3c;
+    --black: #0f0f0f;
+}
+
+:root.dark {
+    --white: #292929;
+    --lightgray: #505050;
+    --middlegray: #000000;
+    --darkgray: #d3d3d3;
+    --black: #f0f0f0;
+}
+
+
+/*
+=======================
+html, body, main
+=======================
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 801px) {
+
+    html {
+        scroll-padding-top: 82px;
+    }
+
+    body {
+        margin-right: 0px;
+    }
+
+    main {
+        max-width: 950px;
+        margin: auto;
+        width: calc(100% - 440px);
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    html {
+        scroll-padding-top: 62px;
+    }
+
+    body {
+        margin-right: 40px;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+body {
+    margin: auto;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+p {
+    margin-right: 20px;
+}
+
+/*
+=======================
+nav
+=======================
+*/
+
+nav {
+    position: fixed;
+    display: block;
+    height: 100%;
+    right: 0;
+    text-align: right;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    padding: 6px 8px 6px 8px;
+    font-size: 1.5em;
+    color: var(--darkgray);
+}
+
+nav li a {
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+nav li.active a {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 801px) {
+
+    nav {
+        width: 180px;
+        top: 81px;
+        margin-right: 40px;
+        margin-left: 30px;
+    }
+
+    #btn-nav {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav {
+        top: calc(61px + 1px);
+        margin-right: 40px;
+        overflow: auto;
+        border-top: 1px solid var(--white);
+        box-shadow: 0 9px 12px -1px var(--middlegray); /* offset-x offset-y blur-radius spread-radius color */
+        background: var(--white);
+        transition: width .25s linear;
+    }
+
+    nav.open {
+        width: 220px;
+    }
+
+    nav.closed {
+        width: 0px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    #btn-nav {
+        position: fixed;
+        display: block;
+        right: 0;
+        top: 61px;
+        z-index: 1;
+        height: 100%;
+        width: 40px;
+        overflow-x: hidden;
+        border: none;
+        box-shadow: 0 3px 6px -1px var(--middlegray);
+        font-size: 1.25em;
+        color: var(--black);
+        background: var(--white);
+        transition: border-left .25s linear, box-shadow .25s linear;
+    }
+
+    #btn-nav.open {
+        border-left: none;
+        box-shadow: none;
+    }
+
+    #btn-nav,
+    #btn-nav.active,
+    #btn-nav.focus {
+        outline: none;
+    }
+
+    #btn-nav:hover {
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+}
+
+
+/*
+=======================
+color button
+=======================
+*/
+
+#btn-color {
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid transparent;
+    font-size: 1em;
+    width: 2.5em;
+    height: 2.5em;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    padding: 10px;
+    transition: display .25s linear;
+}
+
+#btn-color:hover {
+    border: 1px solid var(--darkgray);
+}
+
+nav.closed #btn-color {
+    display: none;
+}
+
+@media only screen and (min-width: 801px) {
+
+    #btn-color {
+        margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #btn-color {
+        margin-right: 40px;
+    }
+
+}
+
+
+/*
+=======================
+header
+=======================
+*/
+
+header {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--lightgray);
+    overflow-x: hidden;
+}
+
+header.scrolled {
+    border-bottom: 1px solid transparent;
+    box-shadow: -12px 0 var(--white), 12px 0 var(--white), 0 -4px 12px -1px var(--middlegray);
+    /* box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05); */
+    /* offset-x offset-y blur-radius spread-radius color */
+}
+
+#heading {
+    margin: 0;
+}
+
+#heading a {
+    text-decoration: none;
+    color: var(--darkgray);
+}
+
+@media only screen and (min-width: 801px) {
+
+    header {
+        height: 81px;
+    }
+    
+    #heading {
+        padding-top: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        height: 61px
+    }
+
+    #heading {
+        padding-top: 5px;
+    }
+}
+
+
+/*
+=======================
+sections
+=======================
+*/
+
+section {
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 801px) {
+
+    section:not(last-child) {
+        margin-bottom: 250px;
+        min-height: calc(100vh - 81px - 250px);
+    }
+
+    section:last-child {
+        min-height: calc(100vh - 81px);
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    section:not(last-child) {
+        margin-bottom: 150px;
+        min-height: calc(100vh - 61px - 150px);
+    }
+
+    section:last-child {
+        min-height: calc(100vh - 61px);
+    }
+}
+
+/*
+=======================
+headings
+=======================
+*/
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+nav li a {
+    color: var(--darkgray);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+hr.heading-underline {
+    height: 0px;
+    width: 250px;
+    border: none;
+    border-top: 1px solid var(--darkgray);
+    margin-bottom: 27px;
+}
+
+h2,
+h3 {
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+
+/*
+=======================
+links
+=======================
+*/
+
+a,
+p a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+p a[href^='#']::after,
+td a[href^='#']::after {
+    content: " ↘";
+    font-weight: normal;
+    font-size: .75em;
+}
+
+p a:not([href^='#'])::after,
+td a:not([href^='#'])::after,
+a h4.caption-software::after {
+    content: " ↗";
+    font-weight: normal;
+    font-size: .75em;
+}
+
+a:hover,
+a:hover p,
+p:hover a,
+a:hover h4,
+a:hover h5 {
+    text-decoration: underline;
+}
+
+
+/*
+=======================
+footnotes
+=======================
+*/
+
+.footnote p {
+    padding-top: 9pt;
+    margin-right: 0;
+    font-size: .75em;
+}
+
+
+/*
+=======================
+icons
+=======================
+*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 200,
+      'GRAD' -25,
+      'opsz' 40;
+    vertical-align: middle;
+    color: var(--darkgray);
+}
+
+.icon {
+    height: 1em;
+    margin-left: 0.125em;
+    margin-right: 0.125em;
+    vertical-align: middle;
+}
+
+
+/*
+=======================
+tables and lists
+=======================
+*/
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+td {
+    vertical-align: top;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    table {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    tr {
+        display: table;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    td {
+        display: table-row;
+    }
+
+    td:nth-child(1) {
+        font-variant: small-caps;
+        font-weight: bold;
+        color: var(--darkgray);
+    }
+
+}
+
+
+/*
+=======================
+section about me
+=======================
+*/
+
+.wrapper-about::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+
+#wrapper-photo-about {
+    /* todo resize original photo */
+    margin: 5px 40px 0px 0px;
+}
+
+@media only screen and (min-width: 801px) {
+
+    #wrapper-photo-about {
+        width: 250px;
+    }
+
+    #photo-about {
+        width: 250px;
+    }
+
+    ul {
+        /* padding-left: 310px; */
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    #wrapper-photo-about {
+        width: 200px;
+    }
+
+    #photo-about {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 1001px) {
+
+    #wrapper-photo-about {
+        float: left;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #wrapper-photo-about {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+}
+
+
+/*
+=======================
+section cv
+=======================
+*/
+
+.table-cv {
+    border-collapse: collapse;
+}
+
+.table-cv td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 20px solid transparent;
+}
+
+.table-cv ul {
+    margin: 0 auto 0 auto;
+    padding-left: 25px;
+}
+
+.table-cv p {
+    margin: 10px auto 10px auto;
+}
+
+
+/*
+=======================
+section teaching
+=======================
+*/
+
+.table-teaching {
+    border-collapse: collapse;
+}
+
+.table-teaching td {
+    padding: 3pt;
+    border-right: 20px solid transparent;
+}
+
+.table-teaching ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+
+.table-teaching li:not(:last-child) {
+    margin-bottom: .5ex;
+}
+
+
+/*
+=======================
+section software
+=======================
+*/
+
+#grid-software {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+@media only screen and (min-width: 1001px) {
+
+    #grid-software {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #grid-software {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+.tile-software {
+    padding: 10px;
+    border: 1px solid var(--lightgray);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* #software-logic:hover {
+    background-image: url("img/software-logic_.png");
+}
+#software-teaching:hover {
+    background-image: url("img/software-teaching_.png");
+}
+#software-plasma:hover {
+    background-image: url("img/software-plasma_.png");
+}
+#software-kwin:hover {
+    background-image: url("img/software-kwin_.png");
+}
+#software-shell:hover {
+    background-image: url("img/software-shell_.png");
+}
+#software-web:hover {
+    background-image: url("img/software-web_.png");
+} */
+
+.project-software {
+    padding: 15px;
+}
+
+.caption-software {
+    font-variant: normal;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    line-height: 1.125;
+}
+
+.description-software {
+    margin-top: -6px;
+    margin-bottom: 3px;
+}
+
+
+/*
+=======================
+section contact
+=======================
+*/
+
+#sec-contact {
+    position: relative;
+}
+
+.table-contact {
+    word-break: break-word;
+    border-collapse: collapse;
+}
+
+.table-contact td {
+    padding-top: 6pt;
+    padding-bottom: 3pt;
+    vertical-align: top;
+    border-right: 1em solid transparent;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
