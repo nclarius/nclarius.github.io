@@ -67,11 +67,12 @@ html {
 
     main {
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 60px;
     }
 }
 
 body {
+    position: relative;
     margin: auto;
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
@@ -291,6 +292,7 @@ header.scrolled {
 
     #heading {
         padding-top: 5px;
+        margin-right: 40px;
     }
 }
 
@@ -694,10 +696,6 @@ section contact
 =======================
 */
 
-#sec-contact {
-    position: relative;
-}
-
 .table-contact {
     word-break: break-word;
     border-collapse: collapse;
@@ -718,10 +716,29 @@ section contact
     }
 }
 
+.last-par {
+    margin-bottom: 80px;
+}
+
+
+/*
+=======================
+footer
+=======================
+*/
+
 #footer {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+    margin-top: 10px;
 }
 
+@media only screen and (max-width: 800px) {
+
+    #footer {
+        left: calc(50% - 40px);
+    }
+
+}
