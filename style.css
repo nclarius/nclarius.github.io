@@ -408,7 +408,9 @@ p a {
 
 p a[href^='#']::after,
 td a[href^='#']::after {
-    content: " ↘";
+    /* content: " ↘"; */
+    font-family: 'FontAwesome';
+    content: " \f0c1";
     font-weight: normal;
     font-size: .75em;
 }
@@ -416,7 +418,9 @@ td a[href^='#']::after {
 p a:not([href^='#'])::after,
 td a:not([href^='#'])::after,
 a h4.caption-software::after {
-    content: " ↗";
+    /* content: " ↗"; */
+    font-family: 'FontAwesome';
+    content: " \f08e";
     font-weight: normal;
     font-size: .75em;
 }
