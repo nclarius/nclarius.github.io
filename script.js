@@ -107,6 +107,9 @@ function updateScroll() {
     document.querySelectorAll("section").forEach((section) => {
         indicateVisibilitySection(section);
     });
+
+    // update scroll button visibility
+    updateVisibilityScrollButtons();
 }
 
 function indicateScrollednessHeader() {
@@ -125,6 +128,21 @@ function indicateVisibilitySection(section) {
         li.classList.add("active");
     } else {
         li.classList.remove("active");
+    }
+}
+
+function updateVisibilityScrollButtons() {
+    const btnTop = document.getElementById("btn-top");
+    const btnBottom = document.getElementById("btn-bottom");
+    if (window.scrollY) {
+        btnTop.classList.add("visible");
+    } else {
+        btnTop.classList.remove("visible");
+    }
+    if (window.scrollY + window.innerHeight < document.body.scrollHeight) {
+        btnBottom.classList.add("visible");
+    } else {
+        btnBottom.classList.remove("visible");
     }
 }
 
