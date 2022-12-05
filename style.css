@@ -147,7 +147,7 @@ nav li.active a {
         display: block;
         right: 0;
         z-index: 2;
-        width: 40px;
+        width: 50px;
         overflow-x: hidden;
         border: none;
         color: var(--black);
@@ -156,7 +156,7 @@ nav li.active a {
 
     #btn-nav.closed {
         top: calc(50% - 20px);
-        height: 40px;
+        height: 50px;
         box-shadow: 0px 0px 6px -1px var(--middlegray);
     }
 
