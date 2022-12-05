@@ -152,11 +152,10 @@ nav li.active a {
         z-index: 2;
         color: var(--black);
         background: var(--white);
-        box-shadow: 0px 0px 6px -1px var(--middlegray);
         transition: 0.25s linear;
     }
 
-    .btn-navi:not(.visible) {
+    .btn-navi.hidden {
         opacity: 0;
     }
 
@@ -176,6 +175,7 @@ nav li.active a {
     #btn-nav.closed {
         top: calc(50% - 20px);
         height: 50px;
+        box-shadow: 0px 0px 6px -1px var(--middlegray);
     }
 
     #btn-nav.open {
