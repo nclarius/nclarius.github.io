@@ -33,6 +33,7 @@ function toggleNav() {
 function setNav(open) {
     const nav = document.getElementById("nav");
     const navBtn = document.getElementById("btn-nav");
+    const navIcn = document.getElementById("icon-nav");
     if (!nav.classList.contains("toggleable")) return;
     if (open) {
         nav.classList.add("open");
@@ -40,12 +41,29 @@ function setNav(open) {
         navBtn.classList.add("open");
         navBtn.classList.remove("closed");
         navBtn.setAttribute("title", "close navigation");
+        navIcn.classList.add("open");
+        navIcn.classList.remove("closed");
     } else {
         nav.classList.add("closed");
         nav.classList.remove("open");
         navBtn.classList.add("closed");
         navBtn.classList.remove("open");
         navBtn.setAttribute("title", "open navigation");
+        navIcn.classList.add("closed");
+        navIcn.classList.remove("open");
+    }
+}
+
+function setHamburger(toggle) {
+    const nav = document.getElementById("nav");
+    const navIcn = document.getElementById("icon-nav");
+    open = toggle != nav.classList.contains("open");
+    if (open) {
+        navIcn.classList.add("open");
+        navIcn.classList.remove("closed");
+    } else {
+        navIcn.classList.add("closed");
+        navIcn.classList.remove("open");
     }
 }
 

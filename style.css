@@ -181,15 +181,11 @@ nav li.active a {
         transition: 0.25s ease-out;
     }
 
-    #btn-nav.closed:hover #icon-nav,
-    #btn-nav.open:active #icon-nav,
-    #btn-nav.open:not(hover) #icon-nav {
+    #icon-nav.open {
         transform: rotate(90deg);
     }
 
-    #btn-nav.open:hover #icon-nav,
-    #btn-nav.closed:active #icon-nav
-    #btn-nav.closed:not(hover) #icon-nav {
+    #icon-nav.closed {
         transform: rotate(0deg);
     }
 
@@ -217,7 +213,8 @@ color button
     transition: 0.25s ease-out;
 }
 
-#btn-color:hover #icon-color {
+#btn-color:hover #icon-color,
+#btn-color:active #icon-color {
     transform: rotate(180deg);
 }
 
