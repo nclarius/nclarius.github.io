@@ -497,13 +497,6 @@ td {
     td {
         display: table-row;
     }
-
-    td:nth-child(1) {
-        font-variant: small-caps;
-        font-weight: bold;
-        color: var(--darkgray);
-    }
-
 }
 
 
@@ -715,6 +708,14 @@ section contact
     padding-bottom: 3pt;
     vertical-align: top;
     border-right: 1em solid transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+    td .label-contact {
+        font-variant: small-caps;
+        font-weight: bold;
+        color: var(--darkgray);
+    }
 }
 
 #footer {
