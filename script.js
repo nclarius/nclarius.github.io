@@ -119,19 +119,11 @@ toggle light/dark mode
 document.addEventListener("DOMContentLoaded", initializeColor);
 
 function initializeColor() {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        setColor(true);
-    } else {
-        setColor(false);
-    }
+    setColor(window.matchMedia("(prefers-color-scheme: dark)").matches);
 }
 
 function toggleColor() {
-    if (!document.documentElement.classList.contains("dark")) {
-        setColor(true);
-    } else {
-        setColor(false);
-    }
+    setColor(!document.documentElement.classList.contains("dark"));
 }
 
 function setColor(dark) {
