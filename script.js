@@ -47,11 +47,11 @@ function openNav() {
     nav.classList.add("open");
     nav.classList.remove("closed");
 
-    const nav_btn = document.getElementById("btn-nav");
-    nav_btn.classList.add("open");
-    nav_btn.classList.remove("closed");
-    nav_btn.setAttribute("title", "close navigation");
-    nav_btn.innerHTML = "&rang;";
+    const navBtn = document.getElementById("btn-nav");
+    navBtn.classList.add("open");
+    navBtn.classList.remove("closed");
+    navBtn.setAttribute("title", "close navigation");
+    navBtn.innerHTML = "&rang;";
 }
 
 function closeNav() {
@@ -62,11 +62,11 @@ function closeNav() {
     nav.classList.add("closed");
     nav.classList.remove("open");
 
-    const nav_btn = document.getElementById("btn-nav");
-    nav_btn.classList.add("closed");
-    nav_btn.classList.remove("open");
-    nav_btn.setAttribute("title", "open navigation");
-    nav_btn.innerHTML = "&lang;";
+    const navBtn = document.getElementById("btn-nav");
+    navBtn.classList.add("closed");
+    navBtn.classList.remove("open");
+    navBtn.setAttribute("title", "open navigation");
+    navBtn.innerHTML = "&lang;";
 }
 
 /*
