@@ -160,6 +160,7 @@ nav li.active a {
     }
 
     #btn-top, #btn-bottom {
+        display: none;
         z-index: 3;
         height: 50px;
     }
