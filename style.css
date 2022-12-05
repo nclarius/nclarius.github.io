@@ -40,10 +40,6 @@ html {
         scroll-padding-top: 82px;
     }
 
-    body {
-        margin-right: 0px;
-    }
-
     main {
         max-width: 950px;
         margin: auto;
@@ -56,13 +52,8 @@ html {
         scroll-padding-top: 62px;
     }
 
-    body {
-        margin-right: 40px;
-    }
-
     main {
-        margin-left: 20px;
-        margin-right: 60px;
+        margin: auto 20px auto 20px;
     }
 }
 
@@ -133,9 +124,9 @@ nav li.active a {
         margin-right: 40px;
         overflow: auto;
         border-top: 1px solid var(--white);
-        box-shadow: 0 9px 12px -1px var(--middlegray); /* offset-x offset-y blur-radius spread-radius color */
+        box-shadow: 0px 0px 12px -1px var(--middlegray);
         background: var(--white);
-        transition: width 0.25s linear;
+        transition: 0.25s ease-out;
     }
 
     nav.open {
@@ -154,21 +145,23 @@ nav li.active a {
         position: fixed;
         display: block;
         right: 0;
-        top: 60px;
         z-index: 2;
-        height: 100%;
         width: 40px;
         overflow-x: hidden;
         border: none;
-        box-shadow: 0 3px 6px -1px var(--middlegray);
-        font-size: 1.25em;
         color: var(--black);
         background: var(--white);
-        transition: border-left 0.25s linear, box-shadow 0.25s linear;
+    }
+
+    #btn-nav.closed {
+        top: calc(50% - 20px);
+        height: 40px;
+        box-shadow: 0px 0px 6px -1px var(--middlegray);
     }
 
     #btn-nav.open {
-        border-left: none;
+        top: 0px;
+        height: 100%;
         box-shadow: none;
     }
 
@@ -178,10 +171,28 @@ nav li.active a {
         outline: none;
     }
 
-    #btn-nav:hover {
-        font-size: x-large;
-        font-weight: bold;
+    #btn-nav i {
+        font-family: "FontAwesome";
+        font-style: normal;
+        font-size: 1.25em;
     }
+
+    #icon-nav {
+        transition: 0.25s ease-out;
+    }
+
+    #btn-nav.closed:hover #icon-nav,
+    #btn-nav.open:active #icon-nav,
+    #btn-nav.open:not(hover) #icon-nav {
+        transform: rotate(90deg);
+    }
+
+    #btn-nav.open:hover #icon-nav,
+    #btn-nav.closed:active #icon-nav
+    #btn-nav.closed:not(hover) #icon-nav {
+        transform: rotate(0deg);
+    }
+
 }
 
 /*
@@ -200,10 +211,13 @@ color button
     position: fixed;
     right: 20px;
     bottom: 0;
-    transition: transform 0.25s linear;
 }
 
-#btn-color:hover {
+#icon-color {
+    transition: 0.25s ease-out;
+}
+
+#btn-color:hover #icon-color {
     transform: rotate(180deg);
 }
 
@@ -240,19 +254,13 @@ header {
 
 header.scrolled {
     border-bottom: 1px solid transparent;
-    box-shadow: -12px 0 var(--white), 12px 0 var(--white), 0 -4px 12px -1px var(--middlegray);
-    /* box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05); */
-    /* offset-x offset-y blur-radius spread-radius color */
+    box-shadow: 0 -4px 12px -1px var(--middlegray);
 }
 
 #heading {
     margin: 0;
     color: var(--darkgray);
 }
-
-/* #heading a:hover {
-    text-decoration: underline;
-} */
 
 @media only screen and (min-width: 801px) {
     header {
@@ -271,7 +279,6 @@ header.scrolled {
 
     #heading {
         padding-top: 5px;
-        margin-right: 40px;
     }
 }
 
@@ -671,22 +678,10 @@ section contact
     margin-bottom: 80px;
 }
 
-/*
-=======================
-footer
-=======================
-*/
-
 #footer {
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
-}
-
-@media only screen and (max-width: 800px) {
-    #footer {
-        left: calc(50% - 40px);
-    }
 }

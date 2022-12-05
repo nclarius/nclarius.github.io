@@ -40,14 +40,12 @@ function setNav(open) {
         navBtn.classList.add("open");
         navBtn.classList.remove("closed");
         navBtn.setAttribute("title", "close navigation");
-        navBtn.innerHTML = "&rang;";
     } else {
         nav.classList.add("closed");
         nav.classList.remove("open");
         navBtn.classList.add("closed");
         navBtn.classList.remove("open");
         navBtn.setAttribute("title", "open navigation");
-        navBtn.innerHTML = "&lang;";
     }
 }
 
