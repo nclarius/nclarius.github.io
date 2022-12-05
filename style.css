@@ -127,7 +127,7 @@ nav li.active a {
         border-top: 1px solid var(--white);
         box-shadow: 0px 0px 12px -1px var(--middlegray);
         background: var(--white);
-        transition: 0.25s ease-out;
+        transition: 0.25s ease-in-out;
     }
 
     nav.open {
@@ -179,7 +179,7 @@ nav li.active a {
     }
 
     #icon-nav {
-        transition: 0.25s ease-out;
+        transition: 0.25s ease-in-out;
     }
 
     #icon-nav.open {
@@ -227,7 +227,7 @@ nav.closed #btn-color {
 }
 
 #icon-color {
-    transition: 0.25s ease-out;
+    transition: 0.25s ease-in-out;
 }
 
 #icon-color.light {
