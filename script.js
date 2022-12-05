@@ -34,8 +34,8 @@ function setNav(open) {
     const nav = document.getElementById("nav");
     const navBtn = document.getElementById("btn-nav");
     const navIcn = document.getElementById("icon-nav");
-    const topBtn = document.getElementById("btn-top");
-    const bottomBtn = document.getElementById("btn-bottom");
+    // const topBtn = document.getElementById("btn-top");
+    // const bottomBtn = document.getElementById("btn-bottom");
     if (!nav.classList.contains("toggleable")) return;
     if (open) {
         nav.classList.add("open");
@@ -45,8 +45,8 @@ function setNav(open) {
         navBtn.setAttribute("title", "close navigation");
         navIcn.classList.add("open");
         navIcn.classList.remove("closed");
-        topBtn.classList.remove("hidden");
-        bottomBtn.classList.remove("hidden");
+        // topBtn.classList.remove("hidden");
+        // bottomBtn.classList.remove("hidden");
     } else {
         nav.classList.add("closed");
         nav.classList.remove("open");
@@ -55,8 +55,8 @@ function setNav(open) {
         navBtn.setAttribute("title", "open navigation");
         navIcn.classList.add("closed");
         navIcn.classList.remove("open");
-        topBtn.classList.add("hidden");
-        bottomBtn.classList.add("hidden");
+        // topBtn.classList.add("hidden");
+        // bottomBtn.classList.add("hidden");
     }
 }
 
@@ -138,18 +138,18 @@ function indicateVisibilitySection(section) {
 }
 
 function updateVisibilityScrollButtons() {
-    const btnTop = document.getElementById("btn-top");
-    const btnBottom = document.getElementById("btn-bottom");
-    if (window.scrollY) {
-        btnTop.classList.remove("hidden");
-    } else {
-        btnTop.classList.add("hidden");
-    }
-    if (window.scrollY + window.innerHeight < document.body.scrollHeight) {
-        btnBottom.classList.remove("hidden");
-    } else {
-        btnBottom.classList.add("hidden");
-    }
+    // const topBtn = document.getElementById("btn-top");
+    // const bottomBtn = document.getElementById("btn-bottom");
+    // if (window.scrollY) {
+    //     topBtn.classList.remove("hidden");
+    // } else {
+    //     topBtn.classList.add("hidden");
+    // }
+    // if (window.scrollY + window.innerHeight < document.body.scrollHeight) {
+    //     bottomBtn.classList.remove("hidden");
+    // } else {
+    //     bottomBtn.classList.add("hidden");
+    // }
 }
 
 /*
