@@ -21,52 +21,34 @@ function updateNavToggleability() {
         nav.classList.remove("closed");
     } else if (window.matchMedia("(max-width: 800px)").matches) {
         nav.classList.add("toggleable");
-        if (!nav.classList.contains("open")) {
-            closeNav();
-        }
+        setNav(false);
     }
 }
 
 function toggleNav() {
     const nav = document.getElementById("nav");
-    if (!nav.classList.contains("toggleable")) {
-        return;
-    }
-    if (!nav.classList.contains("open")) {
-        openNav();
-    } else if (!nav.classList.contains("closed")) {
-        closeNav();
-    }
+    setNav(!nav.classList.contains("open"));
 }
 
-function openNav() {
+function setNav(open) {
     const nav = document.getElementById("nav");
-    if (!nav.classList.contains("toggleable")) {
-        return;
-    }
-    nav.classList.add("open");
-    nav.classList.remove("closed");
-
     const navBtn = document.getElementById("btn-nav");
-    navBtn.classList.add("open");
-    navBtn.classList.remove("closed");
-    navBtn.setAttribute("title", "close navigation");
-    navBtn.innerHTML = "&rang;";
-}
-
-function closeNav() {
-    const nav = document.getElementById("nav");
-    if (!nav.classList.contains("toggleable")) {
-        return;
+    if (!nav.classList.contains("toggleable")) return;
+    if (open) {
+        nav.classList.add("open");
+        nav.classList.remove("closed");
+        navBtn.classList.add("open");
+        navBtn.classList.remove("closed");
+        navBtn.setAttribute("title", "close navigation");
+        navBtn.innerHTML = "&rang;";
+    } else {
+        nav.classList.add("closed");
+        nav.classList.remove("open");
+        navBtn.classList.add("closed");
+        navBtn.classList.remove("open");
+        navBtn.setAttribute("title", "open navigation");
+        navBtn.innerHTML = "&lang;";
     }
-    nav.classList.add("closed");
-    nav.classList.remove("open");
-
-    const navBtn = document.getElementById("btn-nav");
-    navBtn.classList.add("closed");
-    navBtn.classList.remove("open");
-    navBtn.setAttribute("title", "open navigation");
-    navBtn.innerHTML = "&lang;";
 }
 
 /*
