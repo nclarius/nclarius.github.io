@@ -316,11 +316,11 @@ section:last-child {
 
     section:not(last-child) {
         margin-bottom: 250px;
-        min-height: calc(100vh - 81px - 250px);
+        min-height: calc(100vh - 82px - 250px);
     }
 
     section:last-child {
-        min-height: calc(100vh - 81px);
+        min-height: calc(100vh - 82px);
     }
 
 }
@@ -329,11 +329,11 @@ section:last-child {
 
     section:not(last-child) {
         margin-bottom: 150px;
-        min-height: calc(100vh - 61px - 150px);
+        min-height: calc(100vh - 62px - 150px);
     }
 
     section:last-child {
-        min-height: calc(100vh - 61px);
+        min-height: calc(100vh - 62px);
     }
 }
 
@@ -733,7 +733,7 @@ footer
 
 #footer {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
