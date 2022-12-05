@@ -142,22 +142,33 @@ nav li.active a {
         margin-right: 20px;
     }
 
-    #btn-nav {
+    .btn-navi {
         position: fixed;
-        display: block;
         right: 0;
-        z-index: 2;
         width: 50px;
-        overflow-x: hidden;
+        display: block;
         border: none;
+        overflow-x: hidden;
+        z-index: 2;
         color: var(--black);
         background: var(--white);
+    }
+
+    #btn-top, #btn-bottom, #btn-nav.closed {
+        box-shadow: 0px 0px 6px -1px var(--middlegray);
+    }
+
+    #btn-top {
+        top: 62px;
+    }
+
+    #btn-bottom {
+        bottom: 1px;
     }
 
     #btn-nav.closed {
         top: calc(50% - 20px);
         height: 50px;
-        box-shadow: 0px 0px 6px -1px var(--middlegray);
     }
 
     #btn-nav.open {
@@ -172,13 +183,12 @@ nav li.active a {
         outline: none;
     }
 
-    #btn-nav i {
-        font-family: "FontAwesome";
-        font-style: normal;
-        font-size: 1.25em;
+    .icon-navi {
+        font-size: 2em;
     }
 
     #icon-nav {
+        padding-bottom: 2px;
         transition: 0.25s ease-in-out;
     }
 

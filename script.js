@@ -69,6 +69,26 @@ function setHamburger(toggle) {
 
 /*
 =============================================
+scroll to top/bottom
+=============================================
+*/
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
+function scrollToBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+    });
+}
+
+/*
+=============================================
 highlight currently active section in navbar
 and shadow header on scrolledness
 =============================================
