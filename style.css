@@ -165,7 +165,7 @@ nav li.active a {
         position: fixed;
         display: block;
         right: 0;
-        top: 61px;
+        top: 60px;
         z-index: 1;
         height: 100%;
         width: 40px;
@@ -251,6 +251,7 @@ header
 header {
     position: sticky;
     top: 0;
+    z-index: 2;
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
     overflow-x: hidden;
