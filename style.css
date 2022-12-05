@@ -212,7 +212,7 @@ color button
     height: 2.5em;
     position: fixed;
     right: 20px;
-    bottom: 0px;
+    bottom: 1px;
     padding: 10px;
     transition: display .25s linear;
 }
