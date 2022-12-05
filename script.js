@@ -57,7 +57,7 @@ function setNav(open) {
 function setHamburger(toggle) {
     const nav = document.getElementById("nav");
     const navIcn = document.getElementById("icon-nav");
-    open = toggle != nav.classList.contains("open");
+    open = toggle != document.getElementById("nav").classList.contains("open");
     if (open) {
         navIcn.classList.add("open");
         navIcn.classList.remove("closed");
@@ -127,13 +127,33 @@ function toggleColor() {
 function setColor(dark) {
     const root = document.documentElement;
     const colorBtn = document.getElementById("btn-color");
+    const colorIcn = document.getElementById("icon-color");
     if (dark) {
         root.classList.add("dark");
         root.classList.remove("light");
         colorBtn.setAttribute("title", "light color scheme");
+        colorIcn.classList.add("dark");
+        colorIcn.classList.remove("light");
+        colorIcn.innerHTML = "◐";
     } else {
         root.classList.add("light");
         root.classList.remove("dark");
         colorBtn.setAttribute("title", "dark color scheme");
+        colorIcn.classList.add("light");
+        colorIcn.classList.remove("dark");
+        colorIcn.innerHTML = "◑";
+    }
+}
+
+function setLightbulb(toggle) {
+    const root = document.documentElement;
+    const colorIcn = document.getElementById("icon-color");
+    dark = toggle != root.classList.contains("dark");
+    if (dark) {
+        colorIcn.classList.add("dark");
+        colorIcn.classList.remove("light");
+    } else {
+        colorIcn.classList.add("light");
+        colorIcn.classList.remove("dark");
     }
 }

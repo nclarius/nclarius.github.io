@@ -209,15 +209,6 @@ color button
     bottom: 0;
 }
 
-#icon-color {
-    transition: 0.25s ease-out;
-}
-
-#btn-color:hover #icon-color,
-#btn-color:active #icon-color {
-    transform: rotate(180deg);
-}
-
 nav.closed #btn-color {
     display: none;
 }
@@ -232,6 +223,18 @@ nav.closed #btn-color {
     #btn-color {
         margin-right: 40px;
     }
+}
+
+#icon-color {
+    transition: 0.25s ease-out;
+}
+
+#icon-color.light {
+    transform: rotate(0deg);
+}
+
+#icon-color.dark {
+    transform: rotate(180deg);
 }
 
 /*
