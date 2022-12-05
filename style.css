@@ -99,6 +99,7 @@ nav li {
 nav li a {
     text-decoration: none;
     font-variant: small-caps;
+    transition: 0.125s ease-in-out;
 }
 
 nav li.active a {
