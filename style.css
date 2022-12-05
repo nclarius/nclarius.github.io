@@ -93,6 +93,7 @@ nav
 nav {
     position: fixed;
     display: block;
+    z-index: 1;
     height: 100%;
     right: 0;
     text-align: right;
@@ -166,7 +167,7 @@ nav li.active a {
         display: block;
         right: 0;
         top: 59px;
-        z-index: 1;
+        z-index: 2;
         height: 100%;
         width: 40px;
         overflow-x: hidden;
@@ -251,7 +252,7 @@ header
 header {
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
     overflow-x: hidden;
@@ -721,7 +722,7 @@ section contact
     }
 }
 
-.last-par {
+#end-content {
     margin-bottom: 80px;
 }
 
@@ -734,7 +735,6 @@ footer
 
 #footer {
     position: absolute;
-    z-index: 0;
     bottom: 0px;
     left: 50%;
     transform: translate(-50%);
