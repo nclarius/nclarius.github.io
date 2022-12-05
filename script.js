@@ -10,11 +10,11 @@ toggle nav overlay
 */
 
 
-document.addEventListener("DOMContentLoaded", update_nav_toggleability);
-window.addEventListener("load", update_nav_toggleability);
-window.addEventListener("resize", update_nav_toggleability);
+document.addEventListener("DOMContentLoaded", updateNavToggleability);
+window.addEventListener("load", updateNavToggleability);
+window.addEventListener("resize", updateNavToggleability);
 
-function update_nav_toggleability() {
+function updateNavToggleability() {
     const nav = document.getElementById("nav");
     if (window.matchMedia("(min-width: 801px)").matches) {
         nav.classList.remove("toggleable");
@@ -23,24 +23,24 @@ function update_nav_toggleability() {
     } else if (window.matchMedia("(max-width: 800px)").matches) {
         nav.classList.add("toggleable");
         if (!nav.classList.contains("open")) {
-            close_nav();
+            closeNav();
         }
     }
 }
 
-function toggle_nav() {
+function toggleNav() {
     const nav = document.getElementById("nav");
     if (!nav.classList.contains("toggleable")) {
         return;
     }
     if (!nav.classList.contains("open")) {
-        open_nav();
+        openNav();
     } else if (!nav.classList.contains("closed")) {
-        close_nav();
+        closeNav();
     }
 }
 
-function open_nav() {
+function openNav() {
     const nav = document.getElementById("nav");
     if (!nav.classList.contains("toggleable")) {
         return;
@@ -55,7 +55,7 @@ function open_nav() {
     nav_btn.innerHTML = "&rang;";
 }
 
-function close_nav() {
+function closeNav() {
     const nav = document.getElementById("nav");
     if (!nav.classList.contains("toggleable")) {
         return;
@@ -78,22 +78,22 @@ and shadow header on scrolledness
 =============================================
 */
 
-document.addEventListener("DOMContentLoaded", update_scroll);
-window.addEventListener("load", update_scroll);
-window.addEventListener("scroll", update_scroll);
-window.addEventListener("resize", update_scroll);
+document.addEventListener("DOMContentLoaded", updateScroll);
+window.addEventListener("load", updateScroll);
+window.addEventListener("scroll", updateScroll);
+window.addEventListener("resize", updateScroll);
 
-function update_scroll() {
+function updateScroll() {
     // shadow header on scrolledness
-    indicate_scrolledness_header();
+    indicateScrollednessHeader();
 
     // highlight each section on activeness
     document.querySelectorAll("section").forEach(section => {
-        indicate_visibility_section(section);
+        indicateVisibilitySection(section);
     });
 }
 
-function indicate_scrolledness_header() {
+function indicateScrollednessHeader() {
     const header = document.getElementById("header");
     if (window.scrollY) {
         header.classList.add("scrolled");
@@ -102,16 +102,14 @@ function indicate_scrolledness_header() {
     }
 }
 
-function indicate_visibility_section(section) {
-    const id = section.getAttribute("id");
+function indicateVisibilitySection(section) {
+    const li = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`).parentElement;
     const geo = section.getBoundingClientRect();
     if (geo.top < document.documentElement.clientHeight &&
         geo.bottom > document.getElementById("header").offsetHeight) {
-        document.querySelector(`nav ul li a[href="#${id}"]`).parentElement.
-        classList.add("active");
+        li.classList.add("active");
     } else {
-        document.querySelector(`nav ul li a[href="#${id}"]`).parentElement.
-        classList.remove("active");
+        li.classList.remove("active");
     }
 }
 
@@ -121,38 +119,35 @@ toggle light/dark mode
 =============================================
 */
 
-document.addEventListener("DOMContentLoaded", initialize_color);
+document.addEventListener("DOMContentLoaded", initializeColor);
 
-function initialize_color() {
+function initializeColor() {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        color_dark();
+        setColor(true);
     } else {
-        color_light();
+        setColor(false);
     }
 }
 
-function toggle_color() {
+function toggleColor() {
     if (!document.documentElement.classList.contains("dark")) {
-        color_dark();
+        setColor(true);
     } else {
-        color_light();
+        setColor(false);
     }
 }
 
-function color_dark() {
+function setColor(dark) {
     const root = document.documentElement;
-    root.classList.add("dark");
-    root.classList.remove("light");
-
-    const color_btn = document.getElementById("btn-color");
-    color_btn.setAttribute("title", "light color scheme");
+    const colorBtn = document.getElementById("btn-color");
+    if (dark) {
+        root.classList.add("dark");
+        root.classList.remove("light");
+        colorBtn.setAttribute("title", "light color scheme");
+    } else {
+        root.classList.add("light");
+        root.classList.remove("dark");
+        colorBtn.setAttribute("title", "dark color scheme");
+    }
 }
 
-function color_light() {
-    const root = document.documentElement;
-    root.classList.add("light");
-    root.classList.remove("dark");
-
-    const color_btn = document.getElementById("btn-color");
-    color_btn.setAttribute("title", "dark color scheme");
-}
