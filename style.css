@@ -3,7 +3,6 @@ Natalie Clarius - Personal Website
 (C) 2022 Natalie Clarius <natalie_clarius@yahoo.de>
 */
 
-
 /*
 =======================
 root
@@ -26,7 +25,6 @@ root
     --black: #f0f0f0;
 }
 
-
 /*
 =======================
 html, body, main
@@ -38,7 +36,6 @@ html {
 }
 
 @media only screen and (min-width: 801px) {
-
     html {
         scroll-padding-top: 82px;
     }
@@ -52,11 +49,9 @@ html {
         margin: auto;
         width: calc(100% - 440px);
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     html {
         scroll-padding-top: 62px;
     }
@@ -120,7 +115,6 @@ nav li.active a {
 }
 
 @media only screen and (min-width: 801px) {
-
     nav {
         width: 180px;
         top: 81px;
@@ -131,11 +125,9 @@ nav li.active a {
     #btn-nav {
         display: none;
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     nav {
         top: calc(61px + 1px);
         margin-right: 40px;
@@ -143,7 +135,7 @@ nav li.active a {
         border-top: 1px solid var(--white);
         box-shadow: 0 9px 12px -1px var(--middlegray); /* offset-x offset-y blur-radius spread-radius color */
         background: var(--white);
-        transition: width .25s linear;
+        transition: width 0.25s linear;
     }
 
     nav.open {
@@ -172,7 +164,7 @@ nav li.active a {
         font-size: 1.25em;
         color: var(--black);
         background: var(--white);
-        transition: border-left .25s linear, box-shadow .25s linear;
+        transition: border-left 0.25s linear, box-shadow 0.25s linear;
     }
 
     #btn-nav.open {
@@ -190,9 +182,7 @@ nav li.active a {
         font-size: x-large;
         font-weight: bold;
     }
-
 }
-
 
 /*
 =======================
@@ -222,21 +212,16 @@ nav.closed #btn-color {
 }
 
 @media only screen and (min-width: 801px) {
-
     #btn-color {
         margin-right: 20px;
     }
-
 }
 
 @media screen and (max-width: 800px) {
-
     #btn-color {
         margin-right: 40px;
     }
-
 }
-
 
 /*
 =======================
@@ -270,21 +255,18 @@ header.scrolled {
 } */
 
 @media only screen and (min-width: 801px) {
-
     header {
         height: 81px;
     }
-    
+
     #heading {
         padding-top: 15px;
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     header {
-        height: 61px
+        height: 61px;
     }
 
     #heading {
@@ -292,7 +274,6 @@ header.scrolled {
         margin-right: 40px;
     }
 }
-
 
 /*
 =======================
@@ -310,7 +291,6 @@ section:last-child {
 }
 
 @media only screen and (min-width: 801px) {
-
     section:not(last-child) {
         margin-bottom: 250px;
         min-height: calc(100vh - 82px - 250px);
@@ -319,11 +299,9 @@ section:last-child {
     section:last-child {
         min-height: calc(100vh - 82px);
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     section:not(last-child) {
         margin-bottom: 150px;
         min-height: calc(100vh - 62px - 150px);
@@ -389,7 +367,6 @@ h4 {
     font-size: 1em;
 }
 
-
 /*
 =======================
 links
@@ -402,24 +379,23 @@ p a {
     text-decoration: none;
 }
 
-
-p a[href^='#']::after,
-td a[href^='#']::after {
+p a[href^="#"]::after,
+td a[href^="#"]::after {
     /* content: " ↘"; */
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: " \f0c1";
     font-weight: normal;
-    font-size: .75em;
+    font-size: 0.75em;
 }
 
-p a:not([href^='#'])::after,
-td a:not([href^='#'])::after,
+p a:not([href^="#"])::after,
+td a:not([href^="#"])::after,
 a h4.caption-software::after {
     /* content: " ↗"; */
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     content: " \f08e";
     font-weight: normal;
-    font-size: .75em;
+    font-size: 0.75em;
 }
 
 a:hover,
@@ -430,7 +406,6 @@ a:hover h5 {
     text-decoration: underline;
 }
 
-
 /*
 =======================
 footnotes
@@ -440,9 +415,8 @@ footnotes
 .footnote p {
     padding-top: 9pt;
     margin-right: 0;
-    font-size: .75em;
+    font-size: 0.75em;
 }
-
 
 /*
 =======================
@@ -451,11 +425,7 @@ icons
 */
 
 .material-symbols-outlined {
-    font-variation-settings:
-      'FILL' 1,
-      'wght' 200,
-      'GRAD' -25,
-      'opsz' 40;
+    font-variation-settings: "FILL" 1, "wght" 200, "GRAD" -25, "opsz" 40;
     vertical-align: middle;
     color: var(--darkgray);
 }
@@ -466,7 +436,6 @@ icons
     margin-right: 0.125em;
     vertical-align: middle;
 }
-
 
 /*
 =======================
@@ -485,7 +454,6 @@ td {
 }
 
 @media only screen and (max-width: 1000px) {
-
     table {
         width: 100%;
         margin-right: 20px;
@@ -502,7 +470,6 @@ td {
     }
 }
 
-
 /*
 =======================
 section about me
@@ -514,7 +481,6 @@ section about me
     clear: both;
     display: table;
 }
-  
 
 #wrapper-photo-about {
     /* todo resize original photo */
@@ -522,7 +488,6 @@ section about me
 }
 
 @media only screen and (min-width: 801px) {
-
     #wrapper-photo-about {
         width: 250px;
     }
@@ -534,11 +499,9 @@ section about me
     ul {
         /* padding-left: 310px; */
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     #wrapper-photo-about {
         width: 200px;
     }
@@ -546,26 +509,20 @@ section about me
     #photo-about {
         width: 200px;
     }
-
 }
 
 @media only screen and (min-width: 1001px) {
-
     #wrapper-photo-about {
         float: left;
     }
-
 }
 
 @media only screen and (max-width: 1000px) {
-
     #wrapper-photo-about {
         margin: auto;
         margin-top: 20px;
     }
-
 }
-
 
 /*
 =======================
@@ -592,7 +549,6 @@ section cv
     margin: 10px auto 10px auto;
 }
 
-
 /*
 =======================
 section teaching
@@ -615,9 +571,8 @@ section teaching
 }
 
 .table-teaching li:not(:last-child) {
-    margin-bottom: .5ex;
+    margin-bottom: 0.5ex;
 }
-
 
 /*
 =======================
@@ -632,19 +587,15 @@ section software
 }
 
 @media only screen and (min-width: 1001px) {
-
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media only screen and (max-width: 1000px) {
-
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
     }
-    
 }
 
 .tile-software {
@@ -690,7 +641,6 @@ section software
     margin-bottom: 3px;
 }
 
-
 /*
 =======================
 section contact
@@ -721,7 +671,6 @@ section contact
     margin-bottom: 80px;
 }
 
-
 /*
 =======================
 footer
@@ -737,9 +686,7 @@ footer
 }
 
 @media only screen and (max-width: 800px) {
-
     #footer {
         left: calc(50% - 40px);
     }
-
 }

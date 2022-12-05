@@ -9,7 +9,6 @@ toggle nav overlay
 =============================================
 */
 
-
 document.addEventListener("DOMContentLoaded", updateNavToggleability);
 window.addEventListener("load", updateNavToggleability);
 window.addEventListener("resize", updateNavToggleability);
@@ -68,7 +67,6 @@ function closeNav() {
     nav_btn.classList.remove("open");
     nav_btn.setAttribute("title", "open navigation");
     nav_btn.innerHTML = "&lang;";
-
 }
 
 /*
@@ -88,7 +86,7 @@ function updateScroll() {
     indicateScrollednessHeader();
 
     // highlight each section on activeness
-    document.querySelectorAll("section").forEach(section => {
+    document.querySelectorAll("section").forEach((section) => {
         indicateVisibilitySection(section);
     });
 }
@@ -105,8 +103,7 @@ function indicateScrollednessHeader() {
 function indicateVisibilitySection(section) {
     const li = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`).parentElement;
     const geo = section.getBoundingClientRect();
-    if (geo.top < document.documentElement.clientHeight &&
-        geo.bottom > document.getElementById("header").offsetHeight) {
+    if (geo.top < document.documentElement.clientHeight && geo.bottom > document.getElementById("header").offsetHeight) {
         li.classList.add("active");
     } else {
         li.classList.remove("active");
@@ -150,4 +147,3 @@ function setColor(dark) {
         colorBtn.setAttribute("title", "dark color scheme");
     }
 }
-
