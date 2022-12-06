@@ -274,7 +274,7 @@ header {
 
 header.scrolled {
     border-bottom: 1px solid transparent;
-    box-shadow: 0 -5px 12px 0px var(--middlegray);
+    box-shadow: 0 -6px 12px -1px var(--middlegray);
 }
 
 #heading {
