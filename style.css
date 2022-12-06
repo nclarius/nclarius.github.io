@@ -125,7 +125,7 @@ nav li.active a {
         margin-right: 40px;
         overflow: auto;
         border-top: 1px solid var(--white);
-        box-shadow: 0px 0px 12px -1px var(--middlegray);
+        box-shadow: -6px 0px 12px -6px var(--middlegray);
         background: var(--white);
         transition: width 0.25s ease-in-out;
     }
@@ -156,7 +156,7 @@ nav li.active a {
     }
 
     .btn-navi.closed {
-        box-shadow: 0px 0px 6px -1px var(--middlegray);
+        box-shadow: 0px 2px 6px -2px var(--middlegray);
     }
 
     .btn-nav.open {
@@ -274,7 +274,7 @@ header {
 
 header.scrolled {
     border-bottom: 1px solid transparent;
-    box-shadow: 0 -4px 12px -1px var(--middlegray);
+    box-shadow: 0 -5px 12px 0px var(--middlegray);
 }
 
 #heading {
@@ -666,6 +666,10 @@ section software
 .description-software {
     margin-top: -6px;
     margin-bottom: 3px;
+}
+
+td.field-skills {
+    font-family: "FontAwesome";
 }
 
 /*
