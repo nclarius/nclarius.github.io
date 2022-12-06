@@ -32,38 +32,31 @@ function toggleNav() {
 
 function setNav(open) {
     const nav = document.getElementById("nav");
-    const navBtn = document.getElementById("btn-nav");
     const navIcn = document.getElementById("icon-nav");
-    // const topBtn = document.getElementById("btn-top");
-    // const bottomBtn = document.getElementById("btn-bottom");
+    const navBtn = document.getElementById("btn-nav");
+    const topBtn = document.getElementById("btn-top");
+    const bottomBtn = document.getElementById("btn-bottom");
     if (!nav.classList.contains("toggleable")) return;
     if (open) {
-        nav.classList.add("open");
-        nav.classList.remove("closed");
-        navBtn.classList.add("open");
-        navBtn.classList.remove("closed");
+        [nav, navIcn, navBtn, topBtn, bottomBtn].forEach(btn => {
+            btn.classList.add("open");
+            btn.classList.remove("closed");
+        });
         navBtn.setAttribute("title", "close navigation");
-        navIcn.classList.add("open");
-        navIcn.classList.remove("closed");
-        // topBtn.classList.remove("hidden");
-        // bottomBtn.classList.remove("hidden");
+        updateVisibilityNavButtons(false);
     } else {
-        nav.classList.add("closed");
-        nav.classList.remove("open");
-        navBtn.classList.add("closed");
-        navBtn.classList.remove("open");
+        [nav, navIcn, navBtn, topBtn, bottomBtn].forEach(btn => {
+            btn.classList.add("closed");
+            btn.classList.remove("open");
+        });
         navBtn.setAttribute("title", "open navigation");
-        navIcn.classList.add("closed");
-        navIcn.classList.remove("open");
-        // topBtn.classList.add("hidden");
-        // bottomBtn.classList.add("hidden");
     }
 }
 
 function setHamburger(toggle) {
     const nav = document.getElementById("nav");
     const navIcn = document.getElementById("icon-nav");
-    open = toggle != document.getElementById("nav").classList.contains("open");
+    open = toggle != nav.classList.contains("open");
     if (open) {
         navIcn.classList.add("open");
         navIcn.classList.remove("closed");
@@ -104,6 +97,7 @@ document.addEventListener("DOMContentLoaded", updateScroll);
 window.addEventListener("load", updateScroll);
 window.addEventListener("scroll", updateScroll);
 window.addEventListener("resize", updateScroll);
+window.addEventListener('mousemove', updateVisibilityNavButtons);
 
 function updateScroll() {
     // shadow header on scrolledness
@@ -115,7 +109,7 @@ function updateScroll() {
     });
 
     // update scroll button visibility
-    updateVisibilityScrollButtons();
+    updateVisibilityNavButtons(true);
 }
 
 function indicateScrollednessHeader() {
@@ -137,22 +131,28 @@ function indicateVisibilitySection(section) {
     }
 }
 
-function updateVisibilityScrollButtons() {
+function updateVisibilityNavButtons(timeout = true) {
     const navBtn = document.getElementById("btn-nav");
-    navBtn.style.opacity = "100";
-    setTimeout(() => {navBtn.style.opacity = "0"}, 1500);
-    // const topBtn = document.getElementById("btn-top");
-    // const bottomBtn = document.getElementById("btn-bottom");
-    // if (window.scrollY) {
-    //     topBtn.classList.remove("hidden");
-    // } else {
-    //     topBtn.classList.add("hidden");
-    // }
-    // if (window.scrollY + window.innerHeight < document.body.scrollHeight) {
-    //     bottomBtn.classList.remove("hidden");
-    // } else {
-    //     bottomBtn.classList.add("hidden");
-    // }
+    const topBtn = document.getElementById("btn-top");
+    const bottomBtn = document.getElementById("btn-bottom");
+    [navBtn, topBtn, bottomBtn].forEach(btn => {
+        if (btn == navBtn || 
+            btn == topBtn && window.scrollY || 
+            btn == bottomBtn && window.scrollY + window.innerHeight < document.body.scrollHeight) {
+            btn.style.opacity = "100";
+        } else {
+            btn.style.opacity = "0";
+        }
+    });
+    if (timeout) {
+        setTimeout(() => {
+            [navBtn, topBtn, bottomBtn].forEach(btn => {
+                if (!document.getElementById("nav").classList.contains("open")) {
+                        btn.style.opacity = "0";
+                }
+            });
+        }, 1500);
+    }
 }
 
 /*
