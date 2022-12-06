@@ -138,6 +138,9 @@ function indicateVisibilitySection(section) {
 }
 
 function updateVisibilityScrollButtons() {
+    const navBtn = document.getElementById("btn-nav");
+    navBtn.style.opacity = "100";
+    setTimeout(() => {navBtn.style.opacity = "0"}, 1500);
     // const topBtn = document.getElementById("btn-top");
     // const bottomBtn = document.getElementById("btn-bottom");
     // if (window.scrollY) {

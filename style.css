@@ -152,6 +152,7 @@ nav li.active a {
         z-index: 2;
         color: var(--black);
         background: var(--white);
+        transition: opacity 0.25s linear;
     }
 
     .btn-navi.hidden {
