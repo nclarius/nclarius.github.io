@@ -226,7 +226,7 @@ color button
     height: 2.5em;
     position: fixed;
     right: 20px;
-    bottom: 0;
+    bottom: 4px;
 }
 
 nav.closed #btn-color {
@@ -704,7 +704,7 @@ section contact
 
 #footer {
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
