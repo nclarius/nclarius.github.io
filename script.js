@@ -97,18 +97,21 @@ document.addEventListener("DOMContentLoaded", updateScroll);
 window.addEventListener("load", updateScroll);
 window.addEventListener("scroll", updateScroll);
 window.addEventListener("resize", updateScroll);
-window.addEventListener('mousemove', updateVisibilityNavButtons);
+window.addEventListener('mousemove', updateMouseMove);
 
 function updateScroll() {
     // shadow header on scrolledness
     indicateScrollednessHeader();
 
     // highlight each section on activeness
-    document.querySelectorAll("section").forEach((section) => {
-        indicateVisibilitySection(section);
-    });
+    document.querySelectorAll("section").forEach(indicateVisibilitySection);
 
-    // update scroll button visibility
+    // update nav button visibility
+    updateMouseMove();
+}
+
+function updateMouseMove() {
+    // update nav button visibility
     updateVisibilityNavButtons(true);
 }
 
