@@ -182,7 +182,7 @@ nav li.active a {
     }
 
     #btn-nav.open {
-        top: calc(60px + 50px + 4px);
+        top: calc(60px + 50px + 8px);
         height: calc(100% - 60px - 2 * (50px + 4px));
     }
 
