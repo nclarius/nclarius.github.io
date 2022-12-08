@@ -154,7 +154,7 @@ function updateVisibilityNavButtons(timeout = true) {
                         btn.style.opacity = "0";
                 }
             });
-        }, 1500);
+        }, 2000);
     }
 }
 
