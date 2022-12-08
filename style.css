@@ -177,13 +177,13 @@ nav li.active a {
     }
 
     #btn-nav.closed {
-        top: calc(50% - 20px);
-        height: 50px;
+        top: calc(30px + 50% - 25px);
+        height: 50px ;
     }
 
     #btn-nav.open {
-        top: 0px;
-        height: 100%;
+        top: calc(60px + 50px + 4px);
+        height: calc(100% - 60px - 2 * (50px + 4px));
     }
 
     #btn-nav,
