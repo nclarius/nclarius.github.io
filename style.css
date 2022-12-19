@@ -713,3 +713,7 @@ footer {
     transform: translate(-50%);
     margin-top: 10px;
 }
+
+.nowrap {
+    white-space: nowrap;
+}
