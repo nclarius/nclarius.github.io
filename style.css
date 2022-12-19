@@ -712,6 +712,7 @@ footer {
     left: 50%;
     transform: translate(-50%);
     margin-top: 10px;
+    text-align: center;
 }
 
 .nowrap {
