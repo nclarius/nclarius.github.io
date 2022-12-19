@@ -70,6 +70,10 @@ p {
     margin-right: 20px;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /*
 =======================
 nav
@@ -618,15 +622,19 @@ section software
 }
 
 @media only screen and (min-width: 1001px) {
+
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media only screen and (max-width: 1000px) {
+
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
     }
+    
 }
 
 .tile-software {
@@ -636,25 +644,6 @@ section software
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* #software-logic:hover {
-    background-image: url("img/software-logic_.png");
-}
-#software-teaching:hover {
-    background-image: url("img/software-teaching_.png");
-}
-#software-plasma:hover {
-    background-image: url("img/software-plasma_.png");
-}
-#software-kwin:hover {
-    background-image: url("img/software-kwin_.png");
-}
-#software-shell:hover {
-    background-image: url("img/software-shell_.png");
-}
-#software-web:hover {
-    background-image: url("img/software-web_.png");
-} */
 
 .project-software {
     padding: 15px;
@@ -670,10 +659,6 @@ section software
 .description-software {
     margin-top: -6px;
     margin-bottom: 3px;
-}
-
-td.field-skills {
-    font-family: "FontAwesome";
 }
 
 /*
@@ -713,8 +698,4 @@ footer {
     transform: translate(-50%);
     margin-top: 10px;
     text-align: center;
-}
-
-.nowrap {
-    white-space: nowrap;
 }
