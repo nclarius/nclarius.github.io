@@ -432,10 +432,8 @@ a h4.caption-software::after {
 
 
 a:hover,
-a:hover p,
-p:hover a,
-a:hover h4,
-a:hover h5 {
+.description-software:hover,
+.caption-software:hover {
     text-decoration: underline;
 }
 
