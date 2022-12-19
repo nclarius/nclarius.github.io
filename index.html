@@ -7,76 +7,70 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="style.css" />
         <script src="script.js"></script>
         <link rel="stylesheet" href="media/fonts/material-symbols-outlined.css" />
         <link rel="stylesheet" href="media/fonts/font-awesome.css" />
 
         <title>Natalie Clarius</title>
-        <meta name="description"
-            content="I am a hobby developer of free open-source software with a background in logic and computational linguistics." />
-        <meta name="keywords" 
-            content="Natalie Clarius, Tübingen, Tuebingen, Tubingen, KDE, KWin, Plasma, pyPL, pyGrade" />
-        <link rel="shortcut icon" type="image/png" href="media/icons/nc.png">
-        
+        <meta name="description" content="I am a hobby developer of free open-source software with a background in logic and computational linguistics." />
+        <meta name="keywords" content="Natalie Clarius, Tübingen, Tuebingen, Tubingen, KDE, KWin, Plasma, pyPL, pyGrade" />
+        <link rel="shortcut icon" type="image/png" href="media/icons/nc.png" />
+
         <meta name="google-site-verification" content="atTvJK0HtOE0Q5QSUTQ-WuxbVteTfejkjgVGniXnlIY" />
     </head>
     <body>
-        <script>0</script> <!-- show page after everything from head is loaded -->
+        <script>
+            0;
+        </script>
+        <!-- show page after everything from head is loaded -->
         <header id="header">
             <h1 id="heading"><a href="#">Natalie Clarius</a></h1>
         </header>
         <div>
-            <button id="btn-top" class="btn-navi"
-            onclick="scrollToTop()">
+            <button id="btn-top" class="btn-navi" onclick="scrollToTop()">
                 <span id="icon-top" class="icon-navi">&#10514;</span>
             </button>
-            <button id="btn-nav" class="btn-navi" 
-            onmouseenter="setHamburger(true)" onmouseleave="setHamburger(false)" onclick="toggleNav()">
+            <button id="btn-nav" class="btn-navi" onmouseenter="setHamburger(true)" onmouseleave="setHamburger(false)" onclick="toggleNav()">
                 <span id="icon-nav" class="icon-navi">☰</span>
             </button>
-            <button id="btn-bottom" class="btn-navi"
-            onclick="scrollToBottom()">
+            <button id="btn-bottom" class="btn-navi" onclick="scrollToBottom()">
                 <span id="icon-bottom" class="icon-navi">&#10515;</span>
             </button>
         </div>
         <nav id="nav">
             <ul>
-                <li><a 
-                    onclick="toggleNav()" 
-                    href="#sec-about">
-                    About
+                <li>
+                    <a onclick="toggleNav()" href="#sec-about">
+                        About
                     </a>
                 </li>
-                <li><a 
-                    onclick="toggleNav()" 
-                    href="#sec-cv">
-                    CV
+                <li>
+                    <a onclick="toggleNav()" href="#sec-cv">
+                        CV
                     </a>
                 </li>
-                <li><a 
-                    onclick="toggleNav()" 
-                    href="#sec-teaching">
-                    Teaching
+                <li>
+                    <a onclick="toggleNav()" href="#sec-teaching">
+                        Teaching
                     </a>
                 </li>
-                <li><a 
-                    onclick="toggleNav()" 
-                    href="#sec-software">
-                    Software
+                <li>
+                    <a onclick="toggleNav()" href="#sec-software">
+                        Software
                     </a>
                 </li>
-                <li><a 
-                    onclick="toggleNav()" 
-                    href="#sec-contact">
-                    Contact
+                <li>
+                    <a onclick="toggleNav()" href="#sec-contact">
+                        Contact
                     </a>
                 </li>
             </ul>
             <div>
-                <button id="btn-color"
-                onmouseenter="setLightbulb(true)" onmouseleave="setLightbulb(false)" onclick="toggleColor()">
-                    <span id="icon-color">◐</span> <!-- ◑ ◐ -->
+                <button id="btn-color" onmouseenter="setLightbulb(true)" onmouseleave="setLightbulb(false)" onclick="toggleColor()">
+                    <span id="icon-color">◐</span>
+                    <!-- ◑ ◐ -->
                 </button>
             </div>
         </nav>
@@ -84,7 +78,7 @@
             <section id="sec-about">
                 <div class="wrapper-about">
                     <figure id="wrapper-photo-about">
-                        <img id="photo-about" alt="Natalie Clarius" src="media/img/photo.jpg">
+                        <img id="photo-about" alt="Natalie Clarius" src="media/img/photo.jpg" />
                     </figure>
                     <div id="about-text">
                         <p>I am a master's student and software developer based in Tübingen, Germany.</p>
@@ -96,18 +90,19 @@
             </section>
             <section id="sec-cv">
                 <h2><a href="#sec-cv">CV</a></h2>
-                <hr class="heading-underline"/>
+                <hr class="heading-underline" />
                 <h3>Positions</h3>
                 <table id="table-positions" class="table-cv">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>07/2014 – present (periodically)</td>
                         <td>
                             <b>Research Assistant</b><br />
-                            <p>University of Tübingen, Department of Linguistics,<br />
+                            <p>
+                                University of Tübingen, Department of Linguistics,<br />
                                 University of Tübingen, Department of Computer Science &amp;<br />
                                 University of Tübingen, Department of Philosophy and History of Science<br />
                             </p>
@@ -119,11 +114,12 @@
                         <td>10/2015 – 03/2021</td>
                         <td>
                             <b>Teaching Assistant</b><br />
-                            <p>University of Tübingen, Department of Linguistics,<br />
+                            <p>
+                                University of Tübingen, Department of Linguistics,<br />
                                 University of Tübingen, Department of Computer Science &amp;<br />
                                 University of Göttingen, Faculty of Mathematics and Computer Science<br />
                             </p>
-                            <p>Lectures and tutorials in the study programs B.A./M.A. General Linguistics, B.A./M.A. Computational Linguistics and B.Sc./M.Sc. Computer Science
+                            <p>Lectures and tutorials in the study programs B.A./M.A. General Linguistics, B.A./M.A. Computational Linguistics and B.Sc./M.Sc. Computer Science</p>
                             <p>Complete list: see <a href="#sec-teaching">Teaching</a></p>
                         </td>
                     </tr>
@@ -131,16 +127,22 @@
                 <h3>Education</h3>
                 <table id="table-education" class="table-cv">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>10/2016 – present</td>
-                        <td><b>M.A. General Linguistics</b> with additional courses in <b>Computer Science</b><br />University of Tübingen</td>
+                        <td>
+                            <b>M.A. General Linguistics</b> with additional courses in <b>Computer Science</b><br />
+                            University of Tübingen
+                        </td>
                     </tr>
                     <tr>
                         <td>10/2013 – 09/2016</td>
-                        <td><b>B.A. General Linguistics</b> with minor in <b>Computational Linguistics</b><br />University of Tübingen</td>
+                        <td>
+                            <b>B.A. General Linguistics</b> with minor in <b>Computational Linguistics</b><br />
+                            University of Tübingen
+                        </td>
                     </tr>
                     <!-- <tr>
                         <td>09/2001 – 06/2013</td>
@@ -153,12 +155,12 @@
             </section>
             <section id="sec-teaching">
                 <h2><a href="#sec-teaching">Teaching</a></h2>
-                <hr class="heading-underline"/>
+                <hr class="heading-underline" />
                 <h3>Lectures</h3>
                 <table id="table-lectures" class="table-teaching">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>Winter term 2020</td>
@@ -172,35 +174,33 @@
                 <h3>Seminars</h3>
                 <table id="table-seminars" class="table-teaching">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>Summer term 2021</td>
-                        <td><i>Selected Topics in Formal Semantics</i> (Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹
+                        <td><i>Selected Topics in Formal Semantics</i> (Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹</td>
                     </tr>
                 </table>
                 <h3>Compact courses</h3>
                 <table id="compact-table-courses" class="table-teaching">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>Summer term 2017</td>
-                        <td><i>Introduction to Logic Programming with Prolog</i>: independently taught compact
-                            course accompanying the Grammar Formalisms tutorial¹
-                        </td>
+                        <td><i>Introduction to Logic Programming with Prolog</i>: independently taught compact course accompanying the Grammar Formalisms tutorial¹</td>
                     </tr>
                 </table>
                 <h3>Tutorials</h3>
                 <table id="table-tutorials" class="table-teaching">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
-                        <td style="padding-top: 3pt">Summer term 2020</td>
+                        <td style="padding-top: 3pt;">Summer term 2020</td>
                         <td><i>Gödel's Incompleteness Theorems</i> (Prof. Dr. Reinhard Kahle; compact course in the Hilbert-Bernays Summer School on Logic and Computation 2020)⁴</td>
                     </tr>
                     <tr>
@@ -241,8 +241,7 @@
                     </tr>
                     <tr>
                         <td>Summer term 2018</td>
-                        <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹
-                        </td>
+                        <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹</td>
                     </tr>
                     <tr>
                         <td>Winter term 2017</td>
@@ -278,8 +277,7 @@
                     </tr>
                     <tr>
                         <td>Winter term 2016</td>
-                        <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹
-                        </td>
+                        <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
                     </tr>
                     <tr>
                         <td>Summer term 2016</td>
@@ -297,8 +295,8 @@
                 <h3>Talks</h3>
                 <table id="table-talks" class="table-teaching">
                     <colgroup>
-                        <col span="1" style="width: 200px;">
-                        <col>
+                        <col span="1" style="width: 200px;" />
+                        <col />
                     </colgroup>
                     <tr>
                         <td>18/11/2020</td>
@@ -316,7 +314,7 @@
             </section>
             <section id="sec-software">
                 <h2><a href="#sec-software">Software</a></h2>
-                <hr class="heading-underline"/>
+                <hr class="heading-underline" />
                 <div id="grid-software">
                     <div id="software-logic" class="tile-software">
                         <h3>Logic</h3>
@@ -397,13 +395,13 @@
                         <div class="project-software">
                             <a href="https://github.com/nclarius/floating-tiles" target="_blank">
                                 <h4 class="caption-software">Floating Tiles</h4>
-                                <p class="description-software">KWin script to prevent windows from overlapping </p>
+                                <p class="description-software">KWin script to prevent windows from overlapping</p>
                             </a>
                         </div>
                         <div class="project-software">
                             <a href="https://github.com/nclarius/tile-gaps" target="_blank">
                                 <h4 class="caption-software">Window Gaps</h4>
-                                <p class="description-software">KWin script to add space around windows touching a screen edge or other window </p>
+                                <p class="description-software">KWin script to add space around windows touching a screen edge or other window</p>
                             </a>
                         </div>
                         <div class="project-software">
@@ -421,7 +419,7 @@
                         <div class="project-software">
                             <a href="https://github.com/nclarius/KWin-window-positioning-scripts" target="_blank">
                                 <h4 class="caption-software">Window Positioning Scripts</h4>
-                                <p class="description-software">KWin scripts for window placement on multi-monitor setups </p>
+                                <p class="description-software">KWin scripts for window placement on multi-monitor setups</p>
                             </a>
                         </div>
                         <div class="project-software">
@@ -441,22 +439,22 @@
                         <div class="project-software">
                             <a href="https://github.com/nclarius/shell-scripts" target="_blank">
                                 <h4 class="caption-software">Shell Scripts</h4>
-                                <p class="description-software">Collection of shell scripts for opening windows, updating files and more </p>
+                                <p class="description-software">Collection of shell scripts for opening windows, updating files and more</p>
                             </a>
                         </div>
                     </div>
                     <div id="software-web" class="tile-software">
                         <h3>Web Development</h3>
                         <div class="project-software">
-                                <h4 class="caption-software">Personal Website</h4>
-                                <p class="description-software">This website is self-made from scratch</p>
+                            <h4 class="caption-software">Personal Website</h4>
+                            <p class="description-software">This website is self-made from scratch</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="sec-contact">
                 <h2><a href="#sec-contact">Contact</a></h2>
-                <hr class="heading-underline"/>
+                <hr class="heading-underline" />
                 <table id="table-contact" class="table-contact">
                     <tr>
                         <td>
@@ -497,8 +495,8 @@
                             <span class="label-contact">E-Mail (academia)</span>
                         </td>
                         <td>
-                            &#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#099;&#108;&#097;&#114;&#105;&#117;&#115;<span
-                                style="display: none">null</span>&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#117;&#110;&#105;&#045;&#116;&#117;&#101;&#098;&#105;&#110;&#103;&#101;&#110;&#046;&#100;&#101;
+                            &#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#099;&#108;&#097;&#114;&#105;&#117;&#115;
+                            <span style="display: none;">null</span>&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#117;&#110;&#105;&#045;&#116;&#117;&#101;&#098;&#105;&#110;&#103;&#101;&#110;&#046;&#100;&#101;
                         </td>
                     </tr>
                     <tr>
@@ -512,7 +510,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/github.png">
+                            <img class="icon" alt="" src="media/icons/github.png" />
                             <span class="label-contact">GitHub</span>
                         </td>
                         <td>
@@ -521,35 +519,35 @@
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/gitlab.png">
+                            <img class="icon" alt="" src="media/icons/gitlab.png" />
                             <span class="label-contact">KDE GitLab</span>
                         </td>
                         <td><a href="https://invent.kde.org/nclarius">@nclarius</a></td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/stackexchange.png">
+                            <img class="icon" alt="" src="media/icons/stackexchange.png" />
                             <span class="label-contact">Stack Exchange</span>
                         </td>
                         <td><a href="https://stackexchange.com/users/8482789/lemontree?tab=accounts">@lemontree</a></td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/reddit.png">
+                            <img class="icon" alt="" src="media/icons/reddit.png" />
                             <span class="label-contact">Reddit</span>
                         </td>
                         <td><a href="https://www.reddit.com/user/reguasbuats">@reguasbuats</a></td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/buymeacoffee.png">
+                            <img class="icon" alt="" src="media/icons/buymeacoffee.png" />
                             <span class="label-contact">Buy Me a Coffee</span>
                         </td>
                         <td><a href="https://www.buymeacoffee.com/nclarius">@nclarius</a></td>
                     </tr>
                     <tr>
                         <td>
-                            <img class="icon" alt="" src="media/icons/paypal.png">
+                            <img class="icon" alt="" src="media/icons/paypal.png" />
                             <span class="label-contact">Donate via PayPal</span>
                         </td>
                         <td><a href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4">@natalie_clarius</a></td>
@@ -559,12 +557,12 @@
                 <div id="end-content"></div>
             </section>
         </main>
-            <footer id="footer" class="footnote">
-                <p>
-                    <span class="nowrap"><a href="https://github.com/nclarius/nclarius.github.io">Source code</a>&nbsp;&nbsp;▪&nbsp;&nbsp;</span>
-                    <span class="nowrap"><a href=LICENSE.txt>GPLv3 license</a>&nbsp;&nbsp;▪&nbsp;&nbsp;</span>
-                    <span class="nowrap">© 2022 Natalie Clarius</span>
-                </p>
-            </footer>
+        <footer id="footer" class="footnote">
+            <p>
+                <span class="nowrap"><a href="https://github.com/nclarius/nclarius.github.io">Source code</a>&nbsp;&nbsp;▪&nbsp;&nbsp;</span>
+                <span class="nowrap"><a href="LICENSE.txt">GPLv3 license</a>&nbsp;&nbsp;▪&nbsp;&nbsp;</span>
+                <span class="nowrap">© 2022 Natalie Clarius</span>
+            </p>
+        </footer>
     </body>
 </html>
