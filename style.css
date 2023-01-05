@@ -522,6 +522,10 @@ section about me
     margin: 5px 40px 0px 0px;
 }
 
+#about-text ul {
+    padding-left: 20px;
+}
+
 @media only screen and (min-width: 801px) {
     #wrapper-photo-about {
         width: 250px;
@@ -529,10 +533,6 @@ section about me
 
     #photo-about {
         width: 250px;
-    }
-
-    ul {
-        /* padding-left: 310px; */
     }
 }
 
@@ -549,6 +549,14 @@ section about me
 @media only screen and (min-width: 1001px) {
     #wrapper-photo-about {
         float: left;
+    }
+
+    #about-text-interests {
+        margin-left: 250px;
+    }
+
+    #about-text ul {
+        margin-left: 40px;
     }
 }
 
