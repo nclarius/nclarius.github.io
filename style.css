@@ -506,6 +506,10 @@ section about me
 }
 
 @media only screen and (min-width: 801px) {
+    #container-about {
+        margin-top: 24px;
+    }
+
     #container-photo-about {
         width: 250px;
     }
