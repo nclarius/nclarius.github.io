@@ -490,13 +490,13 @@ section about me
 =======================
 */
 
-.wrapper-about::after {
+#container-about::after {
     content: "";
     clear: both;
     display: table;
 }
 
-#wrapper-photo-about {
+#container-photo-about {
     /* todo resize original photo */
     margin: 5px 40px 0px 0px;
 }
@@ -506,7 +506,7 @@ section about me
 }
 
 @media only screen and (min-width: 801px) {
-    #wrapper-photo-about {
+    #container-photo-about {
         width: 250px;
     }
 
@@ -516,7 +516,7 @@ section about me
 }
 
 @media only screen and (max-width: 800px) {
-    #wrapper-photo-about {
+    #container-photo-about {
         width: 200px;
     }
 
@@ -526,7 +526,7 @@ section about me
 }
 
 @media only screen and (min-width: 1001px) {
-    #wrapper-photo-about {
+    #container-photo-about {
         float: left;
     }
 
@@ -540,7 +540,7 @@ section about me
 }
 
 @media only screen and (max-width: 1000px) {
-    #wrapper-photo-about {
+    #container-photo-about {
         margin: auto;
         margin-top: 20px;
     }
