@@ -171,12 +171,7 @@ function updateVisibilityNavButtons(timeout = true) {
 function updateVisibilityScrollButton() {
     const scrollBtn = document.getElementById("btn-scroll");
     if (window.scrollY) {
-        scrollBtn.style.opacity = "0";
-        scrollBtn.classList.add("seen");
-    } else {
-        if (!scrollBtn.classList.contains("seen")) {
-            scrollBtn.style.opacity = "100";
-        }
+        scrollBtn.style.display = "none";
     }
 }
 
