@@ -411,8 +411,6 @@ p a {
 }
 
 p a[href^="#"]::after {
-    /* content: " ↘"; */
-    /* content: " \f0c1"; */
     content: " \f08e";
     font-family: "FontAwesome";
     font-weight: normal;
@@ -424,7 +422,6 @@ p a[href^="#"]::after {
 
 p a:not([href^="#"])::after,
 a h4.caption-software::after {
-    /* content: " ↗"; */
     content: " \f08e";
     font-family: "FontAwesome";
     font-weight: normal;
