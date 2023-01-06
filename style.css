@@ -118,6 +118,26 @@ nav li.active a {
         margin-left: 30px;
     }
 
+    #btn-scroll {
+        z-index: 3;
+        height: 50px;
+        position: fixed;
+        left: 50%;
+        bottom: 4px;
+        width: 50px;
+        display: block;
+        border: none;
+        overflow-x: hidden;
+        color: var(--black);
+        background: var(--white);
+        box-shadow: 0px 2px 6px -2px var(--middlegray);
+        transition: opacity 0.25s linear;
+    }
+
+    .icon-scroll {
+        font-size: 1.5em;
+    }
+
     .btn-navi {
         display: none;
     }
@@ -211,6 +231,10 @@ nav li.active a {
 
     #icon-nav.closed {
         transform: rotate(0deg);
+    }
+
+    .btn-sroll {
+        display: none;
     }
 
 }

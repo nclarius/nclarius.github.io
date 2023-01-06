@@ -86,6 +86,13 @@ function scrollToBottom() {
     });
 }
 
+function scrollDown() {
+    window.scrollBy({
+        top: window.innerHeight - document.getElementById("header").offsetHeight,
+        behavior: "smooth",
+    });
+}
+
 /*
 =============================================
 highlight currently active section in navbar
@@ -108,6 +115,9 @@ function updateScroll() {
 
     // update nav button visibility
     updateMouseMove();
+
+    // update scroll button visibility
+    updateVisibilityScrollButton();
 }
 
 function updateMouseMove() {
@@ -155,6 +165,18 @@ function updateVisibilityNavButtons(timeout = true) {
                 }
             });
         }, 2000);
+    }
+}
+
+function updateVisibilityScrollButton() {
+    const scrollBtn = document.getElementById("btn-scroll");
+    if (window.scrollY) {
+        scrollBtn.style.opacity = "0";
+        scrollBtn.classList.add("seen");
+    } else {
+        if (!scrollBtn.classList.contains("seen")) {
+            scrollBtn.style.opacity = "100";
+        }
     }
 }
 
