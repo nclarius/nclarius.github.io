@@ -626,7 +626,7 @@ section software
 #grid-software {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 25px;
 }
 
 @media only screen and (min-width: 1001px) {
@@ -647,7 +647,6 @@ section software
 
 .tile-software {
     padding: 10px;
-    border: 1px solid var(--lightgray);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
