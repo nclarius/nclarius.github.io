@@ -415,6 +415,8 @@ h2 {
 
 h3 {
     font-size: 1.25em;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 h4 {
@@ -632,14 +634,14 @@ section software
 
 #grid-software {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    margin-top: -25px;
 }
 
 @media only screen and (min-width: 1001px) {
 
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0px 40px;
     }
 
 }
@@ -653,19 +655,19 @@ section software
 }
 
 .tile-software {
-    padding: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .project-software {
-    padding: 15px;
+    padding: 4px;
+    padding-bottom: 15px;
 }
 
 .caption-software {
     font-variant: normal;
-    margin-top: 3px;
+    margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.125;
 }
