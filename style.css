@@ -676,6 +676,13 @@ section software
     margin-bottom: 3px;
 }
 
+.screenshot {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
+}
+
 /*
 =======================
 section contact
