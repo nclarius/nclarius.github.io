@@ -683,6 +683,13 @@ section software
     border: 1px solid var(--lightgray);
 }
 
+.icon-software-account {
+    height: 1em;
+    margin-right: 0.25em;
+    height: 21px;
+    vertical-align: bottom;
+}
+
 /*
 =======================
 section contact
