@@ -440,6 +440,7 @@ p a[href^="#"]::after {
     font-family: "FontAwesome";
     font-weight: normal;
     font-size: 0.75em;
+    margin-left: 0.5ex;
     vertical-align: center;
     writing-mode: vertical-lr;
     transform: rotate(90deg);
@@ -451,6 +452,7 @@ a h4.caption-software::after {
     font-family: "FontAwesome";
     font-weight: normal;
     font-size: 0.75em;
+    margin-left: 0.5ex;
     vertical-align: center;
 }
 
