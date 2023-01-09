@@ -456,8 +456,7 @@ a h4.caption-software::after {
 
 
 a:hover,
-.description-software:hover,
-.caption-software:hover {
+a *:hover {
     text-decoration: underline;
 }
 
@@ -675,6 +674,13 @@ section software
 .description-software {
     margin-top: -6px;
     margin-bottom: 3px;
+}
+
+.screenshot {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
 }
 
 /*
