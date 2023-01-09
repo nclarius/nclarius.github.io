@@ -642,15 +642,26 @@ section software
 
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "logic education"
+        "plasma extensions"
+        "plasma shell"
+        "web shell";
         gap: 0px 40px;
     }
-
 }
 
 @media only screen and (max-width: 1000px) {
 
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "logic"
+            "education"
+            "plasma"
+            "extensions"
+            "shell"
+            "web";
     }
     
 }
@@ -659,6 +670,7 @@ section software
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 10px;
 }
 
 .project-software {
@@ -690,6 +702,25 @@ section software
     margin-right: 0.25em;
     height: 21px;
     vertical-align: bottom;
+}
+
+#software-logic {
+    grid-area: logic;
+}
+#software-education {
+    grid-area: education;
+}
+#software-plasma {
+    grid-area: plasma;
+}
+#software-extensions {
+    grid-area: extensions;
+}
+#software-shell {
+    grid-area: shell;
+}
+#software-web {
+    grid-area: web;
 }
 
 /*
