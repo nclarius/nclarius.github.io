@@ -41,7 +41,7 @@ html {
     }
 
     main {
-        max-width: 950px;
+        max-width: 1050px;
         margin: auto;
         width: calc(100% - 440px);
     }
@@ -647,7 +647,7 @@ section software
         "plasma extensions"
         "plasma shell"
         "web shell";
-        gap: 0px 40px;
+        gap: 0px 55px;
     }
 }
 
@@ -675,7 +675,7 @@ section software
 
 .project-software {
     padding: 4px;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .caption-software {
