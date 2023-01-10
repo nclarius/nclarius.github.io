@@ -201,14 +201,12 @@ function setColor(dark) {
         colorBtn.setAttribute("title", "light color scheme");
         colorIcn.classList.add("dark");
         colorIcn.classList.remove("light");
-        colorIcn.innerHTML = "◐";
     } else {
         root.classList.add("light");
         root.classList.remove("dark");
         colorBtn.setAttribute("title", "dark color scheme");
         colorIcn.classList.add("light");
         colorIcn.classList.remove("dark");
-        colorIcn.innerHTML = "◑";
     }
 }
 
