@@ -42,14 +42,14 @@ function setNav(open) {
             btn.classList.add("open");
             btn.classList.remove("closed");
         });
-        navBtn.setAttribute("title", "close navigation");
+        navBtn.setAttribute("title", "Close navigation");
         updateVisibilityNavButtons(false);
     } else {
         [nav, navIcn, navBtn, topBtn, bottomBtn].forEach(btn => {
             btn.classList.add("closed");
             btn.classList.remove("open");
         });
-        navBtn.setAttribute("title", "open navigation");
+        navBtn.setAttribute("title", "Open navigation");
     }
 }
 
@@ -198,13 +198,13 @@ function setColor(dark) {
     if (dark) {
         root.classList.add("dark");
         root.classList.remove("light");
-        colorBtn.setAttribute("title", "light color scheme");
+        colorBtn.setAttribute("title", "Switch to light color scheme");
         colorIcn.classList.add("dark");
         colorIcn.classList.remove("light");
     } else {
         root.classList.add("light");
         root.classList.remove("dark");
-        colorBtn.setAttribute("title", "dark color scheme");
+        colorBtn.setAttribute("title", "Switch to dark color scheme");
         colorIcn.classList.add("light");
         colorIcn.classList.remove("dark");
     }
