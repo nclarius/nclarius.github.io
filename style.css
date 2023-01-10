@@ -454,8 +454,8 @@ p a[href^="#"]::after {
 }
 
 p a:not([href^="#"])::after,
-a .btn-link::after,
-a h4.caption-software::after {
+a .caption-talk::after,
+a .caption::after {
     content: " \f08e";
     font-family: "FontAwesome";
     font-weight: normal;
@@ -643,6 +643,16 @@ section teaching
     margin-bottom: 0.5ex;
 }
 
+.presentation {
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
+    
+}
+
 /*
 =======================
 section software
@@ -698,7 +708,7 @@ section software
     box-shadow: 0px 3px 5px 0px var(--shadowgray);
 }
 
-.caption-software {
+.caption {
     font-variant: normal;
     margin-top: 5px;
     line-height: 1.125;
