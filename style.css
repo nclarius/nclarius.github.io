@@ -249,11 +249,12 @@ color button
     background: var(--white);
     border: none;
     font-size: 1em;
-    width: 1.75em;
-    height: 2.5em;
+    width: 14px;
+    height: 22px;
     position: fixed;
     right: 20px;
-    bottom: 4px;
+    bottom: 16px;
+    padding: 0px;
 }
 
 nav.closed #btn-color {
@@ -272,15 +273,11 @@ nav.closed #btn-color {
     }
 }
 
-#icon-color {
+#btn-color {
     transition: transform 0.25s ease-in-out;
 }
 
-#icon-color.light {
-    transform: rotate(0deg);
-}
-
-#icon-color.dark {
+#btn-color:hover {
     transform: rotate(180deg);
 }
 
