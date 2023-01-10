@@ -510,6 +510,10 @@ section about me
 =======================
 */
 
+#heading-about {
+    display: none;
+}
+
 #container-about::after {
     content: "";
     clear: both;
