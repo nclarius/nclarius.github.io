@@ -766,13 +766,18 @@ section contact
 }
 
 .icon-support {
-    height: 1.375em;
+    height: 1.5em;
     margin-right: .875em;
     vertical-align: middle;
 }
 
 #icon-paypal {
+    height: 1.25em;
     margin-right: -5px;
+}
+
+#icon-paypal_ {
+    height: 1.25em;
 }
 
 #end-content {
