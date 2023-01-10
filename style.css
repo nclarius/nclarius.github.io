@@ -250,6 +250,10 @@ color button
 =======================
 */
 
+button {
+    cursor:pointer;
+}
+
 #btn-color {
     color: var(--black);
     background: var(--white);
