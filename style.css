@@ -125,7 +125,7 @@ nav li.active a {
         left: 50%;
         bottom: 16px;
         width: 50px;
-        display: block;
+        display: none;
         border: none;
         overflow-x: hidden;
         color: var(--black);
