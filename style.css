@@ -454,7 +454,7 @@ a h4.caption-software::after {
 }
 
 
-a:not(.support-link):hover,
+a:not(.account-link):hover,
 a *:hover {
     text-decoration: underline;
 }
