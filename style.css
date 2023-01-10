@@ -457,7 +457,7 @@ a h4.caption-software::after {
 }
 
 
-a:hover,
+a:not(.support-link):hover,
 a *:hover {
     text-decoration: underline;
 }
@@ -736,8 +736,8 @@ section contact
 }
 
 .table-contact td {
-    padding-top: 6pt;
-    padding-bottom: 3pt;
+    padding-top: 4px;
+    padding-bottom: 4px;
     vertical-align: top;
 }
 
@@ -763,6 +763,16 @@ section contact
     height: 1.125em;
     margin-right: .875em;
     vertical-align: middle;
+}
+
+.icon-support {
+    height: 1.375em;
+    margin-right: .875em;
+    vertical-align: middle;
+}
+
+#icon-paypal {
+    margin-right: -5px;
 }
 
 #end-content {
