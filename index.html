@@ -1,618 +1,618 @@
 <!--
     Natalie Clarius - Personal Website
     (C) 2022-2023 Natalie Clarius <natalie_clarius@yahoo.de>
--->
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="media/fonts/material-symbols-outlined.css" />
-        <link rel="stylesheet" href="media/fonts/font-awesome.css" />
-
-        <title>Natalie Clarius</title>
-        <meta name="description" content="Software developer for KDE, automation and teaching tools with a background in formal logic and computational linguistics" />
-        <meta name="keywords" content="Natalie Clarius, Tübingen, Tuebingen, Tubingen, KDE, KWin, KWin script, KRunner, Plasma, pyPL, pyGrade, software, logic, semantics, linguistics" />
-        <link rel="shortcut icon" type="image/png" href="media/icons/nc.png" />
-
-        <meta name="google-site-verification" content="atTvJK0HtOE0Q5QSUTQ-WuxbVteTfejkjgVGniXnlIY" />
-    </head>
-    <body>
-        <script>
-            0;
-        </script>
-        <header id="header">
-            <h1 id="heading"><a href="#">Natalie Clarius</a></h1>
-        </header>
-        <div>
-            <button id="btn-top" class="btn-navi" onclick="scrollToTop()">
-                <span id="icon-top" class="icon-navi">&#10514;</span>
-            </button>
-            <button id="btn-nav" class="btn-navi" onmouseenter="setHamburger(true)" onmouseleave="setHamburger(false)" onclick="toggleNav()">
-                <span id="icon-nav" class="icon-navi">☰</span>
-            </button>
-            <button id="btn-bottom" class="btn-navi" onclick="scrollToBottom()">
-                <span id="icon-bottom" class="icon-navi">&#10515;</span>
-            </button>
-            <button id="btn-scroll" class="btn-scroll" onclick="scrollDown()">
-                <span id="icon-scroll" class="icon-scroll">&#8595;</span>
-            </button>
-        </div>
-        <nav id="nav">
-            <ul>
-                <li>
-                    <a onclick="toggleNav()" href="#sec-about">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a onclick="toggleNav()" href="#sec-cv">
-                        CV
-                    </a>
-                </li>
-                <li>
-                    <a onclick="toggleNav()" href="#sec-teaching">
-                        Teaching
-                    </a>
-                </li>
-                <li>
-                    <a onclick="toggleNav()" href="#sec-software">
-                        Software
-                    </a>
-                </li>
-                <li>
-                    <a onclick="toggleNav()" href="#sec-contact">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+            <link rel="stylesheet" href="style.css" />
+            <script src="script.js"></script>
+            <link rel="stylesheet" href="media/fonts/material-symbols-outlined.css" />
+            <link rel="stylesheet" href="media/fonts/font-awesome.css" />
+            <title>Natalie Clarius</title>
+            <meta name="description" content="Software developer for KDE, automation and teaching tools with a background in formal logic and computational linguistics" />
+            <meta name="keywords" content="Natalie Clarius, Tübingen, Tuebingen, Tubingen, KDE, KWin, KWin script, KRunner, Plasma, pyPL, pyGrade, software, logic, semantics, linguistics" />
+            <link rel="shortcut icon" type="image/png" href="media/icons/nc.png" />
+            <meta name="google-site-verification" content="atTvJK0HtOE0Q5QSUTQ-WuxbVteTfejkjgVGniXnlIY" />
+        </head>
+        <body>
+            <script>
+                0;
+            </script>
+            <header id="header">
+                <h1 id="heading"><a href="#">Natalie Clarius</a></h1>
+            </header>
             <div>
-                <button id="btn-color" onmouseenter="setLightbulb(true)" onmouseleave="setLightbulb(false)" onclick="toggleColor()">
-                    <span id="icon-color">◑</span>
-                    <!-- ◑ ◐ -->
+                <button id="btn-top" class="btn-navi" onclick="scrollToTop()">
+                <span id="icon-top" class="icon-navi">&#10514;</span>
+                </button>
+                <button id="btn-nav" class="btn-navi" onmouseenter="setHamburger(true)" onmouseleave="setHamburger(false)" onclick="toggleNav()">
+                <span id="icon-nav" class="icon-navi">☰</span>
+                </button>
+                <button id="btn-bottom" class="btn-navi" onclick="scrollToBottom()">
+                <span id="icon-bottom" class="icon-navi">&#10515;</span>
+                </button>
+                <button id="btn-scroll" class="btn-scroll" onclick="scrollDown()">
+                <span id="icon-scroll" class="icon-scroll">&#8595;</span>
                 </button>
             </div>
-        </nav>
-        <main onclick="setNav(false)">
-            <section id="sec-about">
-                <h2 id="heading-about"><a href="#sec-about">About</a></h2>
-                <div id="container-about">
-                    <figure id="container-photo-about">
-                        <img id="photo-about" alt="Photo of Natalie Clarius" src="media/img/photo.jpg" />
-                    </figure>
-                    <div id="about-text">
-                        <p>I am a master's student and software developer based in Tübingen, Germany.</p>
-                        <p>My main interests are in</p>
-                        <div id="about-text-interests">
-                            <ul>
-                                <li>the computational implementation of logical formalisms, in particular the tableau calculus and modal logic,</li>
-                                <li>automation of routine processes, with a focus on administrative tasks in academic education, and</li>
-                                <li>workflow improvements in desktop Linux, my specialty being window management and global search in the KDE Plasma desktop environment.</li>
-                            </ul>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a onclick="toggleNav()" href="#sec-about">
+                        About
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="toggleNav()" href="#sec-cv">
+                        CV
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="toggleNav()" href="#sec-teaching">
+                        Teaching
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="toggleNav()" href="#sec-software">
+                        Software
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="toggleNav()" href="#sec-contact">
+                        Contact
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <button id="btn-color" onmouseenter="setLightbulb(true)" onmouseleave="setLightbulb(false)" onclick="toggleColor()">
+                        <span id="icon-color">◑</span>
+                        <!-- ◑ ◐ -->
+                    </button>
+                </div>
+            </nav>
+            <main onclick="setNav(false)">
+                <section id="sec-about">
+                    <h2 id="heading-about"><a href="#sec-about">About</a></h2>
+                    <div id="container-about">
+                        <figure id="container-photo-about">
+                            <img id="photo-about" alt="Photo of Natalie Clarius" src="media/img/photo.jpg" />
+                        </figure>
+                        <div id="about-text">
+                            <p>I am a master's student and software developer based in Tübingen, Germany.</p>
+                            <p>My main interests are in</p>
+                            <div id="about-text-interests">
+                                <ul>
+                                    <li>the computational implementation of logical formalisms, in particular the tableau calculus and modal logic,</li>
+                                    <li>automation of routine processes, with a focus on administrative tasks in academic education, and</li>
+                                    <li>workflow improvements in desktop Linux, my specialty being window management and global search in the KDE Plasma desktop environment.</li>
+                                </ul>
+                            </div>
+                            <p>I have a passion and 12 semesters of experience in teaching logic, linguistics and programming.</p>
+                            <p>I am available for contract work. If you are interested in my software development or tutoring, don't hesitate to <a href="#sec-contact">get in touch</a>.</p>
                         </div>
-                        <p>I have a passion and 12 semesters of experience in teaching logic, linguistics and programming.</p>
-                        <p>I am available for contract work. If you are interested in my software development or tutoring, don't hesitate to <a href="#sec-contact">get in touch</a>.</p>
                     </div>
-                </div>
-            </section>
-            <section id="sec-cv">
-                <h2><a href="#sec-cv">CV</a></h2>
-                <hr class="heading-underline" />
-                <h3>Work</h3>
-                <table id="table-work" class="table-cv">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>05/2022 – present (periodically)</td>
-                        <td>
-                            <b>Software Developer</b><br />
-                            Self-employed
-                            <p>Extension of KDE software to end users' requirements<br/>
-                            More details: see <a href="#sec-software">Software</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>07/2014 – present (periodically)</td>
-                        <td>
-                            <b>Research Assistant</b><br />
-                            University of Tübingen, Department of Linguistics,<br />
-                            University of Tübingen, Department of Computer Science &amp;<br />
-                            University of Tübingen, Department of Philosophy and History of Science<br />
-                            <p>Software development, data evaluation, experiment conduction, typesetting and administrative tasks<br/>
-                            More details: see <a href="#sec-software">Software</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10/2015 – 03/2021</td>
-                        <td>
-                            <b>Teaching Assistant</b><br />
-                            University of Tübingen, Department of Linguistics,<br />
-                            University of Tübingen, Department of Computer Science &amp;<br />
-                            University of Göttingen, Faculty of Mathematics and Computer Science<br />
-                            <p>Lectures and tutorials in the study programs B.A./M.A. General Linguistics, B.A./M.A. Computational Linguistics and B.Sc./M.Sc. Computer Science<br/>
-                            Complete list: see <a href="#sec-teaching">Teaching</a></p>
-                        </td>
-                    </tr>
-                </table>
-                <h3>Education</h3>
-                <table id="table-education" class="table-cv">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>10/2016 – present</td>
-                        <td>
-                            <b>M.A. General Linguistics</b> with additional courses in <b>Computer Science</b><br />
-                            University of Tübingen
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>10/2013 – 09/2016</td>
-                        <td>
-                            <b>B.A. General Linguistics</b> with minor in <b>Computational Linguistics</b><br />
-                            University of Tübingen
-                        </td>
-                    </tr>
-                </table>
-                <p id="footnote-resume">A full resume is available upon request.</p>
-            </section>
-            <section id="sec-teaching">
-                <h2><a href="#sec-teaching">Teaching</a></h2>
-                <hr class="heading-underline" />
-                <h3>Lectures</h3>
-                <table id="table-lectures" class="table-teaching">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>Winter term 2020</td>
-                        <td><i>Introduction to General Linguistics</i> (jointly with Isabella Boga): supervised preparation and conduction of some class sessions¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2019</td>
-                        <td><i>Logic</i> (jointly with Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹</td>
-                    </tr>
-                </table>
-                <h3>Seminars</h3>
-                <table id="table-seminars" class="table-teaching">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>Summer term 2021</td>
-                        <td><i>Selected Topics in Formal Semantics</i> (Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹</td>
-                    </tr>
-                </table>
-                <h3>Compact courses</h3>
-                <table id="compact-table-courses" class="table-teaching">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>Summer term 2017</td>
-                        <td><i>Introduction to Logic Programming with Prolog</i>: independently taught compact course accompanying the Grammar Formalisms tutorial¹</td>
-                    </tr>
-                </table>
-                <h3>Tutorials</h3>
-                <table id="table-tutorials" class="table-teaching">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td style="padding-top: 3pt;">Summer term 2020</td>
-                        <td><i>Gödel's Incompleteness Theorems</i> (Prof. Dr. Reinhard Kahle; compact course in the Hilbert-Bernays Summer School on Logic and Computation 2020)⁴</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2020</td>
-                        <td><i>Introduction to Logic</i> (Dr. Thomas Piecha)²</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2019</td>
-                        <td><i>Logic</i> (Prof. Dr. Gerhard Jäger)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2019</td>
-                        <td><i>Programming and Data Analysis</i> (Prof. Dr. Gerhard Jäger)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2019</td>
-                        <td><i>Production and Interpretation of Referring Expressions</i> (Dr. Oliver Bott)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2018</td>
-                        <td><i>Lambda Calculus and Combinatory Logic</i> (Dr. Thomas Piecha)²</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2018</td>
-                        <td><i>Linear Algebra for Linguistics</i> (Prof. Dr. Fritz Hamm)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2018</td>
-                        <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Dr. Oliver Bott)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2018</td>
-                        <td><i>Theoretical Foundations of Logic Programming</i> (Dr. Thomas Piecha)²</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2018</td>
-                        <td><i>Programming and Data Analysis</i> (Dr. Johannes Dellert)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2018</td>
-                        <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2017</td>
-                        <td><i>Lambda Calculus and Combinatory Logic</i> (Dr. Thomas Piecha)²</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2017</td>
-                        <td><i>Syntax and Semantics</i> (Prof. Dr. Fritz Hamm)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2017</td>
-                        <td><i>Current Trends in Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2017</td>
-                        <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2017</td>
-                        <td><i>Grammar Formalisms for Computational Linguistics</i> (Prof. Dr. Kurt Eberle)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2017</td>
-                        <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2016</td>
-                        <td><i>Syntax and Semantics</i> (Prof. Dr. Fritz Hamm)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2016</td>
-                        <td><i>Current Trends in Linguistics</i> (Prof. Dr. Gerhard Jäger)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2016</td>
-                        <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Summer term 2016</td>
-                        <td><i>Pragmatics</i> (Dr. Christian Ebert)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2015</td>
-                        <td><i>Semantics</i> (Prof. Dr. Wolfgang Sternefeld)¹</td>
-                    </tr>
-                    <tr>
-                        <td>Winter term 2015</td>
-                        <td><i>Introduction to General Linguistics</i> (Dr. Christian Ebert, Johannes Wahle &amp; Marisa Köllner)¹</td>
-                    </tr>
-                </table>
-                <h3>Talks</h3>
-                <table id="table-talks" class="table-teaching">
-                    <colgroup>
-                        <col span="1" style="width: 200px;" />
-                        <col />
-                    </colgroup>
-                    <tr>
-                        <td>18/11/2020</td>
-                        <td><a href="https://raw.githubusercontent.com/nclarius/pyPL/master/doc/presentation.pdf" target="_blank"><i>Automated Model Generation, Model Checking and Theorem Proving for Linguistic Applications</i>³</a></td>
-                    </tr>
-                </table>
-                <div id="table-teachings-footnote" class="footnote">
-                    <p>
-                        ¹ University of Tübingen, Department of Linguistics<br />
-                        ² University of Tübingen, Department of Computer Science<br />
-                        ³ University of Tübingen, Carl Friedrich von Weizsäcker Center for Foundational Research<br />
-                        ⁴ University of Göttingen, Faculty of Mathematics and Computer Science<br />
-                    </p>
-                </div>
-            </section>
-            <section id="sec-software">
-                <h2><a href="#sec-software">Software</a></h2>
-                <hr class="heading-underline" />
-                <div id="grid-software">
-                    <div id="software-logic" class="category-software">
-                        <h3>Logic</h3>
-                        <div class="project-software">
+                </section>
+                <section id="sec-cv">
+                    <h2><a href="#sec-cv">CV</a></h2>
+                    <hr class="heading-underline" />
+                    <h3>Work</h3>
+                    <table id="table-work" class="table-cv">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>05/2022 – present (periodically)</td>
+                            <td>
+                                <b>Software Developer</b><br />
+                                Self-employed
+                                <p>Extension of KDE software to end users' requirements<br/>
+                                    More details: see <a href="#sec-software">Software</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>07/2014 – present (periodically)</td>
+                            <td>
+                                <b>Research Assistant</b><br />
+                                University of Tübingen, Department of Linguistics,<br />
+                                University of Tübingen, Department of Computer Science &amp;<br />
+                                University of Tübingen, Department of Philosophy and History of Science<br />
+                                <p>Software development, data evaluation, experiment conduction, typesetting and administrative tasks<br/>
+                                    More details: see <a href="#sec-software">Software</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10/2015 – 03/2021</td>
+                            <td>
+                                <b>Teaching Assistant</b><br />
+                                University of Tübingen, Department of Linguistics,<br />
+                                University of Tübingen, Department of Computer Science &amp;<br />
+                                University of Göttingen, Faculty of Mathematics and Computer Science<br />
+                                <p>Lectures and tutorials in the study programs B.A./M.A. General Linguistics, B.A./M.A. Computational Linguistics and B.Sc./M.Sc. Computer Science<br/>
+                                    Complete list: see <a href="#sec-teaching">Teaching</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Education</h3>
+                    <table id="table-education" class="table-cv">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>10/2016 – present</td>
+                            <td>
+                                <b>M.A. General Linguistics</b> with additional courses in <b>Computer Science</b><br />
+                                University of Tübingen
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10/2013 – 09/2016</td>
+                            <td>
+                                <b>B.A. General Linguistics</b> with minor in <b>Computational Linguistics</b><br />
+                                University of Tübingen
+                            </td>
+                        </tr>
+                    </table>
+                    <p id="footnote-resume">A full resume is available upon request.</p>
+                </section>
+                <section id="sec-teaching">
+                    <h2><a href="#sec-teaching">Teaching</a></h2>
+                    <hr class="heading-underline" />
+                    <h3>Lectures</h3>
+                    <table id="table-lectures" class="table-teaching">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>Winter term 2020</td>
+                            <td><i>Introduction to General Linguistics</i> (jointly with Isabella Boga): supervised preparation and conduction of some class sessions¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2019</td>
+                            <td><i>Logic</i> (jointly with Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹</td>
+                        </tr>
+                    </table>
+                    <h3>Seminars</h3>
+                    <table id="table-seminars" class="table-teaching">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>Summer term 2021</td>
+                            <td><i>Selected Topics in Formal Semantics</i> (Prof. Dr. Gerhard Jäger): supervised preparation and conduction of some class sessions¹</td>
+                        </tr>
+                    </table>
+                    <h3>Compact courses</h3>
+                    <table id="compact-table-courses" class="table-teaching">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>Summer term 2017</td>
+                            <td><i>Introduction to Logic Programming with Prolog</i>: independently taught compact course accompanying the Grammar Formalisms tutorial¹</td>
+                        </tr>
+                    </table>
+                    <h3>Tutorials</h3>
+                    <table id="table-tutorials" class="table-teaching">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td style="padding-top: 3pt;">Summer term 2020</td>
+                            <td><i>Gödel's Incompleteness Theorems</i> (Prof. Dr. Reinhard Kahle; compact course in the Hilbert-Bernays Summer School on Logic and Computation 2020)⁴</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2020</td>
+                            <td><i>Introduction to Logic</i> (Dr. Thomas Piecha)²</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2019</td>
+                            <td><i>Logic</i> (Prof. Dr. Gerhard Jäger)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2019</td>
+                            <td><i>Programming and Data Analysis</i> (Prof. Dr. Gerhard Jäger)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2019</td>
+                            <td><i>Production and Interpretation of Referring Expressions</i> (Dr. Oliver Bott)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2018</td>
+                            <td><i>Lambda Calculus and Combinatory Logic</i> (Dr. Thomas Piecha)²</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2018</td>
+                            <td><i>Linear Algebra for Linguistics</i> (Prof. Dr. Fritz Hamm)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2018</td>
+                            <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Dr. Oliver Bott)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2018</td>
+                            <td><i>Theoretical Foundations of Logic Programming</i> (Dr. Thomas Piecha)²</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2018</td>
+                            <td><i>Programming and Data Analysis</i> (Dr. Johannes Dellert)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2018</td>
+                            <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2017</td>
+                            <td><i>Lambda Calculus and Combinatory Logic</i> (Dr. Thomas Piecha)²</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2017</td>
+                            <td><i>Syntax and Semantics</i> (Prof. Dr. Fritz Hamm)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2017</td>
+                            <td><i>Current Trends in Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2017</td>
+                            <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2017</td>
+                            <td><i>Grammar Formalisms for Computational Linguistics</i> (Prof. Dr. Kurt Eberle)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2017</td>
+                            <td><i>Semantics and Pragmatics</i> (Prof. Dr. Fritz Hamm)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2016</td>
+                            <td><i>Syntax and Semantics</i> (Prof. Dr. Fritz Hamm)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2016</td>
+                            <td><i>Current Trends in Linguistics</i> (Prof. Dr. Gerhard Jäger)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2016</td>
+                            <td><i>Introduction to General Linguistics</i> (Johannes Wahle &amp; Marisa Köllner)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Summer term 2016</td>
+                            <td><i>Pragmatics</i> (Dr. Christian Ebert)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2015</td>
+                            <td><i>Semantics</i> (Prof. Dr. Wolfgang Sternefeld)¹</td>
+                        </tr>
+                        <tr>
+                            <td>Winter term 2015</td>
+                            <td><i>Introduction to General Linguistics</i> (Dr. Christian Ebert, Johannes Wahle &amp; Marisa Köllner)¹</td>
+                        </tr>
+                    </table>
+                    <h3>Talks</h3>
+                    <table id="table-talks" class="table-teaching">
+                        <colgroup>
+                            <col span="1" style="width: 200px;" />
+                            <col />
+                        </colgroup>
+                        <tr>
+                            <td>18/11/2020</td>
+                            <td><a href="https://raw.githubusercontent.com/nclarius/pyPL/master/doc/presentation.pdf" target="_blank"><i>Automated Model Generation, Model Checking and Theorem Proving for Linguistic Applications</i>³</a></td>
+                        </tr>
+                    </table>
+                    <div id="table-teachings-footnote" class="footnote">
+                        <p>
+                            ¹ University of Tübingen, Department of Linguistics<br />
+                            ² University of Tübingen, Department of Computer Science<br />
+                            ³ University of Tübingen, Carl Friedrich von Weizsäcker Center for Foundational Research<br />
+                            ⁴ University of Göttingen, Faculty of Mathematics and Computer Science<br />
+                        </p>
+                    </div>
+                </section>
+                <section id="sec-software">
+                    <h2><a href="#sec-software">Software</a></h2>
+                    <hr class="heading-underline" />
+                    <div id="grid-software">
+                        <div id="software-logic" class="category-software">
+                            <h3>Logic</h3>
                             <a href="https://github.com/nclarius/pyPL" target="_blank">
-                                <h4 class="caption-software">pyPL</h4>
-                                <p class="description-software">Analytic tableau based minimal model generator, model checker and theorem prover for first-order logic with modal extensions</p>
-                                <img class="screenshot" alt="Screenshot of pyPL" src="media/screenshots/pypl.png">
-                                <img class="screenshot" alt="Screenshot of pyPL" src="media/screenshots/pypl_.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">pyPL</h4>
+                                    <p class="description-software">Analytic tableau based minimal model generator, model checker and theorem prover for first-order logic with modal extensions</p>
+                                    <img class="screenshot" alt="Screenshot of pyPL" src="media/screenshots/pypl.png">
+                                    <img class="screenshot" alt="Screenshot of pyPL" src="media/screenshots/pypl_.png">
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div id="software-education" class="category-software">
-                        <h3>Education</h3>
-                        <div class="project-software">
+                        <div id="software-education" class="category-software">
+                            <h3>Education</h3>
                             <a href="https://github.com/nclarius/pyGrade" target="_blank">
-                                <h4 class="caption-software">pyGrade</h4>
-                                <p class="description-software">Interactive assistant for semi-automated grading of Python programming assignments</p>
-                                <img class="screenshot" alt="Screenshot of pyGrade" src="media/screenshots/pygrade.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">pyGrade</h4>
+                                    <p class="description-software">Interactive assistant for semi-automated grading of Python programming assignments</p>
+                                    <img class="screenshot" alt="Screenshot of pyGrade" src="media/screenshots/pygrade.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/Moode-group-assignment-administration" target="_blank">
-                                <h4 class="caption-software">Moodle Group Assignment Administration</h4>
-                                <p class="description-software">Scripts for administering group assignment submissions via the Moodle learning management system</p>
-                                <img class="screenshot" alt="Screenshot of Moodle Group Assignment Administration" src="media/screenshots/moodle-submissions.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Moodle Group Assignment Administration</h4>
+                                    <p class="description-software">Scripts for administering group assignment submissions via the Moodle learning management system</p>
+                                    <img class="screenshot" alt="Screenshot of Moodle Group Assignment Administration" src="media/screenshots/moodle-submissions.png">
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div id="software-plasma" class="category-software">
-                        <h3>KDE Plasma Desktop Environment</h3>
-                        <div class="project-software">
+                        <div id="software-plasma" class="category-software">
+                            <h3>KDE Plasma Desktop Environment</h3>
                             <a href="https://invent.kde.org/plasma/kwin/-/merge_requests/2201" target="_blank">
-                                <h4 class="caption-software">KWin #2201</h4>
-                                <p class="description-software">Option to bring window to current virtual desktop when activiated on a different desktop</p>
-                                <img class="screenshot" alt="Screenshot of Option to bring window to current virtual desktop when activiated on different desktop" src="media/screenshots/virtual-desktop-behavior.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">KWin #2201</h4>
+                                    <p class="description-software">Option to bring window to current virtual desktop when activiated on a different desktop</p>
+                                    <img class="screenshot" alt="Screenshot of Option to bring window to current virtual desktop when activiated on different desktop" src="media/screenshots/virtual-desktop-behavior.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2055" target="_blank">
-                                <h4 class="caption-software">KWin #2871 / Workspace #2055</h4>
-                                <p class="description-software">Configurable daytime screen color temperature</p>
-                                <img class="screenshot" alt="Screenshot of Configurable daytime screen color temperature" src="media/screenshots/daytime-color.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">KWin #2871 / Workspace #2055</h4>
+                                    <p class="description-software">Configurable daytime screen color temperature</p>
+                                    <img class="screenshot" alt="Screenshot of Configurable daytime screen color temperature" src="media/screenshots/daytime-color.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2177" target="_blank">
-                                <h4 class="caption-software">Workspace #2177</h4>
-                                <p class="description-software">Substantial improvements to the relevance of runner results</p>
-                                <img class="screenshot" alt="Screenshot of Substantial improvements to the relevance of runner results" src="media/screenshots/runner-relevance.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Workspace #2177</h4>
+                                    <p class="description-software">Substantial improvements to the relevance of runner results</p>
+                                    <img class="screenshot" alt="Screenshot of Substantial improvements to the relevance of runner results" src="media/screenshots/runner-relevance.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/plasma/kwin/-/merge_requests/3229" target="_blank">
-                                <h4 class="caption-software">KWin #3229</h4>
-                                <p class="description-software">Optimization of window placement so as to avoid complete overlap</p>
-                                <img class="screenshot" alt="Screenshot of Optimization of window placement so as to avoid complete overlap" src="media/screenshots/placement-cascade.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">KWin #3229</h4>
+                                    <p class="description-software">Optimization of window placement so as to avoid complete overlap</p>
+                                    <img class="screenshot" alt="Screenshot of Optimization of window placement so as to avoid complete overlap" src="media/screenshots/placement-cascade.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/plasma/kdeplasma-addons/-/merge_requests/260" target="_blank">
-                                <h4 class="caption-software">Addons #260</h4>
-                                <p class="description-software">Inclusion of difference between time zones in time runner plugin</p>
-                                <img class="screenshot" alt="Screenshot of Inclusion of difference between time zones in time runner plugin<" src="media/screenshots/datetimerunner-timediff.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Addons #260</h4>
+                                    <p class="description-software">Inclusion of difference between time zones in time runner plugin</p>
+                                    <img class="screenshot" alt="Screenshot of Inclusion of difference between time zones in time runner plugin<" src="media/screenshots/datetimerunner-timediff.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/plasma/kwin/-/merge_requests/3255" target="_blank">
-                                <h4 class="caption-software">KWin #3255</h4>
-                                <p class="description-software">Shortcuts to get screen in direction relative to reference</p>
-                                <img class="screenshot" alt="Screenshot of Shortcut to get screen in direction relative to reference" src="media/screenshots/output-direction.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">KWin #3255</h4>
+                                    <p class="description-software">Shortcuts to get screen in direction relative to reference</p>
+                                    <img class="screenshot" alt="Screenshot of Shortcut to get screen in direction relative to reference" src="media/screenshots/output-direction.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://invent.kde.org/documentation/develop-kde-org/-/merge_requests/168" target="_blank">
-                                <h4 class="caption-software">Development Documentation #168</h4>
-                                <p class="description-software">Overhaul of the KWin scripting tutorial</p>
-                                <img class="screenshot" alt="Screenshot of Overhaul of the KWin scripting tutorial" src="media/screenshots/kwin-scripting-tutorial.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Development Documentation #168</h4>
+                                    <p class="description-software">Overhaul of the KWin scripting tutorial</p>
+                                    <img class="screenshot" alt="Screenshot of Overhaul of the KWin scripting tutorial" src="media/screenshots/kwin-scripting-tutorial.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
-                            <!-- <a href="https://github.com/search?o=desc&p=1&q=org%3AKDE+author%3Anclarius&s=committer-date&type=Commits" target="_blank"> -->
                             <a href="https://invent.kde.org/groups/plasma/-/merge_requests?author_username=nclarius&scope=all&sort=updated_desc&state=all" target="_blank">
-                                <h4 class="caption-software"><img class="icon-software-account" src="media/icons/gitlab.png" alt="">View all contributions</h4>
+                                <!-- https://github.com/search?o=desc&p=1&q=org%3AKDE+author%3Anclarius&s=committer-date&type=Commits-->
+                                <div class="project-software">
+                                    <h4 class="caption-software caption-view-all"><img class="icon-software-account" src="media/icons/gitlab.png" alt="">View all contributions</h4>
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div id="software-extensions" class="category-software">
-                        <h3>KDE Window Management Plugins</h3>
-                        <div class="project-software">
+                        <div id="software-extensions" class="category-software">
+                            <h3>KDE Window Management Plugins</h3>
                             <a href="https://github.com/nclarius/floating-tiles" target="_blank">
-                                <h4 class="caption-software">Floating Tiles</h4>
-                                <p class="description-software">KWin script to prevent windows from overlapping</p>
-                                <img class="screenshot" alt="Screenshot of Floating Tiles<" src="media/screenshots/floating-tiles.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Floating Tiles</h4>
+                                    <p class="description-software">KWin script to prevent windows from overlapping</p>
+                                    <img class="screenshot" alt="Screenshot of Floating Tiles<" src="media/screenshots/floating-tiles.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/tile-gaps" target="_blank">
-                                <h4 class="caption-software">Window Gaps</h4>
-                                <p class="description-software">KWin script to add space around windows touching a screen edge or other window</p>
-                                <img class="screenshot" alt="Screenshot of Window Gaps" src="media/screenshots/window-gaps.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Window Gaps</h4>
+                                    <p class="description-software">KWin script to add space around windows touching a screen edge or other window</p>
+                                    <img class="screenshot" alt="Screenshot of Window Gaps" src="media/screenshots/window-gaps.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/kwin-application-switcher" target="_blank">
-                                <h4 class="caption-software">Application Switcher</h4>
-                                <p class="description-software">KWin script to raise all windows of an application as a group</p>
-                                <img class="screenshot" alt="Screenshot of Application Switcher" src="media/screenshots/application-switcher.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Application Switcher</h4>
+                                    <p class="description-software">KWin script to raise all windows of an application as a group</p>
+                                    <img class="screenshot" alt="Screenshot of Application Switcher" src="media/screenshots/application-switcher.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/KWin-window-geometry-scripts" target="_blank">
-                                <h4 class="caption-software">Window Geometry Keyboard Tools</h4>
-                                <p class="description-software">KWin scripts to control window geometry with keyboard shortcuts</p>
-                                <img class="screenshot" alt="Screenshot of Window Geometry Keyboard Tools" src="media/screenshots/window-geometry-scripts.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Window Geometry Keyboard Tools</h4>
+                                    <p class="description-software">KWin scripts to control window geometry with keyboard shortcuts</p>
+                                    <img class="screenshot" alt="Screenshot of Window Geometry Keyboard Tools" src="media/screenshots/window-geometry-scripts.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/KWin-window-positioning-scripts" target="_blank">
-                                <h4 class="caption-software">Window Positioning Scripts</h4>
-                                <p class="description-software">KWin scripts for window placement on multi-monitor setups</p>
-                                <img class="screenshot" alt="Screenshot of Window Positioning Scripts" src="media/screenshots/window-positioning-scripts.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Window Positioning Scripts</h4>
+                                    <p class="description-software">KWin scripts for window placement on multi-monitor setups</p>
+                                    <img class="screenshot" alt="Screenshot of Window Positioning Scripts" src="media/screenshots/window-positioning-scripts.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/Plasma-window-decorations" target="_blank">
-                                <h4 class="caption-software">Breeze Active Accent</h4>
-                                <p class="description-software">Plasma window decoration highlighting the active window in the color scheme's accent color</p>
-                                <img class="screenshot" alt="Screenshot of Breeze Active Accent" src="media/screenshots/breeze-active-accent.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Breeze Active Accent</h4>
+                                    <p class="description-software">Plasma window decoration highlighting the active window in the color scheme's accent color</p>
+                                    <img class="screenshot" alt="Screenshot of Breeze Active Accent" src="media/screenshots/breeze-active-accent.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://www.pling.com/u/nclarius" target="_blank">
-                                
-                                <h4 class="caption-software"><img class="icon-software-account" src="media/icons/pling.png" alt="">View all extensions</h4>
+                                <div class="project-software">
+                                    <h4 class="caption-software caption-view-all"><img class="icon-software-account" src="media/icons/pling.png" alt="">View all extensions</h4>
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div id="software-shell" class="category-software">
-                        <h3>Scripts for Desktop Linux</h3>
-                        <div class="project-software">
+                        <div id="software-shell" class="category-software">
+                            <h3>Scripts for Desktop Linux</h3>
                             <a href="https://github.com/nclarius/automatic-manual-duplex-printing" target="_blank">
-                                <h4 class="caption-software">Automatic Manual Duplex Printing</h4>
-                                <p class="description-software">Shell script to semi-automatize manual two-sided printing</p>
-                                <img class="screenshot" alt="Screenshot of dAutomatic Manual Duplex Printing" src="media/screenshots/duplex.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Automatic Manual Duplex Printing</h4>
+                                    <p class="description-software">Shell script to semi-automatize manual two-sided printing</p>
+                                    <img class="screenshot" alt="Screenshot of dAutomatic Manual Duplex Printing" src="media/screenshots/duplex.png">
+                                </div>
                             </a>
-                        </div>
-                        <div class="project-software">
                             <a href="https://github.com/nclarius/shell-scripts" target="_blank">
-                                <h4 class="caption-software">Shell Scripts</h4>
-                                <p class="description-software">Collection of shell scripts for opening windows, updating files and more</p>
-                                <img class="screenshot" alt="Screenshot of shell script source code" src="media/screenshots/shell.png">
+                                <div class="project-software">
+                                    <h4 class="caption-software">Shell Scripts</h4>
+                                    <p class="description-software">Collection of shell scripts for opening windows, updating files and more</p>
+                                    <img class="screenshot" alt="Screenshot of shell script source code" src="media/screenshots/shell.png">
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div id="software-web" class="category-software">
-                        <h3>Web Development</h3>
-                        <div class="project-software">
-                            <h4 class="caption-software">Personal Website</h4>
-                            <p class="description-software">This website is self-made from scratch</p>
-                            <img class="screenshot" alt="Screenshot of this website" src="media/screenshots/website.png">
+                        <div id="software-web" class="category-software">
+                            <h3>Web Development</h3>
+                            <div class="project-software">
+                                <h4 class="caption-software">Personal Website</h4>
+                                <p class="description-software">This website is self-made from scratch</p>
+                                <img class="screenshot" alt="Screenshot of this website" src="media/screenshots/website.png">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="sec-contact">
-                <h2><a href="#sec-contact">Contact</a></h2>
-                <hr class="heading-underline" />
-                <table id="table-contact" class="table-contact">
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">forum</span>
-                            <span class="label-contact">Languages</span>
-                        </td>
-                        <td>
-                            German, English
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">pin_drop</span>
-                            <span class="label-contact">Address</span>
-                        </td>
-                        <td>
-                            Room 3.2<br />
-                            Carl Friedrich von Weizsäcker Center<br />
-                            University of Tübingen<br />
-                            Doblerstraße 33<br />
-                            72074 Tübingen, Germany
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">schedule</span>
-                            <span class="label-contact">Office Hours</span>
-                        </td>
-                        <td>By appointment</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">call</span>
-                            <span class="label-contact">Telephone</span>
-                        </td>
-                        <td>+49-7071-71614</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">mail</span>
-                            <span class="label-contact">E-Mail (academia)</span>
-                        </td>
-                        <td>
-                            &#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#099;&#108;&#097;&#114;&#105;&#117;&#115;<span style="display: none;">null</span>&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#117;&#110;&#105;&#045;&#116;&#117;&#101;&#098;&#105;&#110;&#103;&#101;&#110;&#046;&#100;&#101;
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">mail</span>
-                            <span class="label-contact">E-Mail (software)</span>
-                        </td>
-                        <td>
-                            n&#97;&#116;a&#108;i&#101;_clarius&#64;y&#97;h&#111;o&#46;de
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">public</span>
-                            <span class="label-contact">Web</span>
-                        </td>
-                        <td>
-                            <a class="account-link" href="https://github.com/nclarius" target="_blank">
+                </section>
+                <section id="sec-contact">
+                    <h2><a href="#sec-contact">Contact</a></h2>
+                    <hr class="heading-underline" />
+                    <table id="table-contact" class="table-contact">
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">forum</span>
+                                <span class="label-contact">Languages</span>
+                            </td>
+                            <td>
+                                German, English
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <span class="label-contact">Address</span>
+                            </td>
+                            <td>
+                                Room 3.2<br />
+                                Carl Friedrich von Weizsäcker Center<br />
+                                University of Tübingen<br />
+                                Doblerstraße 33<br />
+                                72074 Tübingen, Germany
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <span class="label-contact">Office Hours</span>
+                            </td>
+                            <td>By appointment</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">call</span>
+                                <span class="label-contact">Telephone</span>
+                            </td>
+                            <td>+49-7071-71614</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">mail</span>
+                                <span class="label-contact">E-Mail (academia)</span>
+                            </td>
+                            <td>
+                                &#110;&#097;&#116;&#097;&#108;&#105;&#101;&#046;&#099;&#108;&#097;&#114;&#105;&#117;&#115;<span style="display: none;">null</span>&#064;&#115;&#116;&#117;&#100;&#101;&#110;&#116;&#046;&#117;&#110;&#105;&#045;&#116;&#117;&#101;&#098;&#105;&#110;&#103;&#101;&#110;&#046;&#100;&#101;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">mail</span>
+                                <span class="label-contact">E-Mail (software)</span>
+                            </td>
+                            <td>
+                                n&#97;&#116;a&#108;i&#101;_clarius&#64;y&#97;h&#111;o&#46;de
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">public</span>
+                                <span class="label-contact">Web</span>
+                            </td>
+                            <td>
+                                <a class="account-link" href="https://github.com/nclarius" target="_blank">
                                 <img class="icon-account" alt="Profile on GitHub" src="media/icons/github.png" />
-                            </a>
-                            <a class="account-link" href="https://invent.kde.org/nclarius" target="_blank">
+                                </a>
+                                <a class="account-link" href="https://invent.kde.org/nclarius" target="_blank">
                                 <img class="icon-account" alt="Profile on KDE GitLab" src="media/icons/kde.png" />
-                            </a>
-                            <a class="account-link" href="https://stackexchange.com/users/8482789/lemontree?tab=accounts" target="_blank">
+                                </a>
+                                <a class="account-link" href="https://stackexchange.com/users/8482789/lemontree?tab=accounts" target="_blank">
                                 <img class="icon-account" alt="Profile on Stack Exchange" src="media/icons/stackexchange.png" />
-                            </a>
-                            <a class="account-link" href="https://www.reddit.com/user/reguasbuats" target="_blank">
+                                </a>
+                                <a class="account-link" href="https://www.reddit.com/user/reguasbuats" target="_blank">
                                 <img class="icon-account" alt="Profile on Reddit" src="media/icons/reddit.png" />
-                            </a>
-                            <a class="account-link" href="https://www.linkedin.com/in/natalie-clarius-76238b261" target="_blank">
+                                </a>
+                                <a class="account-link" href="https://www.linkedin.com/in/natalie-clarius-76238b261" target="_blank">
                                 <img class="icon-account" alt="Profile on LinkedIn" src="media/icons/linkedin.png" />
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="material-symbols-outlined">savings</span>
-                            <span class="label-contact">Tip jar</span>
-                        </td>
-                        <td>
-                            <a class="account-link" href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="material-symbols-outlined">savings</span>
+                                <span class="label-contact">Tip jar</span>
+                            </td>
+                            <td>
+                                <a class="account-link" href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank">
                                 <img id="icon-paypal" class="icon-support" alt="Donate using PayPal" src="media/icons/paypal.png" />
                                 <img id="icon-paypal_" class="icon-support" alt="Donate using PayPal" src="media/icons/paypal_.png" />
-                            </a>
-                            <a class="account-link" href="https://liberapay.com/natalie.clarius/donate" target="_blank">
+                                </a>
+                                <a class="account-link" href="https://liberapay.com/natalie.clarius/donate" target="_blank">
                                 <img class="icon-support" alt="Donate using Liberapay" src="media/icons/liberapay_.png" />
-                            </a>
-                            <!-- <a class="account-link" href="https://www.buymeacoffee.com/nclarius" target="_blank">
-                                <img class="icon-support" alt="Donate using BuyMeACoffee" src="media/icons/buymeacoffee_.png" />
-                            </a> -->
-                            <!-- <a class="account-link" href="https://www.patreon.com/bePatron?u=74516432">
-                                <img class="icon-support" alt="Donate using Patreon" src="media/icons/patreon_.png" />
-                            </a> -->
-                        </td>
-                    </tr>
-                </table>
-                <div id="end-content"></div>
-            </section>
-        </main>
-        <footer id="footer" class="footnote">
-            <p>
-                <span class="nowrap">
+                                </a>
+                                <!-- <a class="account-link" href="https://www.buymeacoffee.com/nclarius" target="_blank">
+                                    <img class="icon-support" alt="Donate using BuyMeACoffee" src="media/icons/buymeacoffee_.png" />
+                                    </a> -->
+                                <!-- <a class="account-link" href="https://www.patreon.com/bePatron?u=74516432">
+                                    <img class="icon-support" alt="Donate using Patreon" src="media/icons/patreon_.png" />
+                                    </a> -->
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="end-content"></div>
+                </section>
+            </main>
+            <footer id="footer" class="footnote">
+                <p>
+                    <span class="nowrap">
                     <a href="https://github.com/nclarius/nclarius.github.io" target="_blank">
-                        Source code
+                    Source code
                     </a>
                     &nbsp;&nbsp;▪&nbsp;&nbsp;
                     </span>
-                <span class="nowrap">
+                    <span class="nowrap">
                     <a href="LICENSE.txt" target="_blank">
-                        GPLv3 license
+                    GPLv3 license
                     </a>
                     &nbsp;&nbsp;▪&nbsp;&nbsp;
-                </span>
-                <span class="nowrap">
+                    </span>
+                    <span class="nowrap">
                     © 2022-2023 Natalie Clarius
-                </span>
-            </p>
-        </footer>
-    </body>
-</html>
+                    </span>
+                </p>
+            </footer>
+        </body>
+    </html>
+    
