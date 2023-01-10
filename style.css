@@ -804,7 +804,9 @@ section contact
 }
 
 #end-content {
-    margin-bottom: 80px;
+    height: 40px;
+    display: block;
+    margin-bottom: 60px;
 }
 
 footer {
