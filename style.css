@@ -834,25 +834,33 @@ section contact
     color: var(--darkgray);
 }
 
+.btn-account {
+    padding: 4px;
+    margin-right: 4px;
+}
+
 .icon-account {
-    height: 1.125em;
-    margin-right: .875em;
+    height: 1.625em;
     vertical-align: middle;
 }
 
+.btn-support {
+    padding: 4px;
+    margin-right: 4px;
+}
+
 .icon-support {
-    height: 1.5em;
-    margin-right: .875em;
+    height: 2em;
     vertical-align: middle;
 }
 
 #icon-paypal {
-    height: 1.25em;
+    height: 1.825em;
     margin-right: -5px;
 }
 
 #icon-paypal_ {
-    height: 1.25em;
+    height: 1.725em;
 }
 
 footer {
