@@ -203,7 +203,7 @@ navigation buttons
     }
 
     #btn-nav {
-        top: calc(60px + 50% - 50px);
+        top: calc((60px + 100% - 50px) / 2);
     }
 
     #btn-top {
