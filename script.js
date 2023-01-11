@@ -148,7 +148,8 @@ function updateVisibilityNavButtons(timeout = true) {
     const navBtn = document.getElementById("btn-nav");
     const topBtn = document.getElementById("btn-top");
     const bottomBtn = document.getElementById("btn-bottom");
-    [navBtn, topBtn, bottomBtn].forEach(btn => {
+    const naviBtns = [navBtn, topBtn, bottomBtn];
+    naviBtns.forEach(btn => {
         if (btn == navBtn || 
             btn == topBtn && window.scrollY || 
             btn == bottomBtn && window.scrollY + window.innerHeight < document.body.scrollHeight) {
@@ -159,11 +160,12 @@ function updateVisibilityNavButtons(timeout = true) {
     });
     if (timeout) {
         setTimeout(() => {
-            [navBtn, topBtn, bottomBtn].forEach(btn => {
-                if (!document.getElementById("nav").classList.contains("open")) {
-                        btn.style.opacity = "0";
-                }
-            });
+            if (!(document.getElementById("nav").classList.contains("open") ||
+                  naviBtns.some(btn => btn.matches(":hover")))) {
+                naviBtns.forEach(btn => {
+                            btn.style.opacity = "0";
+                    }
+            )};
         }, 2000);
     }
 }
