@@ -123,30 +123,6 @@ nav li.active a {
         margin-right: 40px;
         margin-left: 30px;
     }
-
-    #btn-scroll {
-        z-index: 3;
-        height: 50px;
-        position: fixed;
-        left: 50%;
-        bottom: 16px;
-        width: 50px;
-        display: none;
-        border: none;
-        overflow-x: hidden;
-        color: var(--black);
-        background: var(--white);
-        box-shadow: 0px 2px 6px -2px var(--middlegray);
-        transition: opacity 0.25s;
-    }
-
-    .icon-scroll {
-        font-size: 1.25em;
-    }
-
-    .btn-navi {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -171,6 +147,42 @@ nav li.active a {
     nav ul {
         margin-right: 20px;
     }
+}
+
+/*
+=======================
+buttons
+=======================
+*/
+
+button {
+    cursor:pointer;
+    color: var(--black);
+    background: var(--white);
+    border: none;
+}
+
+button,
+button.active,
+button.focus {
+    outline: none;
+}
+
+/*
+=======================
+navigation buttons
+=======================
+*/
+
+@media only screen and (min-width: 801px) {
+
+    .btn-navi {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
 
     .btn-navi {
         position: fixed;
@@ -188,8 +200,18 @@ nav li.active a {
         box-shadow: 0px 2px 6px -2px var(--middlegray);
     }
 
-    .btn-nav.open {
+    .btn-navi.open {
         box-shadow: none;
+    }
+
+    #btn-nav.closed {
+        top: calc(30px + 50% - 25px);
+        height: 50px ;
+    }
+
+    #btn-nav.open {
+        top: calc(60px + 50px + 8px);
+        height: calc(100% - 60px - 2 * (50px + 4px));
     }
 
     #btn-top, #btn-bottom {
@@ -203,22 +225,6 @@ nav li.active a {
 
     #btn-bottom {
         bottom: 4px;
-    }
-
-    #btn-nav.closed {
-        top: calc(30px + 50% - 25px);
-        height: 50px ;
-    }
-
-    #btn-nav.open {
-        top: calc(60px + 50px + 8px);
-        height: calc(100% - 60px - 2 * (50px + 4px));
-    }
-
-    #btn-nav,
-    #btn-nav.active,
-    #btn-nav.focus {
-        outline: none;
     }
 
     .icon-navi {
@@ -238,6 +244,40 @@ nav li.active a {
         transform: rotate(0deg);
     }
 
+}
+
+/*
+=======================
+scroll button
+=======================
+*/
+
+@media only screen and (min-width: 801px) {
+
+    #btn-scroll {
+        z-index: 3;
+        height: 50px;
+        position: fixed;
+        left: 50%;
+        bottom: 16px;
+        width: 50px;
+        display: none;
+        border: none;
+        overflow-x: hidden;
+        color: var(--black);
+        background: var(--white);
+        box-shadow: 0px 2px 6px -2px var(--middlegray);
+        transition: opacity 0.25s;
+    }
+
+    .icon-scroll {
+        font-size: 1.25em;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
     #btn-scroll {
         display: none;
     }
@@ -249,13 +289,6 @@ nav li.active a {
 color button
 =======================
 */
-
-button {
-    cursor:pointer;
-    color: var(--black);
-    background: var(--white);
-    border: none;
-}
 
 #btn-color {
     font-size: 1em;
