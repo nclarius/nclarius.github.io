@@ -682,9 +682,10 @@ section teaching
     margin-bottom: 0.5ex;
 }
 
-.presentation {
+.img-presentation {
     display: block;
     max-width: 625px;
+    height: auto;
     margin-top: 10px;
     border: 1px solid var(--lightgray);
     
@@ -764,9 +765,10 @@ section software
     margin-bottom: 3px;
 }
 
-.screenshot {
+.img-screenshot {
     width: 100%;
     max-width: 100%;
+    height: auto;
     margin-top: 10px;
     border: 1px solid var(--lightgray);
 }
