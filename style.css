@@ -486,10 +486,11 @@ p a[href^="#"]::after {
     font-family: "FontAwesome";
     font-weight: normal;
     font-size: 0.75em;
-    margin-left: 0.5ex;
+    display: inline-block;
     vertical-align: center;
     writing-mode: vertical-lr;
     transform: rotate(90deg);
+    padding-left: 0.5ex;
 }
 
 p a:not([href^="#"])::after,
@@ -499,7 +500,7 @@ a .caption::after {
     font-family: "FontAwesome";
     font-weight: normal;
     font-size: 0.75em;
-    margin-left: 0.5ex;
+    padding-left: 0.5ex;
     vertical-align: center;
 }
 
