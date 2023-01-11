@@ -43,7 +43,6 @@ html {
     }
 
     main {
-        max-width: 1050px;
         margin: auto;
         width: calc(100% - 440px);
     }
@@ -78,6 +77,11 @@ p {
 
 .nowrap {
     white-space: nowrap;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
@@ -525,6 +529,10 @@ section about me
 =======================
 */
 
+#sec-about {
+    max-width: 1000px;
+}
+
 #heading-about {
     display: none;
 }
@@ -595,6 +603,10 @@ section cv
 =======================
 */
 
+#sec-cv {
+    max-width: 1000px;
+}
+
 .table-cv {
     border-collapse: collapse;
 }
@@ -623,6 +635,10 @@ section cv
 section teaching
 =======================
 */
+
+#sec-teaching {
+    max-width: 1000px;
+}
 
 .table-teaching {
     border-collapse: collapse;
@@ -656,6 +672,10 @@ section teaching
 section software
 =======================
 */
+
+#sec-software {
+    max-width: 1350px;
+}
 
 #grid-software {
     display: grid;
