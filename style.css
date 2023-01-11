@@ -644,7 +644,8 @@ section teaching
 }
 
 .presentation {
-    max-width: 500px;
+    display: block;
+    max-width: 625px;
     margin-top: 10px;
     border: 1px solid var(--lightgray);
     
