@@ -128,7 +128,6 @@ nav li.active a {
 @media only screen and (max-width: 800px) {
     nav {
         top: calc(61px + 1px);
-        margin-right: 40px;
         overflow: auto;
         border-top: 1px solid var(--white);
         box-shadow: -6px 0px 12px -6px var(--middlegray);
@@ -137,7 +136,7 @@ nav li.active a {
     }
 
     nav.open {
-        width: 220px;
+        width: 240px;
     }
 
     nav.closed {
@@ -145,7 +144,7 @@ nav li.active a {
     }
 
     nav ul {
-        margin-right: 20px;
+        margin-right: 60px;
     }
 }
 
@@ -185,42 +184,30 @@ navigation buttons
 @media only screen and (max-width: 800px) {
 
     .btn-navi {
+        display: block;
         position: fixed;
         right: 0;
         width: 50px;
-        display: block;
-        border: none;
+        height: 50px;
         overflow-x: hidden;
-        z-index: 2;
-        color: var(--black);
-        background: var(--white);
     }
 
     .btn-navi.closed {
+        z-index: 3;
         box-shadow: 0px 2px 6px -2px var(--middlegray);
     }
 
     .btn-navi.open {
+        z-index: 2;
         box-shadow: none;
     }
 
-    #btn-nav.closed {
-        top: calc(30px + 50% - 25px);
-        height: 50px ;
-    }
-
-    #btn-nav.open {
-        top: calc(60px + 50px + 8px);
-        height: calc(100% - 60px - 2 * (50px + 4px));
-    }
-
-    #btn-top, #btn-bottom {
-        z-index: 3;
-        height: 50px;
+    #btn-nav {
+        top: calc(60px + 50% - 50px);
     }
 
     #btn-top {
-        top: 64px;
+        top: calc(60px + 4px);
     }
 
     #btn-bottom {
@@ -228,6 +215,7 @@ navigation buttons
     }
 
     .icon-navi {
+        display: inline-block;
         font-size: 2em;
     }
 
