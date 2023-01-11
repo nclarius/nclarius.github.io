@@ -44,7 +44,7 @@ html {
 
     main {
         margin: auto;
-        width: calc(100% - 440px);
+        width: calc(100% - 2 * (180px + 40px));
     }
 }
 
@@ -337,6 +337,12 @@ header {
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
     overflow-x: hidden;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header.scrolled {
@@ -352,6 +358,7 @@ header.scrolled {
 @media only screen and (min-width: 801px) {
     header {
         height: 81px;
+        transition: height 0.05s linear;
     }
 
     #heading {

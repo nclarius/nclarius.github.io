@@ -127,11 +127,18 @@ function updateMouseMove() {
 
 function indicateScrollednessHeader() {
     const header = document.getElementById("header");
-    if (window.scrollY) {
+    const nav = document.getElementById("nav");
+    const html = document.documentElement;
+    let headerHeight = 80 + Math.max(0, Math.min(275, (1 - window.scrollY) + 275));
+    header.style.height = String(headerHeight + 1) + "px";
+    nav.style.top = String(headerHeight + 1) + "px";
+    html.style.scrollPaddingTop = String(headerHeight + 2) + "px";
+    if (headerHeight <= 80) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
     }
+    console.log(window.scrollY, 1 - window.scrollY, header.style.height);
 }
 
 function indicateVisibilitySection(section) {
