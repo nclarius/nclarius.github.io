@@ -144,6 +144,7 @@ function indicateVisibilitySection(section) {
     }
 }
 
+var navBtnVisibilityTimeout = window.setTimeout(2000);
 function updateVisibilityNavButtons(timeout = true) {
     const navBtn = document.getElementById("btn-nav");
     const topBtn = document.getElementById("btn-top");
@@ -159,13 +160,15 @@ function updateVisibilityNavButtons(timeout = true) {
         }
     });
     if (timeout) {
-        setTimeout(() => {
+        window.clearTimeout(navBtnVisibilityTimeout);
+        navBtnVisibilityTimeout = window.setTimeout(() => {
             if (!(document.getElementById("nav").classList.contains("open") ||
                   naviBtns.some(btn => btn.matches(":hover")))) {
                 naviBtns.forEach(btn => {
                             btn.style.opacity = "0";
                     }
-            )};
+                );
+            }
         }, 2000);
     }
 }
