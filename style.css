@@ -127,7 +127,7 @@ nav li.active a {
 
 @media only screen and (max-width: 800px) {
     nav {
-        top: calc(61px + 1px);
+        top: 61px;
         overflow: auto;
         border-top: 1px solid var(--white);
         box-shadow: -6px 0px 12px -6px var(--middlegray);
