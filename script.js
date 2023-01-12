@@ -204,14 +204,12 @@ function setColor(dark) {
         root.classList.add("dark");
         root.classList.remove("light");
         colorBtn.setAttribute("title", "Switch to light color scheme");
-        colorIcn.classList.add("dark");
-        colorIcn.classList.remove("light");
+        colorIcn.innerHTML = "dark_mode";
     } else {
         root.classList.add("light");
         root.classList.remove("dark");
         colorBtn.setAttribute("title", "Switch to dark color scheme");
-        colorIcn.classList.add("light");
-        colorIcn.classList.remove("dark");
+        colorIcn.innerHTML = "light_mode";
     }
 }
 
@@ -220,10 +218,8 @@ function setLightbulb(toggle) {
     const colorIcn = document.getElementById("icon-color");
     dark = toggle != root.classList.contains("dark");
     if (dark) {
-        colorIcn.classList.add("dark");
-        colorIcn.classList.remove("light");
+        colorIcn.innerHTML = "dark_mode";
     } else {
-        colorIcn.classList.add("light");
-        colorIcn.classList.remove("dark");
+        colorIcn.innerHTML = "light_mode";
     }
 }

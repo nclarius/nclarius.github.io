@@ -277,13 +277,9 @@ color button
 */
 
 #btn-color {
-    font-size: 1em;
-    width: 14px;
-    height: 22px;
+    display: inline-block;
     position: fixed;
-    right: 20px;
-    bottom: 16px;
-    padding: 0px;
+    bottom: 13.5px;
 }
 
 nav.closed #btn-color {
@@ -292,22 +288,24 @@ nav.closed #btn-color {
 
 @media only screen and (min-width: 801px) {
     #btn-color {
-        margin-right: 20px;
+        right: 40px;
     }
 }
 
 @media screen and (max-width: 800px) {
     #btn-color {
-        margin-right: 40px;
+        right: 60px;
     }
 }
 
-#btn-color {
+#icon-color {
+    float: right;
+    font-size: 1.625em;
     transition: transform 0.25s;
 }
 
-#btn-color:hover {
-    transform: rotate(180deg);
+#icon-color:hover {
+    transform: rotate(360deg);
 }
 
 /*
