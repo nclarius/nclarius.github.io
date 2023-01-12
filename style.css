@@ -223,11 +223,14 @@ navigation buttons
 
     #icon-hamburger {
         padding-bottom: 4px;
-        transition: transform 0.25s;
     }
 
     #icon-hamburger.open {
         transform: rotate(90deg);
+    }
+
+    #btn-hamburger:hover #icon-hamburger {
+        transition: transform 0.25s;
     }
 
 }
@@ -301,11 +304,11 @@ nav.closed #btn-color {
 #icon-color {
     float: right;
     font-size: 1.625em;
-    transition: transform 0.25s;
 }
 
 #icon-color:hover {
     transform: rotate(360deg);
+    transition: transform 0.25s;
 }
 
 /*
