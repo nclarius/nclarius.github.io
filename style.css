@@ -175,7 +175,7 @@ navigation buttons
 
 @media only screen and (min-width: 801px) {
 
-    .btn-navi {
+    .btn-nav {
         display: none;
     }
 
@@ -183,7 +183,7 @@ navigation buttons
 
 @media only screen and (max-width: 800px) {
 
-    .btn-navi {
+    .btn-nav {
         display: block;
         position: fixed;
         right: 0;
@@ -192,17 +192,17 @@ navigation buttons
         overflow-x: hidden;
     }
 
-    .btn-navi.closed {
+    .btn-nav.closed {
         z-index: 3;
         box-shadow: 0px 2px 6px -2px var(--middlegray);
     }
 
-    .btn-navi.open {
+    .btn-nav.open {
         z-index: 2;
         box-shadow: none;
     }
 
-    #btn-nav {
+    #btn-hamburger {
         top: calc((60px + 100% - 50px) / 2);
     }
 
@@ -214,22 +214,20 @@ navigation buttons
         bottom: 4px;
     }
 
-    .icon-navi {
+    .icon-nav {
         display: inline-block;
         font-size: 2em;
+        line-height: 100%;
+        vertical-align: middle;
     }
 
-    #icon-nav {
-        padding-bottom: 2px;
+    #icon-hamburger {
+        padding-bottom: 4px;
         transition: transform 0.25s;
     }
 
-    #icon-nav.open {
+    #icon-hamburger.open {
         transform: rotate(90deg);
-    }
-
-    #icon-nav.closed {
-        transform: rotate(0deg);
     }
 
 }

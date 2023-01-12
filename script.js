@@ -32,8 +32,8 @@ function toggleNav() {
 
 function setNav(open) {
     const nav = document.getElementById("nav");
-    const navIcn = document.getElementById("icon-nav");
-    const navBtn = document.getElementById("btn-nav");
+    const navIcn = document.getElementById("icon-hamburger");
+    const navBtn = document.getElementById("btn-hamburger");
     const topBtn = document.getElementById("btn-top");
     const bottomBtn = document.getElementById("btn-bottom");
     if (!nav.classList.contains("toggleable")) return;
@@ -55,7 +55,7 @@ function setNav(open) {
 
 function setHamburger(toggle) {
     const nav = document.getElementById("nav");
-    const navIcn = document.getElementById("icon-nav");
+    const navIcn = document.getElementById("icon-hamburger");
     open = toggle != nav.classList.contains("open");
     if (open) {
         navIcn.classList.add("open");
@@ -146,7 +146,7 @@ function indicateVisibilitySection(section) {
 
 var navBtnVisibilityTimeout = window.setTimeout(2000);
 function updateVisibilityNavButtons(timeout = true) {
-    const navBtn = document.getElementById("btn-nav");
+    const navBtn = document.getElementById("btn-hamburger");
     const topBtn = document.getElementById("btn-top");
     const bottomBtn = document.getElementById("btn-bottom");
     const naviBtns = [navBtn, topBtn, bottomBtn];
