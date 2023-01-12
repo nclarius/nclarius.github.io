@@ -469,26 +469,25 @@ p a {
 }
 
 p a[href^="#"]::after {
-    content: " \f08e";
-    font-family: "FontAwesome";
+    content: " open_in_new";
+    font-family: "Material Symbols Outlined";
     font-weight: normal;
-    font-size: 0.75em;
     display: inline-block;
-    vertical-align: center;
+    padding-left: 0.1ex;
     writing-mode: vertical-lr;
-    transform: rotate(90deg);
-    padding-left: 0.5ex;
+    transform: translateY(0.1ex);
 }
 
 p a:not([href^="#"])::after,
 a .caption-talk::after,
 a .caption::after {
-    content: " \f08e";
-    font-family: "FontAwesome";
+    content: " open_in_new";
+    font-family: "Material Symbols Outlined";
     font-weight: normal;
-    font-size: 0.75em;
-    padding-left: 0.5ex;
-    vertical-align: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-left: 0.25ex;
+    transform: translateY(-0.1ex);
 }
 
 a:not(.account-link):hover,
