@@ -451,8 +451,7 @@ h4 {
 }
 
 .footnote {
-    padding-top: 9pt;
-    margin-right: 0;
+    margin: 8px 4px 8px;
     font-size: 0.75em;
 }
 
@@ -497,6 +496,7 @@ a:not(.account-link) *:hover {
 
 .btn-link {
     padding: 10px;
+    margin-bottom: 20px;
     box-shadow: 0px 3px 5px 0px var(--shadowgray);
 }
 
