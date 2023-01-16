@@ -118,6 +118,60 @@ section:last-child {
 
 /*
 =======================
+paragraphs, lists, tables, items
+=======================
+*/
+
+p {
+    margin-right: 20px;
+}
+
+p.footnote {
+    padding: 8px 4px 8px;
+    margin: 0px;
+    font-size: 0.75em;
+}
+
+p.headnote {
+    padding: 4px 4px 10px;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+td {
+    vertical-align: top;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .table-cv, .table-teaching {
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    tr {
+        display: table;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    td {
+        display: table-row;
+    }
+}
+
+.btn-link {
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 5px 0px var(--shadowgray);
+}
+
+/*
+=======================
 headings and footnotes
 =======================
 */
@@ -178,21 +232,6 @@ hr.heading-underline {
 
 /*
 =======================
-paragraphs
-=======================
-*/
-
-p {
-    margin-right: 20px;
-}
-
-p.footnote {
-    margin: 8px 4px 8px;
-    font-size: 0.75em;
-}
-
-/*
-=======================
 links
 =======================
 */
@@ -230,44 +269,6 @@ a:not(.account-link) *:hover {
     text-decoration: underline;
 }
 
-/*
-=======================
-tables and lists
-=======================
-*/
-
-ul {
-    list-style-type: square;
-    list-style-position: outside;
-}
-
-td {
-    vertical-align: top;
-    font-size: 1em;
-}
-
-@media only screen and (max-width: 1000px) {
-    .table-cv, .table-teaching {
-        margin-right: 20px;
-        width: 100%;
-    }
-
-    tr {
-        display: table;
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    td {
-        display: table-row;
-    }
-}
-
-.btn-link {
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 5px 0px var(--shadowgray);
-}
 
 /*
 =======================
