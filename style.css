@@ -118,7 +118,7 @@ section:last-child {
 
 /*
 =======================
-paragraphs, lists, tables, items
+paragraphs, lists, tables, tiles
 =======================
 */
 
@@ -164,7 +164,7 @@ td {
     }
 }
 
-.btn-link {
+.tile-link {
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 0px 3px 5px 0px var(--shadowgray);
@@ -236,14 +236,28 @@ hr.footer-overline {
 
 /*
 =======================
-links
+links and buttons
 =======================
 */
 
 a,
-p a {
+p a,
+button {
     color: var(--black);
+    background: var(--white);
+    border: none;
+    cursor:pointer;
     text-decoration: none;
+}
+
+a:not(.link-btn):hover,
+a:not(.link-btn) *:hover {
+    text-decoration: underline;
+}
+
+button,
+button.active {
+    outline: none;
 }
 
 p a[href^="#"]::after {
@@ -257,7 +271,6 @@ p a[href^="#"]::after {
 }
 
 p a:not([href^="#"])::after,
-a .caption-talk::after,
 a .caption::after {
     content: " open_in_new";
     font-family: "Material Symbols Outlined";
@@ -267,12 +280,6 @@ a .caption::after {
     padding-left: 0.25ex;
     transform: translateY(-0.1ex);
 }
-
-a:not(.account-link):hover,
-a:not(.account-link) *:hover {
-    text-decoration: underline;
-}
-
 
 /*
 =======================
@@ -340,25 +347,6 @@ nav li.active a {
     nav ul {
         margin-right: 60px;
     }
-}
-
-/*
-=======================
-buttons
-=======================
-*/
-
-button {
-    cursor:pointer;
-    color: var(--black);
-    background: var(--white);
-    border: none;
-}
-
-button,
-button.active,
-button.focus {
-    outline: none;
 }
 
 /*
