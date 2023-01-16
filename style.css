@@ -33,6 +33,10 @@ html, body
 =======================
 */
 
+* {
+    box-sizing: border-box;
+  }
+
 html {
     scroll-behavior: smooth;
     min-height: 100%;
@@ -339,7 +343,6 @@ nav li.active a {
     nav {
         top: 61px;
         height: calc(100% - 62px - 92px);
-        overflow: auto;
         border-top: 1px solid var(--white);
         box-shadow: -6px 6px 12px -6px var(--darkshadowgray);
         background: var(--white);
@@ -472,7 +475,11 @@ color button
 */
 
 #container-color {
+    position: sticky;
+    top: calc(100% - 10px - 1.625em);
+    right: 0;
     margin-bottom: 10px;
+    display: block;
 }
 
 nav.closed #container-color {
@@ -481,17 +488,12 @@ nav.closed #container-color {
 
 @media only screen and (min-width: 801px) {
     #container-color {
-        position: sticky;
-        top: calc(100% - 10px - 1.625em);
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 800px) {
     #container-color {
-        position: fixed;
-        bottom: 0;
-        right: 0;
         margin-right: 60px;
     }
 }
