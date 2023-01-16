@@ -369,7 +369,6 @@ navigation buttons
 */
 
 @media only screen and (min-width: 801px) {
-
     .btn-nav {
         display: none;
     }
@@ -377,7 +376,6 @@ navigation buttons
 }
 
 @media only screen and (max-width: 800px) {
-
     .btn-nav {
         display: block;
         position: fixed;
@@ -437,7 +435,6 @@ scroll button
 */
 
 @media only screen and (min-width: 801px) {
-
     #btn-scroll {
         z-index: 3;
         height: 50px;
@@ -461,11 +458,9 @@ scroll button
 }
 
 @media only screen and (max-width: 800px) {
-
     #btn-scroll {
         display: none;
     }
-
 }
 
 /*
@@ -702,7 +697,6 @@ section software
 }
 
 @media only screen and (min-width: 1001px) {
-
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
@@ -715,7 +709,6 @@ section software
 }
 
 @media only screen and (max-width: 1000px) {
-
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
@@ -743,6 +736,30 @@ section software
     margin-right: 5px;
     margin-bottom: 20px;
     box-shadow: 0px 3px 6px 0px var(--lightshadowgray);
+}
+
+#software-logic {
+    grid-area: logic;
+}
+
+#software-education {
+    grid-area: education;
+}
+
+#software-plasma {
+    grid-area: plasma;
+}
+
+#software-extensions {
+    grid-area: extensions;
+}
+
+#software-shell {
+    grid-area: shell;
+}
+
+#software-web {
+    grid-area: web;
 }
 
 .caption {
@@ -773,25 +790,6 @@ section software
     margin-right: 0.25em;
     height: 21px;
     vertical-align: bottom;
-}
-
-#software-logic {
-    grid-area: logic;
-}
-#software-education {
-    grid-area: education;
-}
-#software-plasma {
-    grid-area: plasma;
-}
-#software-extensions {
-    grid-area: extensions;
-}
-#software-shell {
-    grid-area: shell;
-}
-#software-web {
-    grid-area: web;
 }
 
 /*
