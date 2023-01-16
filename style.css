@@ -12,19 +12,19 @@ root
 :root.light {
     --white: #ffffff;
     --lightgray: #d3d3d3;
-    --middlegray: #808080;
     --darkgray: #3c3c3c;
     --black: #0f0f0f;
-    --shadowgray: #d3d3d3;
+    --lightshadowgray: #d3d3d3;
+    --darkshadowgray: #808080;
 }
 
 :root.dark {
     --white: #292929;
     --lightgray: #505050;
-    --middlegray: #000000;
     --darkgray: #d3d3d3;
     --black: #f0f0f0;
-    --shadowgray: #060606;
+    --lightshadowgray: #060606;
+    --darkshadowgray: #030303;
 }
 
 /*
@@ -169,7 +169,7 @@ td {
 .tile-link {
     padding: 10px;
     margin-bottom: 20px;
-    box-shadow: 0px 3px 5px 0px var(--shadowgray);
+    box-shadow: 0px 3px 5px 0px var(--lightshadowgray);
 }
 
 /*
@@ -341,7 +341,7 @@ nav li.active a {
         height: calc(100% - 61px - 91px);
         overflow: auto;
         border-top: 1px solid var(--white);
-        box-shadow: -6px 0px 12px -6px var(--middlegray);
+        box-shadow: -6px 0px 12px -6px var(--darkshadowgray);
         background: var(--white);
         transition: width 0.25s;
     }
@@ -386,7 +386,7 @@ navigation buttons
 
     .btn-nav.closed {
         z-index: 3;
-        box-shadow: 0px 2px 6px -2px var(--middlegray);
+        box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
     }
 
     .btn-nav.open {
@@ -447,7 +447,7 @@ scroll button
         overflow-x: hidden;
         color: var(--black);
         background: var(--white);
-        box-shadow: 0px 2px 6px -2px var(--middlegray);
+        box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
         transition: opacity 0.25s;
     }
 
@@ -527,7 +527,7 @@ header {
 
 header.scrolled {
     border-bottom: 1px solid transparent;
-    box-shadow: 0 -6px 12px -1px var(--middlegray);
+    box-shadow: 0 -6px 12px -1px var(--darkshadowgray);
 }
 
 @media only screen and (min-width: 801px) {
@@ -740,7 +740,7 @@ section software
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 20px;
-    box-shadow: 0px 3px 6px 0px var(--shadowgray);
+    box-shadow: 0px 3px 6px 0px var(--lightshadowgray);
 }
 
 .caption {
