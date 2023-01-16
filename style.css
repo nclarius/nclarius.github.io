@@ -324,8 +324,8 @@ nav li.active a {
 
 @media only screen and (min-width: 801px) {
     nav {
-        top: 82px;
-        height: calc(100% - 82px - 92px);
+        top: 81px;
+        height: calc(100% - 81px - 91px);
         width: 220px;
         margin-left: 30px;
     }
@@ -337,8 +337,8 @@ nav li.active a {
 
 @media only screen and (max-width: 800px) {
     nav {
-        top: 62px;
-        height: calc(100% - 62px - 92px);
+        top: 61px;
+        height: calc(100% - 61px - 91px);
         overflow: auto;
         border-top: 1px solid var(--white);
         box-shadow: -6px 0px 12px -6px var(--middlegray);
