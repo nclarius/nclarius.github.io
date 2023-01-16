@@ -29,13 +29,32 @@ root
 
 /*
 =======================
-html, body, main
+html, body
 =======================
 */
 
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    position: relative;
+    margin: auto;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+body, body * {
+    transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+/*
+=======================
+main
+=======================
+*/
 
 @media only screen and (min-width: 801px) {
     html {
@@ -58,26 +77,200 @@ html {
     }
 }
 
-body {
-    position: relative;
-    margin: auto;
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: var(--black);
-    background-color: var(--white);
+/*
+=======================
+sections
+=======================
+*/
+
+section {
+    flex-grow: 1;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-body, body * {
-    transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+section:last-child {
+    margin-bottom: 0;
 }
+
+@media only screen and (min-width: 801px) {
+    section:not(last-child) {
+        margin-bottom: 250px;
+        min-height: calc(100vh - 82px - 250px);
+    }
+
+    section:last-child {
+        min-height: calc(100vh - 82px - 2px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    section:not(last-child) {
+        margin-bottom: 150px;
+        min-height: calc(100vh - 62px - 150px);
+    }
+
+    section:last-child {
+        min-height: calc(100vh - 62px);
+    }
+}
+
+/*
+=======================
+headings and footnotes
+=======================
+*/
+
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+nav li a {
+    color: var(--darkgray);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+hr {
+    height: 0px;
+    width: 250px;
+    border: none;
+    border-top: 1px solid var(--darkgray);
+}
+
+hr.heading-underline {
+    margin-bottom: 27px;
+}
+
+hr.footer-overline {
+    margin-bottom: 4px;
+}
+
+/*
+=======================
+paragraphs
+=======================
+*/
 
 p {
     margin-right: 20px;
 }
 
-section {
-    margin-left: auto;
-    margin-right: auto;
+p.footnote {
+    margin: 8px 4px 8px;
+    font-size: 0.75em;
+}
+
+/*
+=======================
+links
+=======================
+*/
+
+a,
+p a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+p a[href^="#"]::after {
+    content: " open_in_new";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    display: inline-block;
+    padding-left: 0.1ex;
+    writing-mode: vertical-lr;
+    transform: translateY(0.1ex);
+}
+
+p a:not([href^="#"])::after,
+a .caption-talk::after,
+a .caption::after {
+    content: " open_in_new";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-left: 0.25ex;
+    transform: translateY(-0.1ex);
+}
+
+a:not(.account-link):hover,
+a:not(.account-link) *:hover {
+    text-decoration: underline;
+}
+
+/*
+=======================
+tables and lists
+=======================
+*/
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+td {
+    vertical-align: top;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .table-cv, .table-teaching {
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    tr {
+        display: table;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    td {
+        display: table-row;
+    }
+}
+
+.btn-link {
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 5px 0px var(--shadowgray);
 }
 
 /*
@@ -353,190 +546,6 @@ header.scrolled {
 
     #heading {
         padding-top: 5px;
-    }
-}
-
-/*
-=======================
-sections
-=======================
-*/
-
-section {
-    flex-grow: 1;
-    overflow-x: hidden;
-}
-
-section:last-child {
-    margin-bottom: 0;
-}
-
-@media only screen and (min-width: 801px) {
-    section:not(last-child) {
-        margin-bottom: 250px;
-        min-height: calc(100vh - 82px - 250px);
-    }
-
-    section:last-child {
-        min-height: calc(100vh - 82px - 2px);
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    section:not(last-child) {
-        margin-bottom: 150px;
-        min-height: calc(100vh - 62px - 150px);
-    }
-
-    section:last-child {
-        min-height: calc(100vh - 62px);
-    }
-}
-
-/*
-=======================
-headings and footnotes
-=======================
-*/
-
-h1,
-h1 a,
-h2,
-h2 a,
-h3,
-h3 a,
-h4,
-h4 a,
-h5,
-h5 a,
-nav li a {
-    color: var(--darkgray);
-}
-
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
-h2,
-h3 {
-    font-variant: small-caps;
-}
-
-h1 {
-    font-size: 1.75em;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.25em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-h4 {
-    font-size: 1em;
-}
-
-hr {
-    height: 0px;
-    width: 250px;
-    border: none;
-    border-top: 1px solid var(--darkgray);
-}
-
-.heading-underline {
-    margin-bottom: 27px;
-}
-
-hr.footer-overline {
-    margin-bottom: 4px;
-}
-
-.footnote {
-    margin: 8px 4px 8px;
-    font-size: 0.75em;
-}
-
-/*
-=======================
-links
-=======================
-*/
-
-a,
-p a {
-    color: var(--black);
-    text-decoration: none;
-}
-
-p a[href^="#"]::after {
-    content: " open_in_new";
-    font-family: "Material Symbols Outlined";
-    font-weight: normal;
-    display: inline-block;
-    padding-left: 0.1ex;
-    writing-mode: vertical-lr;
-    transform: translateY(0.1ex);
-}
-
-p a:not([href^="#"])::after,
-a .caption-talk::after,
-a .caption::after {
-    content: " open_in_new";
-    font-family: "Material Symbols Outlined";
-    font-weight: normal;
-    display: inline-block;
-    vertical-align: text-bottom;
-    padding-left: 0.25ex;
-    transform: translateY(-0.1ex);
-}
-
-a:not(.account-link):hover,
-a:not(.account-link) *:hover {
-    text-decoration: underline;
-}
-
-.btn-link {
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 5px 0px var(--shadowgray);
-}
-
-/*
-=======================
-tables and lists
-=======================
-*/
-
-ul {
-    list-style-type: square;
-    list-style-position: outside;
-}
-
-td {
-    vertical-align: top;
-    font-size: 1em;
-}
-
-@media only screen and (max-width: 1000px) {
-    .table-cv, .table-teaching {
-        margin-right: 20px;
-        width: 100%;
-    }
-
-    tr {
-        display: table;
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    td {
-        display: table-row;
     }
 }
 
