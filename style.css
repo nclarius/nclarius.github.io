@@ -419,14 +419,6 @@ h3 {
     text-align: center;
 }
 
-hr.heading-underline {
-    height: 0px;
-    width: 250px;
-    border: none;
-    border-top: 1px solid var(--darkgray);
-    margin-bottom: 27px;
-}
-
 h2,
 h3 {
     font-variant: small-caps;
@@ -450,8 +442,19 @@ h4 {
     font-size: 1em;
 }
 
-.headnote {
-    margin: 4px 4px 4px;
+hr {
+    height: 0px;
+    width: 250px;
+    border: none;
+    border-top: 1px solid var(--darkgray);
+}
+
+.heading-underline {
+    margin-bottom: 27px;
+}
+
+hr.footer-overline {
+    margin-bottom: 4px;
 }
 
 .footnote {
