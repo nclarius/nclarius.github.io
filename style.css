@@ -858,12 +858,7 @@ section contact
     vertical-align: middle;
 }
 
-#icon-paypal {
-    height: 1.825em;
-    margin-right: -5px;
-}
-
-#icon-paypal_ {
+#icon-paypal, #icon-paypal_ {
     height: 1.725em;
 }
 
