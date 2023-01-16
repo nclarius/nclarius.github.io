@@ -377,7 +377,7 @@ navigation buttons
 
 @media only screen and (max-width: 800px) {
     .btn-nav {
-        display: block;
+        display: inline-block;
         position: fixed;
         right: 0;
         width: 50px;
@@ -469,26 +469,26 @@ color button
 =======================
 */
 
-#container-color {
+#btn-color {
     position: sticky;
-    top: calc(100% - 10px - 1.625em);
-    right: 0;
+    top: calc(100% - 16px - 1.625em);
+    right: 0px;
     margin-bottom: 10px;
-    display: block;
+    display: inline-block;
 }
 
-nav.closed #container-color {
+nav.closed #btn-color {
     display: none;
 }
 
 @media only screen and (min-width: 801px) {
-    #container-color {
+    #btn-color {
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    #container-color {
+    #btn-color {
         margin-right: 60px;
     }
 }
