@@ -172,7 +172,7 @@ td {
 
 /*
 =======================
-headings and footnotes
+headings and over- and underlines
 =======================
 */
 
@@ -228,6 +228,10 @@ hr {
 
 hr.heading-underline {
     margin-bottom: 27px;
+}
+
+hr.footer-overline {
+    margin-bottom: 2px;
 }
 
 /*
