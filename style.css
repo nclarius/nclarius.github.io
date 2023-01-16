@@ -101,7 +101,7 @@ section:last-child {
     }
 
     section:last-child {
-        min-height: calc(100vh - 82px - 2px);
+        min-height: calc(100vh - 82px - 2px - 90px);
     }
 }
 
@@ -112,7 +112,7 @@ section:last-child {
     }
 
     section:last-child {
-        min-height: calc(100vh - 62px);
+        min-height: calc(100vh - 62px - 2px - 90px);
     }
 }
 
@@ -855,7 +855,7 @@ section contact
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0px;
     margin-top: 10px;
     margin-bottom: 4px;
