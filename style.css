@@ -344,7 +344,7 @@ nav li.active a {
         top: 61px;
         height: calc(100% - 61px - 91px);
         border-top: 1px solid var(--white);
-        box-shadow: -6px 6px 12px -6px var(--darkshadowgray);
+        box-shadow: -3px 0px 12px -6px var(--darkshadowgray);
         background: var(--white);
         transition: width 0.25s;
     }
