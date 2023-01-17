@@ -627,42 +627,68 @@ section cv
     padding: 4px;
 }
 
-.timeline::after {
+.timeline::after { /* vertical line */
   content: '';
   position: absolute;
-  width: 1px;
-  background-color: var(--black);
   top: 0;
   bottom: 0;
-  left: 180px;
+  width: 1px;
+  background-color: var(--black);
 }
 
 .timepoint {
     position: relative;
     display: grid;
-    grid-template-columns: 160px 1fr;
-    column-gap: 35px;
 }
 
 .timepoint:not(:last-child) {
     margin-bottom: 15px;
 }
 
-.timepoint::after {
+.timepoint::after { /* squares */
   content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   top: 8px;
-  left: 171px;
   background-color: var(--white);
   border: 1px solid var(--black);
   border-radius: 0%;
   z-index: 1;
 }
 
-.timepoint-time {
-    text-align: right;
+@media only screen and (min-width: 1051px) {
+    .timeline::after {
+        left: 180px;
+    }
+
+    .timepoint {
+        grid-template-columns: 160px 1fr;
+        column-gap: 35px;
+    }
+
+    .timepoint::after {
+        left: 171px;
+    }
+
+    .timepoint-time {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .timeline::after {
+        left: 5px;
+    }
+
+    .timepoint {
+        grid-template-columns: 1fr;
+        left: 21px;
+    }
+
+    .timepoint::after {
+        left: -25px;
+    }
 }
 
 #note-resume {
