@@ -153,23 +153,6 @@ td {
     font-size: 1em;
 }
 
-@media only screen and (max-width: 1000px) {
-    .table-cv, .table-teaching {
-        margin-right: 20px;
-        width: 100%;
-    }
-
-    tr {
-        display: table;
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    td {
-        display: table-row;
-    }
-}
-
 .tile-link {
     padding: 10px;
     margin-bottom: 20px;
@@ -730,6 +713,23 @@ section teaching
 
 .table-teaching li:not(:last-child) {
     margin-bottom: 0.5ex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .table-teaching {
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    .table-teaching tr {
+        display: table;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .table-teaching td {
+        display: table-row;
+    }
 }
 
 .caption-teaching {
