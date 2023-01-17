@@ -266,6 +266,10 @@ button.active {
     outline: none;
 }
 
+button:focus {
+    outline: 2px solid AccentColor;
+}
+
 p a[href^="#"]::after {
     content: " open_in_new";
     font-family: "Material Symbols Outlined";
