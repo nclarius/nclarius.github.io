@@ -829,28 +829,28 @@ section contact
     color: var(--darkgray);
 }
 
-.btn-account {
-    padding: 4px;
-    margin-right: 4px;
+#field-accounts {
+    display: flex;
+    gap: 10px;
 }
 
 .icon-account {
-    height: 1.625em;
+    height: 1.125em;
     vertical-align: middle;
 }
 
-.btn-support {
-    padding: 4px;
-    margin-right: 4px;
+#field-support {
+    display: flex;
+    gap: 12px;
 }
 
 .icon-support {
-    height: 2em;
+    height: 1.5em;
     vertical-align: middle;
 }
 
 #icon-paypal, #icon-paypal_ {
-    height: 1.725em;
+    height: 1.325em;
 }
 
 /*

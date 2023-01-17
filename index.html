@@ -1,7 +1,7 @@
 <!--
-    Natalie Clarius - Personal Website
-    (C) 2022-2023 Natalie Clarius <natalie_clarius@yahoo.de>
-    -->
+Natalie Clarius - Personal Website
+(C) 2022-2023 Natalie Clarius <natalie_clarius@yahoo.de>
+-->
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -52,16 +52,16 @@
                     </li>
                 </ul>
                 <button id="btn-top" class="btn-nav" title="Scroll to top" onclick="scrollToTop()">
-                    <span id="icon-top" class="icon-nav">&#10514;</span>
+                <span id="icon-top" class="icon-nav">&#10514;</span>
                 </button>
                 <button id="btn-hamburger" class="btn-nav" onmouseenter="setHamburger(true)" onmouseleave="setHamburger(false)" onclick="toggleNav()">
-                    <span id="icon-hamburger" class="icon-nav">☰</span>
+                <span id="icon-hamburger" class="icon-nav">☰</span>
                 </button>
                 <button id="btn-bottom" class="btn-nav" title="Scroll to bottom" onclick="scrollToBottom()">
-                    <span id="icon-bottom" class="icon-nav">&#10515;</span>
+                <span id="icon-bottom" class="icon-nav">&#10515;</span>
                 </button>
                 <button id="btn-scroll" class="btn-scroll" title="Scroll down" onclick="scrollDown()">
-                    <span id="icon-scroll" class="icon-scroll">&#8595;</span>
+                <span id="icon-scroll" class="icon-scroll">&#8595;</span>
                 </button>
                 <button id="btn-color" onmouseenter="setLightbulb(true)" onmouseleave="setLightbulb(false)" onclick="toggleColor()">
                     <span id="icon-color" class="material-symbols-outlined"></span> <!-- ◑ ◐ -->
@@ -556,32 +556,22 @@
                                 <span class="material-symbols-outlined">public</span>
                                 <span class="label-contact">Web</span>
                             </td>
-                            <td>
-                                <button class="btn-account" title="Profile on GitHub">
-                                    <a class="link-btn" href="https://github.com/nclarius" target="_blank">
-                                        <img class="icon-account" alt="" src="media/icons/github.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-account" title="Profile on KDE GitLab">
-                                    <a class="link-btn" href="https://invent.kde.org/nclarius" target="_blank">
-                                        <img class="icon-account" alt="" src="media/icons/kde.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-account" title="Profile on Stack Exchange">
-                                    <a class="link-btn" href="https://stackexchange.com/users/8482789/lemontree?tab=accounts" target="_blank">
-                                        <img class="icon-account" alt="" src="media/icons/stackexchange.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-account" title="Profile on Reddit">
-                                    <a class="link-btn" href="https://www.reddit.com/user/reguasbuats" target="_blank">
-                                        <img class="icon-account" alt="" src="media/icons/reddit.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-account" title="Profile on LinkedIn">
-                                    <a class="link-btn" href="https://www.linkedin.com/in/natalie-clarius-76238b261" target="_blank">
-                                        <img class="icon-account" alt="" src="media/icons/linkedin.png" />
-                                    </a>
-                                </button>
+                            <td id="field-accounts">
+                                <a class="link-btn btn-account" href="https://github.com/nclarius" target="_blank" title="Profile on GitHub">
+                                    <img class="icon-account" alt="" src="media/icons/github.png" />
+                                </a>
+                                <a class="link-btn btn-account" href="https://invent.kde.org/nclarius" target="_blank" title="Profile on KDE GitLab">
+                                    <img class="icon-account" alt="" src="media/icons/kde.png" />
+                                </a>
+                                <a class="link-btn btn-account" href="https://stackexchange.com/users/8482789/lemontree?tab=accounts" target="_blank" title="Profile on Stack Exchange">
+                                    <img class="icon-account" alt="" src="media/icons/stackexchange.png" />
+                                </a>
+                                <a class="link-btn btn-account" href="https://www.reddit.com/user/reguasbuats" target="_blank" title="Profile on Reddit">
+                                    <img class="icon-account" alt="" src="media/icons/reddit.png" />
+                                </a>
+                                <a class="link-btn btn-account" href="https://www.linkedin.com/in/natalie-clarius-76238b261" target="_blank" title="Profile on LinkedIn">
+                                    <img class="icon-account" alt="" src="media/icons/linkedin.png" />
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -589,28 +579,20 @@
                                 <span class="material-symbols-outlined">savings</span>
                                 <span class="label-contact">Tip jar</span>
                             </td>
-                            <td>
-                                <button class="btn-support" title="Donate using PayPal">
-                                    <a class="link-btn" href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank">
-                                        <img id="icon-paypal" class="icon-support" alt="" src="media/icons/paypal.png" />
-                                        <img id="icon-paypal_" class="icon-support" alt="" src="media/icons/paypal_.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-support" title="Donate using Liberapay">
-                                    <a class="link-btn" href="https://liberapay.com/natalie.clarius/donate" target="_blank">
-                                        <img class="icon-support" alt="" src="media/icons/liberapay_.png" />
-                                    </a>
-                                </button>
-                                <!-- <button class="btn-support" title="Donate using BuyMeACoffe">
-                                    <a class="link-btn" href="https://www.buymeacoffee.com/nclarius" target="_blank">
+                            <td id="field-support">
+                                <a class="link-btn btn-support" href="https://www.paypal.com/donate/?hosted_button_id=7LUUJD83BWRM4" target="_blank" title="Donate using PayPal">
+                                    <img id="icon-paypal" class="icon-support" alt="" src="media/icons/paypal.png" />
+                                    <img id="icon-paypal_" class="icon-support" alt="" src="media/icons/paypal_.png" />
+                                </a>
+                                <a class="link-btn btn-support" href="https://liberapay.com/natalie.clarius/donate" target="_blank" title="Donate using Liberapay">
+                                    <img class="icon-support" alt="" src="media/icons/liberapay_.png" />
+                                </a>
+                                <!-- <a class="link-btn btn-support" href="https://www.buymeacoffee.com/nclarius" target="_blank" title="Donate using BuyMeACoffe">
                                         <img class="icon-support" alt="e" src="media/icons/buymeacoffee_.png" />
-                                    </a>
-                                </button>
-                                <button class="btn-support" title="Donate using Patreon">
-                                    <a class="link-btn" href="https://www.patreon.com/bePatron?u=74516432">
+                                    </a> -->
+                                <!-- <a class="link-btn btn-support" href="https://www.patreon.com/bePatron?u=74516432" title="Donate using Patreon">
                                         <img class="icon-support" alt="" src="media/icons/patreon_.png" />
-                                    </a>
-                                </button> -->
+                                    </a> -->
                             </td>
                         </tr>
                     </table>
@@ -619,19 +601,19 @@
             <footer id="footer">
                 <p class="footnote">
                     <span id="footer-author" class="element-footer">
-                        Website design and implementation by me
+                    Website design and implementation by me
                     </span>
                     <br/>
                     <span id="footer-source" class="element-footer">
-                        <a href="https://github.com/nclarius/nclarius.github.io" target="_blank">Source code</a>
+                    <a href="https://github.com/nclarius/nclarius.github.io" target="_blank">Source code</a>
                     </span>
                     &nbsp;▪&nbsp;
                     <span id="footer-license" class="element-footer">
-                        <a href="LICENSE.txt" target="_blank">GPLv3 license</a>
+                    <a href="LICENSE.txt" target="_blank">GPLv3 license</a>
                     </span>
                     <br/>
                     <span id="footer-copyright" class="element-footer">
-                        © 2022-2023 Natalie Clarius
+                    © 2022-2023 Natalie Clarius
                     </span>
                 </p>
             </footer>
