@@ -691,6 +691,10 @@ section cv
     }
 }
 
+.timepoint-entry p {
+    margin-top: 8px;
+}
+
 #note-resume {
     margin-top: 50px;
 }
