@@ -62,7 +62,7 @@ main
 =======================
 */
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     html {
         scroll-padding-top: 81px;
     }
@@ -73,7 +73,7 @@ main
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     html {
         scroll-padding-top: 61px;
     }
@@ -100,7 +100,7 @@ section:last-child {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     section:not(last-child) {
         margin-bottom: 250px;
         min-height: calc(100vh - 81px - 250px);
@@ -111,7 +111,7 @@ section:last-child {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     section:not(last-child) {
         margin-bottom: 150px;
         min-height: calc(100vh - 61px - 150px);
@@ -313,7 +313,7 @@ nav li.active a {
     font-weight: bold;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     nav {
         top: 81px;
         height: calc(100% - 81px - 91px);
@@ -326,7 +326,7 @@ nav li.active a {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     nav {
         top: 61px;
         height: calc(100% - 61px - 91px);
@@ -355,14 +355,14 @@ navigation buttons
 =======================
 */
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     .btn-nav {
         display: none;
     }
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .btn-nav {
         display: inline-block;
         position: fixed;
@@ -421,7 +421,7 @@ scroll button
 =======================
 */
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     #btn-scroll {
         z-index: 3;
         height: 50px;
@@ -444,7 +444,7 @@ scroll button
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     #btn-scroll {
         display: none;
     }
@@ -468,13 +468,13 @@ nav.closed #btn-color {
     display: none;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     #btn-color {
         margin-right: 40px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #btn-color {
         margin-right: 60px;
     }
@@ -514,13 +514,13 @@ header.scrolled {
     box-shadow: 0 -6px 12px -1px var(--darkshadowgray);
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     header {
         height: 80px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     header {
         height: 60px;
     }
@@ -554,7 +554,7 @@ section about me
     padding-left: 20px;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
     #container-about {
         margin-top: 24px;
     }
@@ -568,7 +568,7 @@ section about me
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     #container-photo-about {
         width: 200px;
     }
@@ -715,7 +715,7 @@ section teaching
     margin-bottom: 0.5ex;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .table-teaching {
         margin-right: 20px;
         width: 100%;
@@ -760,7 +760,7 @@ section software
     margin-top: -25px;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1201px) {
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 
@@ -772,7 +772,7 @@ section software
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
