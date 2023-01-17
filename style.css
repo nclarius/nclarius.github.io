@@ -771,6 +771,7 @@ section software
 .caption-software {
     font-variant: normal;
     margin-top: 5px;
+    margin-bottom: 20px;
     line-height: 1.125;
 }
 
