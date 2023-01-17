@@ -659,16 +659,16 @@ section cv
 
 @media only screen and (min-width: 1051px) {
     .timeline::after {
-        left: 180px;
+        left: 187px;
     }
 
     .timepoint {
-        grid-template-columns: 160px 1fr;
-        column-gap: 35px;
+        grid-template-columns: 165px 1fr;
+        column-gap: 40px;
     }
 
     .timepoint::after {
-        left: 171px;
+        left: 178px;
     }
 
     .timepoint-time {
