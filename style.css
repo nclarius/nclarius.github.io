@@ -881,8 +881,23 @@ section contact
     border-right: 1em solid transparent;
 }
 
-@media only screen and (max-width: 1000px) {
-    td .label-contact {
+@media only screen and (max-width: 650px) {
+    .table-contact {
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    .table-contact tr {
+        display: table;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .table-contact td {
+        display: table-row;
+    }
+
+    .table-contact td .label-contact {
         font-variant: small-caps;
         font-weight: bold;
         color: var(--darkgray);
