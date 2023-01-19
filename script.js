@@ -137,7 +137,7 @@ function indicateScrollednessHeader() {
 function indicateVisibilitySection(section) {
     const li = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`).parentElement;
     const geo = section.getBoundingClientRect();
-    if (geo.top < document.documentElement.clientHeight && geo.bottom > document.getElementById("header").offsetHeight) {
+    if (geo.top + 1 < document.documentElement.clientHeight && geo.bottom > document.getElementById("header").offsetHeight + 1) {
         li.classList.add("active");
     } else {
         li.classList.remove("active");
