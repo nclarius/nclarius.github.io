@@ -198,8 +198,7 @@ function toggleColor() {
 
 function setColor(dark) {
     const root = document.documentElement;
-    const colorBtn = document.getElementById("rem;");
-    const colorIcn = document.getElementById("icon-color");
+    const colorBtn = document.getElementById("btn-color");
     if (dark) {
         root.classList.add("dark");
         root.classList.remove("light");
