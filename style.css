@@ -265,18 +265,22 @@ button:focus {
 
 p a[href^="#"]::after { /* internal link */
     content: " ⇲";
-    font-size: 0.75em;
+    font-size: 0.5em;
     display: inline-block;
-    padding-left: 0.5ex;
+    vertical-align: text-bottom;
+    padding-left: 1ex;
+    transform: translateY(-0.5em);
 }
 
 p a:not([href^="#"])::after,
 a .caption::after { /* external link */
     content: " ⇲";
-    font-size: 0.75em;
+    font-size: 0.5em;
     display: inline-block;
-    padding-left: 0.5ex;
-    transform: rotate(270deg);
+    vertical-align: middle;
+    padding-top: 1ex;
+    padding-bottom: 2.5ex;
+    transform: rotate(270deg) translateY(0.75em);
 }
 
 /*
