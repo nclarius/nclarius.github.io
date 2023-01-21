@@ -487,7 +487,7 @@ nav.closed #btn-color {
     transform: rotateY(-180deg);
 }
 
-#icon-color:hover {
+#btn-color:hover #icon-color {
     transform: rotateY(0deg);
     transform-style: preserve-3d;
     transition: transform 0.25s;
