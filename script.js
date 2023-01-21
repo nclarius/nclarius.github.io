@@ -198,28 +198,15 @@ function toggleColor() {
 
 function setColor(dark) {
     const root = document.documentElement;
-    const colorBtn = document.getElementById("btn-color");
+    const colorBtn = document.getElementById("rem;");
     const colorIcn = document.getElementById("icon-color");
     if (dark) {
         root.classList.add("dark");
         root.classList.remove("light");
         colorBtn.setAttribute("title", "Switch to light color scheme");
-        colorIcn.innerHTML = "dark_mode";
     } else {
         root.classList.add("light");
         root.classList.remove("dark");
         colorBtn.setAttribute("title", "Switch to dark color scheme");
-        colorIcn.innerHTML = "light_mode";
-    }
-}
-
-function setLightbulb(toggle) {
-    const root = document.documentElement;
-    const colorIcn = document.getElementById("icon-color");
-    dark = toggle != root.classList.contains("dark");
-    if (dark) {
-        colorIcn.innerHTML = "dark_mode";
-    } else {
-        colorIcn.innerHTML = "light_mode";
     }
 }

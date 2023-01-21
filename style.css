@@ -483,11 +483,13 @@ nav.closed #btn-color {
 
 #icon-color {
     float: right;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    transform: rotateY(-180deg);
 }
 
 #icon-color:hover {
-    transform: rotate(360deg);
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
     transition: transform 0.25s;
 }
 
