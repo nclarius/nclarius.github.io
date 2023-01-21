@@ -506,6 +506,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-y: hidden;
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
 }
