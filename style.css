@@ -406,10 +406,6 @@ navigation buttons
         vertical-align: middle;
     }
 
-    #icon-hamburger {
-        padding-bottom: 4px;
-    }
-
     #icon-hamburger.open {
         transform: rotate(90deg);
     }
