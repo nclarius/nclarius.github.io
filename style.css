@@ -642,7 +642,6 @@ section cv
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 8px;
   background-color: var(--white);
   border: 1px solid var(--black);
   border-radius: 0%;
@@ -660,6 +659,7 @@ section cv
     }
 
     .timepoint::after {
+        top: 8px;
         left: 178px;
     }
 
@@ -679,6 +679,7 @@ section cv
     }
 
     .timepoint::after {
+        top: 7px;
         left: -25px;
     }
 }
