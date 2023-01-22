@@ -349,7 +349,7 @@ nav li.active a {
     }
 
     nav.open {
-        width: 240px;
+        width: 250px;
     }
 
     nav.closed {
