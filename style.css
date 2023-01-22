@@ -484,8 +484,10 @@ nav.closed #btn-color {
 }
 
 #icon-color {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
     float: right;
     font-size: 1.25em;
+    vertical-align: middle;
     transform: rotateY(-180deg);
 }
 
