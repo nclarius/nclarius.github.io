@@ -264,19 +264,24 @@ button:focus {
 }
 
 p a[href^="#"]::after { /* internal link */
-    content: " ⇲";
-    font-size: 0.625em;
+    content: "open_in_new";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
     display: inline-block;
-    margin-left: 1ex;
+    vertical-align: text-bottom;
+    margin-left: 0.25ex;
+    transform: rotate(90deg) translateX(-0.1ex);
 }
 
 p a:not([href^="#"])::after,
 a .caption::after { /* external link */
-    content: " ⇲";
-    font-size: 0.625em;
+    content: "open_in_new";
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
     display: inline-block;
-    margin-left: 1ex;
-    writing-mode: sideways-lr;
+    margin-left: 0.25ex;
+    vertical-align: text-bottom;
+    transform: translateY(-0.1ex);
 }
 
 /*
