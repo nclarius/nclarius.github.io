@@ -267,6 +267,7 @@ p a[href^="#"]::after { /* internal link */
     content: "open_in_new";
     font-family: "Material Symbols Outlined";
     font-weight: normal;
+    color: var(--darkgray);
     display: inline-block;
     vertical-align: text-bottom;
     margin-left: 0.25ex;
@@ -278,6 +279,7 @@ a .caption::after { /* external link */
     content: "open_in_new";
     font-family: "Material Symbols Outlined";
     font-weight: normal;
+    color: var(--darkgray);
     display: inline-block;
     margin-left: 0.25ex;
     vertical-align: text-bottom;
@@ -405,9 +407,7 @@ navigation buttons
     }
 
     .icon-nav {
-        display: inline-block;
-        font-size: 2em;
-        line-height: 100%;
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
         vertical-align: middle;
     }
 
@@ -442,10 +442,6 @@ scroll button
         background: var(--white);
         box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
         transition: opacity 0.25s;
-    }
-
-    .icon-scroll {
-        font-size: 1.25em;
     }
 
 }
@@ -916,7 +912,7 @@ section contact
     }
 }
 
-.material-symbols-outlined {
+.icon-contact {
     font-variation-settings: "FILL" 1, "wght" 200, "GRAD" -25, "opsz" 40;
     vertical-align: middle;
     color: var(--darkgray);
