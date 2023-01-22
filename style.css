@@ -460,7 +460,6 @@ color button
 
 #btn-color {
     position: sticky;
-    top: calc(100% - 17px - 16px - 8px);
     right: 0px;
     margin: 16px 0px;
     padding: 8px;
@@ -473,12 +472,14 @@ nav.closed #btn-color {
 
 @media only screen and (min-width: 901px) {
     #btn-color {
+        top: calc(100% - 17px - 16px - 8px);
         margin-right: 40px;
     }
 }
 
 @media screen and (max-width: 900px) {
     #btn-color {
+        top: calc(100% - 17px - 16px - 8px - 4px);
         margin-right: 60px;
     }
 }
