@@ -165,7 +165,7 @@ td {
 
 .tile-link {
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
 }
 
@@ -753,6 +753,10 @@ section teaching
     max-width: calc(min(100%, 625px));
     margin-top: 10px;
     border: 1px solid var(--lightgray);
+}
+
+#table-teachings-footnote {
+    margin-top: 30px;
 }
 
 /*
