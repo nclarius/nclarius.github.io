@@ -302,11 +302,11 @@ media
     max-height: 1000px;
 }
 
-.expandable img {
+.expandable .hideable {
     height: 0;
 }
 
-.expandable:hover img {
+.expandable:hover .hideable {
     height: 100%;
 }
 
