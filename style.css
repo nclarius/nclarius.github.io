@@ -895,11 +895,9 @@ section software
     display: block;
 }
 
-.icon-software-account {
-    height: 1em;
-    margin-right: 0.25em;
-    height: 21px;
-    vertical-align: bottom;
+.img-software-account {
+    height: 3em;
+    margin-top: 10px;
 }
 
 /*
