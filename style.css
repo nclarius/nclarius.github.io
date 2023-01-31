@@ -310,12 +310,6 @@ media
     height: 100%;
 }
 
-.img-presentation {
-    max-width: 100%;
-    margin-top: 10px;
-    border: 1px solid var(--lightgray);
-}
-
 
 /*
 =======================
@@ -777,6 +771,12 @@ section teaching
     font-variant: normal;
     margin-top: 5px;
     line-height: 1.125;
+}
+
+.img-presentation {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
 }
 
 #table-teachings-footnote {
