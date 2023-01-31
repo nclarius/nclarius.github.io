@@ -288,6 +288,37 @@ a .caption::after { /* external link */
 
 /*
 =======================
+media
+=======================
+*/
+
+.expandable {
+    max-height: 150px;
+    overflow-y: hidden;
+    transition: max-height 0.5s;
+}
+
+.expandable:hover {
+    max-height: 1000px;
+}
+
+.expandable img {
+    height: 0;
+}
+
+.expandable:hover img {
+    height: 100%;
+}
+
+.img-presentation {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid var(--lightgray);
+}
+
+
+/*
+=======================
 nav
 =======================
 */
@@ -748,13 +779,6 @@ section teaching
     line-height: 1.125;
 }
 
-.img-presentation {
-    display: block;
-    max-width: calc(min(100%, 625px));
-    margin-top: 10px;
-    border: 1px solid var(--lightgray);
-}
-
 #table-teachings-footnote {
     margin-top: 30px;
 }
@@ -859,11 +883,16 @@ section software
 }
 
 .img-screenshot {
+    display: none;
     width: 100%;
     max-width: 100%;
     height: auto;
     margin-top: 10px;
     border: 1px solid var(--lightgray);
+}
+
+.project-software:hover .img-screenshot {
+    display: block;
 }
 
 .icon-software-account {
