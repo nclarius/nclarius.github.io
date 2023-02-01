@@ -169,12 +169,6 @@ td {
     box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
 }
 
-@media (hover: none) {
-    .tile-link {
-        padding-bottom: 0px;
-    }
-}
-
 /*
 =======================
 headings and over- and underlines
@@ -316,21 +310,6 @@ media
 .expandable:hover .hideable {
     display: block;
     height: 100%;
-}
-
-@media (hover: none) {
-    .expandable::after {
-        content: "expand_more";
-        font-family: "Material Symbols Outlined";
-        font-weight: normal;
-        font-size: 2em;
-        color: var(--darkgray);
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        transform: translateY(-0.1ex);
-    }
 }
 
 
@@ -861,14 +840,11 @@ section software
 
 .project-software {
     padding: 15px;
-    margin: 5px 5px 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 25px;
     box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
-}
-
-@media (hover: none) {
-    .project-software {
-        padding-bottom: 0px;
-    }
 }
 
 #software-logic {
