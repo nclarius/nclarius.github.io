@@ -293,7 +293,7 @@ media
 */
 
 .expandable {
-    max-height: 150px;
+    max-height: 300px;
     overflow-y: hidden;
     transition: max-height 0.5s;
 }
