@@ -303,10 +303,12 @@ media
 }
 
 .expandable .hideable {
+    display: none;
     height: 0;
 }
 
 .expandable:hover .hideable {
+    display: block;
     height: 100%;
 }
 
@@ -883,16 +885,11 @@ section software
 }
 
 .img-screenshot {
-    display: none;
     width: 100%;
     max-width: 100%;
     height: auto;
     margin-top: 10px;
     border: 1px solid var(--lightgray);
-}
-
-.project-software:hover .img-screenshot {
-    display: block;
 }
 
 .img-software-account {
