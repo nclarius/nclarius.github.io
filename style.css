@@ -734,6 +734,7 @@ section teaching
 }
 
 .table-teaching {
+    width: 100%;
     border-collapse: collapse;
 }
 
