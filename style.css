@@ -781,6 +781,10 @@ section teaching
     border: 1px solid var(--lightgray);
 }
 
+.img-account {
+    margin-top: 10px;
+}
+
 #table-teachings-footnote {
     margin-top: 30px;
 }
