@@ -249,8 +249,11 @@ button {
     text-decoration: none;
 }
 
-a:not(.link-btn):hover,
-a:not(.link-btn) *:hover {
+h1 a:hover,
+a:hover .label-nav,
+p a:hover,
+a:hover .tile-link *,
+a:hover .project-software * {
     text-decoration: underline;
 }
 
