@@ -239,31 +239,12 @@ links and buttons
 =======================
 */
 
-a,
-p a,
-button {
-    color: var(--black);
-    background: var(--white);
-    border: none;
-    cursor:pointer;
-    text-decoration: none;
-}
-
 h1 a:hover,
 a:hover .label-nav,
 p a:hover,
 a:hover .tile-link *,
 a:hover .project-software * {
     text-decoration: underline;
-}
-
-button,
-button.active {
-    outline: none;
-}
-
-button:focus {
-    outline: 2px solid AccentColor;
 }
 
 p a[href^="#"]::after { /* internal link */
@@ -287,6 +268,25 @@ a .caption::after { /* external link */
     margin-left: 0.25ex;
     vertical-align: text-bottom;
     transform: translateY(-0.1ex);
+}
+
+a,
+p a,
+button {
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+button,
+button.active {
+    outline: none;
+}
+
+button:focus {
+    outline: 2px solid AccentColor;
 }
 
 /*
