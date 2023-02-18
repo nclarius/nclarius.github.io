@@ -345,17 +345,17 @@ nav li {
     color: var(--darkgray);
 }
 
+.icon-nav {
+    font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 48;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
 .label-nav {
     text-decoration: none;
     font-variant: small-caps;
     transition: font-weight 0.25s;
     vertical-align: middle;
-}
-
-.icon-nav {
-    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 40;
-    vertical-align: middle;
-    margin-right: 3px;
 }
 
 nav li.active a {
@@ -405,14 +405,14 @@ navigation buttons
 */
 
 @media only screen and (min-width: 901px) {
-    .btn-nav {
+    .btn-navig {
         display: none;
     }
 
 }
 
 @media only screen and (max-width: 900px) {
-    .btn-nav {
+    .btn-navig {
         display: inline-block;
         position: fixed;
         right: 0;
@@ -421,12 +421,12 @@ navigation buttons
         overflow-x: hidden;
     }
 
-    .btn-nav.closed {
+    .btn-navig.closed {
         z-index: 3;
         box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
     }
 
-    .btn-nav.open {
+    .btn-navig.open {
         z-index: 2;
         box-shadow: none;
     }
@@ -443,7 +443,7 @@ navigation buttons
         bottom: 4px;
     }
 
-    .icon-nav {
+    .icon-navig {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
         vertical-align: middle;
     }
@@ -522,7 +522,7 @@ nav.closed #btn-color {
 }
 
 #icon-color {
-    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 48;
     float: right;
     font-size: 1.25em;
     vertical-align: middle;
@@ -959,7 +959,7 @@ section contact
 }
 
 .icon-contact {
-    font-variation-settings: "FILL" 1, "wght" 200, "GRAD" -25, "opsz" 40;
+    font-variation-settings: "FILL" 0, "wght" 450, "GRAD" 0, "opsz" 48;
     vertical-align: middle;
     color: var(--darkgray);
 }
