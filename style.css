@@ -342,10 +342,17 @@ nav li {
     color: var(--darkgray);
 }
 
-nav li a {
+.label-nav {
     text-decoration: none;
     font-variant: small-caps;
     transition: font-weight 0.25s;
+    vertical-align: middle;
+}
+
+.icon-nav {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 40;
+    vertical-align: middle;
+    margin-right: 3px;
 }
 
 nav li.active a {
