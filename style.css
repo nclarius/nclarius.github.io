@@ -345,13 +345,13 @@ nav li {
     color: var(--darkgray);
 }
 
-.icon-nav {
+.icon-sec {
     font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 48;
     vertical-align: middle;
     margin-right: 3px;
 }
 
-.label-nav {
+.label-sec {
     text-decoration: none;
     font-variant: small-caps;
     transition: font-weight 0.25s;
@@ -405,14 +405,14 @@ navigation buttons
 */
 
 @media only screen and (min-width: 901px) {
-    .btn-navig {
+    .btn-nav {
         display: none;
     }
 
 }
 
 @media only screen and (max-width: 900px) {
-    .btn-navig {
+    .btn-nav {
         display: inline-block;
         position: fixed;
         right: 0;
@@ -421,12 +421,12 @@ navigation buttons
         overflow-x: hidden;
     }
 
-    .btn-navig.closed {
+    .btn-nav.closed {
         z-index: 3;
         box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
     }
 
-    .btn-navig.open {
+    .btn-nav.open {
         z-index: 2;
         box-shadow: none;
     }
@@ -443,7 +443,7 @@ navigation buttons
         bottom: 4px;
     }
 
-    .icon-navig {
+    .icon-nav {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
         vertical-align: middle;
     }
