@@ -240,7 +240,7 @@ links and buttons
 */
 
 h1 a:hover,
-a:hover .label-nav,
+a:hover .label-sec,
 p a:hover,
 a:hover .tile-link *,
 a:hover .project-software * {
