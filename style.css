@@ -516,7 +516,7 @@ nav.closed #btn-color {
 
 @media screen and (max-width: 900px) {
     #btn-color {
-        top: calc(100% - 17px - 16px - 8px - 4px);
+        top: calc(100% - 17px - 16px - 8px - 5px);
         margin-right: 60px;
     }
 }
