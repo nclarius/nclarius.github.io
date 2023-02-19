@@ -15,11 +15,11 @@ window.addEventListener("resize", updateNavToggleability);
 
 function updateNavToggleability() {
     const nav = document.getElementById("nav");
-    if (window.matchMedia("(min-width: 901px)").matches) {
+    if (window.matchMedia("(min-width: 1001px)").matches) {
         nav.classList.remove("toggleable");
         nav.classList.remove("open");
         nav.classList.remove("closed");
-    } else if (window.matchMedia("(max-width: 900px)").matches) {
+    } else if (window.matchMedia("(max-width: 1000px)").matches) {
         nav.classList.add("toggleable");
         setNav(false);
     }

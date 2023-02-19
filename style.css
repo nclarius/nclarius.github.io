@@ -62,7 +62,7 @@ main
 =======================
 */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     html {
         scroll-padding-top: 61px;
     }
@@ -72,7 +72,7 @@ main
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
     html {
         scroll-padding-top: 61px;
     }
@@ -82,14 +82,14 @@ main
     }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     html {
         scroll-padding-top: 81px;
     }
 
     main {
         margin: auto;
-        width: calc(100% - 440px);
+        width: calc(100% - 500px);
     }
 }
 
@@ -110,7 +110,7 @@ section:last-child {
     margin-bottom: 0;
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     section:not(last-child) {
         margin-bottom: 250px;
         min-height: calc(100vh - 81px - 250px);
@@ -121,7 +121,7 @@ section:last-child {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     section:not(last-child) {
         margin-bottom: 150px;
         min-height: calc(100vh - 61px - 150px);
@@ -362,7 +362,7 @@ nav li.active a {
     font-weight: bold;
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     nav {
         top: 81px;
         height: calc(100% - 81px - 91px);
@@ -375,7 +375,7 @@ nav li.active a {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     nav {
         top: 61px;
         height: calc(100% - 61px - 91px);
@@ -386,7 +386,7 @@ nav li.active a {
     }
 
     nav.open {
-        width: 250px;
+        width: 265px;
     }
 
     nav.closed {
@@ -404,14 +404,14 @@ navigation buttons
 =======================
 */
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     .btn-nav {
         display: none;
     }
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .btn-nav {
         display: inline-block;
         position: fixed;
@@ -464,7 +464,7 @@ scroll button
 =======================
 */
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     #btn-scroll {
         z-index: 3;
         height: 50px;
@@ -483,7 +483,7 @@ scroll button
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #btn-scroll {
         display: none;
     }
@@ -507,14 +507,14 @@ nav.closed #btn-color {
     display: none;
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     #btn-color {
         top: calc(100% - 17px - 16px - 8px);
         margin-right: 40px;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     #btn-color {
         top: calc(100% - 17px - 16px - 8px - 5px);
         margin-right: 60px;
@@ -560,13 +560,13 @@ header.scrolled {
     box-shadow: 0 -6px 12px -1px var(--darkshadowgray);
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     header {
         height: 80px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     header {
         height: 60px;
     }
@@ -600,7 +600,7 @@ section about me
     padding-left: 20px;
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
     #container-about {
         margin-top: 24px;
     }
@@ -614,7 +614,7 @@ section about me
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #container-photo-about {
         width: 200px;
     }
@@ -624,7 +624,7 @@ section about me
     }
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1101px) {
     #container-photo-about {
         float: left;
     }
@@ -638,7 +638,7 @@ section about me
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     #container-photo-about {
         margin: auto;
         margin-top: 20px;
