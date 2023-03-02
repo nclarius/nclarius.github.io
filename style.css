@@ -729,6 +729,20 @@ section cv
     margin-top: 8px;
 }
 
+.position-role {
+    font-weight: bold;
+    color: var(--darkgray);
+}
+
+.position-organization::before {
+    content: " – ";
+}
+
+.position-description {
+    display: block;
+    margin-top: 6px;
+}
+
 #note-resume {
     margin-top: 50px;
 }
@@ -784,6 +798,11 @@ section teaching
     font-variant: normal;
     margin-top: 5px;
     line-height: 1.125;
+}
+
+.teaching-title {
+    font-weight: bold;
+    color: var(--darkgray);
 }
 
 .img-presentation {
