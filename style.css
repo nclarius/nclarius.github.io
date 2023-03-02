@@ -185,7 +185,9 @@ h4,
 h4 a,
 h5,
 h5 a,
-nav li a {
+nav li a,
+.caption-position,
+.caption-teaching {
     color: var(--darkgray);
 }
 
@@ -729,18 +731,12 @@ section cv
     margin-top: 8px;
 }
 
-.position-role {
+.caption-position {
     font-weight: bold;
-    color: var(--darkgray);
 }
 
-.position-organization::before {
-    content: " – ";
-}
-
-.position-description {
+.info-position {
     display: block;
-    margin-top: 6px;
 }
 
 #note-resume {
@@ -800,9 +796,8 @@ section teaching
     line-height: 1.125;
 }
 
-.teaching-title {
+.caption-teaching {
     font-weight: bold;
-    color: var(--darkgray);
 }
 
 .img-presentation {
