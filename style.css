@@ -988,13 +988,32 @@ section contact
     vertical-align: middle;
 }
 
+:root.light .icon-dark,
+:root.dark .icon-light,
+.icon-colored {
+    display: none;
+}
+
+.btn-account:hover .icon-colored,
+.btn-support:hover .icon-colored {
+    display: inline;
+}
+
+.btn-account:hover .icon-dark,
+.btn-account:hover .icon-light,
+.btn-support:hover .icon-dark,
+.btn-support:hover .icon-light {
+    display: none;
+}
+
+
 #field-support {
     display: flex;
     gap: 12px;
 }
 
 .icon-support {
-    height: 1.5em;
+    height: 1.125em;
     vertical-align: middle;
 }
 
