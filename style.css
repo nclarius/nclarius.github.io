@@ -954,6 +954,7 @@ section contact
     border-right: 1em solid transparent;
 }
 
+
 @media only screen and (max-width: 650px) {
     .table-contact {
         margin-right: 20px;
@@ -988,9 +989,15 @@ section contact
     gap: 10px;
 }
 
-.icon-account {
+.icon-account, .icon-support {
     height: 1.125em;
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 650px) {
+    .icon-account, .icon-support {
+        height: 1.25em;
+    }
 }
 
 :root.light .icon-dark,
@@ -1015,11 +1022,6 @@ section contact
 #field-support {
     display: flex;
     gap: 12px;
-}
-
-.icon-support {
-    height: 1.125em;
-    vertical-align: middle;
 }
 
 /*
