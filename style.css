@@ -792,16 +792,17 @@ section teaching
     .table-teaching td {
         display: table-row;
     }
+
+    .table-teaching td .tile-link {
+        margin-top: 10px;
+    }
 }
 
 .caption-teaching {
     font-variant: normal;
+    font-weight: bold;
     margin-top: 5px;
     line-height: 1.125;
-}
-
-.caption-teaching {
-    font-weight: bold;
 }
 
 .img-presentation {
