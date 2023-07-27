@@ -998,6 +998,10 @@ section contact
     .icon-account, .icon-support {
         height: 1.375em;
     }
+
+    #field-accounts {
+        gap: 15px;
+    }
 }
 
 :root.light .icon-dark,
