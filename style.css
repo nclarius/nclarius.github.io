@@ -767,6 +767,10 @@ section teaching
     border-right: 20px solid transparent;
 }
 
+.table-teaching td:nth-child(1) {  
+    text-align: right;
+  }
+
 .table-teaching ul {
     margin-top: 0;
     margin-bottom: 0;
