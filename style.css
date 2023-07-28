@@ -767,10 +767,6 @@ section teaching
     border-right: 20px solid transparent;
 }
 
-.table-teaching td:nth-child(1) {  
-    text-align: right;
-  }
-
 .table-teaching ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -799,6 +795,12 @@ section teaching
 
     .table-teaching td .tile-link {
         margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    .table-teaching td:nth-child(1) {  
+        text-align: right;
     }
 }
 
