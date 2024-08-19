@@ -28,32 +28,23 @@ root
 }
 
 @media only screen and (min-width: 1001px) {
-    :root:not(.scrolled) {
-        --header-height: 110px;
-    }
-
-    :root.scrolled {
-        --header-height: 80px;
+    :root {
+        --min-header-height: 80px;
+        --max-header-height: 300px;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-    :root:not(.scrolled) {
-        --header-height: 90px;
-    }
-
-    :root.scrolled {
-        --header-height: 60px;
+    :root {
+        --min-header-height: 60px;
+        --max-header-height: 200px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    :root:not(.scrolled) {
-        --header-height: 60px;
-    }
-
-    :root.scrolled {
-        --header-height: 60px;
+    :root {
+        --min-header-height: 60px;
+        --max-header-height: 60px;
     }
 }
 
@@ -83,7 +74,7 @@ body {
 }
 
 body, body * {
-    transition: background-color 0.25s, color 0.25s, box-shadow 0.25s, height 0.25s, top 0.25s;
+    transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
 }
 
 /*
@@ -93,7 +84,7 @@ main
 */
 
 html {
-    scroll-padding-top: calc(var(--header-height) + 1px);
+    scroll-padding-top: calc(var(--min-header-height) + 1px);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -113,6 +104,10 @@ html {
         margin: auto;
         width: calc(100% - 500px);
     }
+}
+
+main {
+    position: sticky;
 }
 
 /*
@@ -135,22 +130,22 @@ section:last-child {
 @media only screen and (min-width: 1001px) {
     section:not(last-child) {
         margin-bottom: 250px;
-        min-height: calc(100vh - var(--header-height) - 1px - 250px);
+        min-height: calc(100vh - var(--min-header-height) - 1px - 250px);
     }
 
     section:last-child {
-        min-height: calc(100vh - var(--header-height) - 1px - 90px - 1px);
+        min-height: calc(100vh - var(--min-header-height) - 1px - 90px - 1px);
     }
 }
 
 @media only screen and (max-width: 1000px) {
     section:not(last-child) {
         margin-bottom: 150px;
-        min-height: calc(100vh - var(--header-height) -1px - 150px);
+        min-height: calc(100vh - var(--min-header-height) -1px - 150px);
     }
 
     section:last-child {
-        min-height: calc(100vh - var(--header-height) -1px - 90px - 1px);
+        min-height: calc(100vh - var(--min-header-height) -1px - 90px - 1px);
     }
 }
 
@@ -354,9 +349,9 @@ nav
 
 nav {
     position: absolute;
-    top: calc(var(--header-height));
+    top: var(--min-header-height);
     right: 0;
-    height: calc(100% - var(--header-height) - 90px);
+    height: calc(100% - var(--min-header-height) - 90px);
     text-align: right;
     z-index: 1;
 }
@@ -460,11 +455,11 @@ navigation buttons
     }
 
     #btn-hamburger {
-        top: calc((100% + var(--header-height) - 50px) / 2);
+        top: calc((100% + var(--min-header-height) - 50px) / 2);
     }
 
     #btn-top {
-        top: calc((var(--header-height)) + 4px);
+        top: calc((var(--mmin-header-height)) + 4px);
     }
 
     #btn-bottom {
@@ -570,75 +565,33 @@ header
 
 header {
     position: sticky;
-    top: 0;
-    z-index: 3;
-    overflow-x: hidden;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    top: calc(var(--min-header-height) - var(--max-header-height));
+    height: var(--max-header-height);
+    width: 100%;
+    z-index: 3;
+    overflow-x: hidden;
     overflow-y: hidden;
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
-    /* height: var(--header-height); */
 }
 
-:root.scrolled header {
+header.scrolled {
     border-bottom: 1px solid transparent;
     box-shadow: 0 -6px 12px -1px var(--darkshadowgray);
 }
 
-@media only screen and (min-width: 1001px) {
-    :root:not(.scrolled) #heading {
-        margin-top: 18px;
-        margin-bottom: 0px;
-    }
-
-    :root:not(.scrolled) #subheading {
-        margin-top: 3px;
-        margin-bottom: 18px;
-    }
-
-    :root.scrolled #heading {
-        margin-top: 18px;
-        margin-bottom: 18px;
-    }
-
-    :root.scrolled #subheading {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
-    :root:not(.scrolled) #heading {
-        margin-top: 8px;
-        margin-bottom: 0px;
-    }
-
-    :root:not(.scrolled) #subheading {
-        margin-top: 4px;
-        margin-bottom: 8px;
-    }
-
-    :root.scrolled #heading {
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    :root.scrolled #subheading {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #heading {
-        margin-top: 8px;
-        margin-bottom: 9px;
-    }
-
-    #subheading {
-        display: none;
-    }
+#headings {
+    position: sticky;
+    top: 0; 
+    height: var(--min-header-height);
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*
@@ -657,7 +610,6 @@ section about me
 
 #container-about {
     display: grid;
-    margin-top: 24px;
 }
 
 #container-about::after {
@@ -671,6 +623,10 @@ section about me
 }
 
 @media only screen and (min-width: 1201px) {
+    #container-about {
+        margin-top: 10px;
+    }
+
     #figure-about {
         width: 250px;
         margin: 18px 40px 18px 0px;
@@ -692,6 +648,10 @@ section about me
 }
 
 @media only screen and (max-width: 1200px) {
+    #container-about {
+        margin-top: 28px;
+    }
+
     #figure-about {
         display: grid;
         justify-content: center;
