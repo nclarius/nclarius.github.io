@@ -260,7 +260,7 @@ p a[href^="#"]::after { /* internal link */
     transform: rotate(90deg) translateX(-0.1ex);
 }
 
-p a:not([href^="#"])::after,
+.footnote a:not([href^="#"])::after,
 .description a:not([href^="#"])::after,
 a:not([href^="#"]) .caption::after { /* external link */
     content: "open_in_new";
