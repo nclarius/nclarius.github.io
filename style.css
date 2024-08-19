@@ -261,7 +261,8 @@ p a[href^="#"]::after { /* internal link */
 }
 
 p a:not([href^="#"])::after,
-a .caption::after { /* external link */
+.description a:not([href^="#"])::after,
+a:not([href^="#"]) .caption::after { /* external link */
     content: "open_in_new";
     font-family: "Material Symbols Outlined";
     font-weight: normal;
