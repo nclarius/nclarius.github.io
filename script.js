@@ -126,22 +126,29 @@ function updateMouseMove() {
 }
 
 function indicateScrollednessHeader() {
-    const header = document.getElementById("header");
-    if (window.scrollY) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
+  const root = document.documentElement;
+  if (window.scrollY) {
+    root.classList.add("scrolled");
+  } else {
+    root.classList.remove("scrolled");
+  }
 }
 
 function indicateVisibilitySection(section) {
-    const li = document.querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`).parentElement;
-    const geo = section.getBoundingClientRect();
-    if (geo.top + 1 < document.documentElement.clientHeight && geo.bottom > document.getElementById("header").offsetHeight + 1) {
-        li.classList.add("active");
-    } else {
-        li.classList.remove("active");
-    }
+  const li =
+      document
+          .querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`)
+          .parentElement;
+  const geo = section.getBoundingClientRect();
+  const headerOffset = (window.scrollY ? 0 : 30)
+  if (geo.top + headerOffset + 1 < document.documentElement.clientHeight &&
+      geo.bottom + headerOffset >
+          document.getElementById("header").offsetHeight + 1) {
+    li.classList.add("active");
+  }
+  else {
+    li.classList.remove("active");
+  }
 }
 
 var navBtnVisibilityTimeout = window.setTimeout(2000);
