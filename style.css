@@ -37,9 +37,19 @@ root
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
     :root:not(.scrolled) {
         --header-height: 90px;
+    }
+
+    :root.scrolled {
+        --header-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root:not(.scrolled) {
+        --header-height: 60px;
     }
 
     :root.scrolled {
@@ -570,7 +580,7 @@ header {
     overflow-y: hidden;
     background: var(--white);
     border-bottom: 1px solid var(--lightgray);
-    height: var(--header-height);
+    /* height: var(--header-height); */
 }
 
 :root.scrolled header {
@@ -579,10 +589,6 @@ header {
 }
 
 @media only screen and (min-width: 1001px) {
-    :root:not(.scrolled) {
-        height: 110px;
-    }
-
     :root:not(.scrolled) #heading {
         margin-top: 18px;
         margin-bottom: 0px;
@@ -597,13 +603,13 @@ header {
         margin-top: 18px;
         margin-bottom: 18px;
     }
+
+    :root.scrolled #subheading {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
-    :root:not(.scrolled) {
-        height: 90px;
-    }
-
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
     :root:not(.scrolled) #heading {
         margin-top: 8px;
         margin-bottom: 0px;
@@ -618,10 +624,21 @@ header {
         margin-top: 8px;
         margin-bottom: 8px;
     }
+
+    :root.scrolled #subheading {
+        display: none;
+    }
 }
 
-:root.scrolled #subheading {
-    display: none;
+@media only screen and (max-width: 600px) {
+    #heading {
+        margin-top: 8px;
+        margin-bottom: 9px;
+    }
+
+    #subheading {
+        display: none;
+    }
 }
 
 /*
