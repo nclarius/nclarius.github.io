@@ -622,8 +622,8 @@ section about me
     padding-left: 20px;
 }
 
-#photo-about {
-    box-shadow: 0px 2px 6px -2px var(--darkshadowgray);
+.img-photo {
+    border: 1px solid var(--lightgray);
 }
 
 @media only screen and (min-width: 1201px) {
