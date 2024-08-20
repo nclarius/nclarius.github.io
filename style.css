@@ -29,22 +29,28 @@ root
 
 @media only screen and (min-width: 1001px) {
     :root {
-        --min-header-height: 80px;
-        --max-header-height: 300px;
+        --sticky-header-height: 80px;
+        --expanded-header-height: 300px;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
     :root {
-        --min-header-height: 60px;
-        --max-header-height: 200px;
+        --sticky-header-height: 60px;
+        --expanded-header-height: 200px;
     }
 }
 
 @media only screen and (max-width: 600px) {
     :root {
-        --min-header-height: 60px;
-        --max-header-height: 60px;
+        --sticky-header-height: 60px;
+        --expanded-header-height: 60px;
+    }
+}
+
+@media only screen and (min-width: 0px) {
+    :root {
+        --footer-height: 90px;
     }
 }
 
@@ -84,7 +90,7 @@ main
 */
 
 html {
-    scroll-padding-top: calc(var(--min-header-height) + 1px);
+    scroll-padding-top: calc(var(--sticky-header-height) + 1px);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -130,22 +136,22 @@ section:last-child {
 @media only screen and (min-width: 1001px) {
     section:not(last-child) {
         margin-bottom: 250px;
-        min-height: calc(100vh - var(--min-header-height) - 1px - 250px);
+        min-height: calc(100vh - var(--sticky-header-height) - 1px - 250px);
     }
 
     section:last-child {
-        min-height: calc(100vh - var(--min-header-height) - 1px - 90px - 1px);
+        min-height: calc(100vh - var(--sticky-header-height) - 1px - var(--footer-height) - 1px);
     }
 }
 
 @media only screen and (max-width: 1000px) {
     section:not(last-child) {
         margin-bottom: 150px;
-        min-height: calc(100vh - var(--min-header-height) -1px - 150px);
+        min-height: calc(100vh - var(--sticky-header-height) -1px - 150px);
     }
 
     section:last-child {
-        min-height: calc(100vh - var(--min-header-height) -1px - 90px - 1px);
+        min-height: calc(100vh - var(--sticky-header-height) -1px - var(--footer-height) - 1px);
     }
 }
 
@@ -349,9 +355,9 @@ nav
 
 nav {
     position: absolute;
-    top: var(--min-header-height);
+    top: var(--sticky-header-height);
     right: 0;
-    height: calc(100% - var(--min-header-height) - 90px);
+    height: calc(100% - var(--sticky-header-height) - var(--footer-height));
     text-align: right;
     z-index: 1;
 }
@@ -455,11 +461,11 @@ navigation buttons
     }
 
     #btn-hamburger {
-        top: calc((100% + var(--min-header-height) - 50px) / 2);
+        top: calc((100% + var(--sticky-header-height) - 50px) / 2);
     }
 
     #btn-top {
-        top: calc((var(--mmin-header-height)) + 4px);
+        top: calc((var(--mheader-height)) + 4px);
     }
 
     #btn-bottom {
@@ -568,8 +574,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: calc(var(--min-header-height) - var(--max-header-height));
-    height: var(--max-header-height);
+    top: calc(var(--sticky-header-height) - var(--expanded-header-height));
+    height: var(--expanded-header-height);
     width: 100%;
     z-index: 3;
     overflow-x: hidden;
@@ -586,7 +592,7 @@ header.scrolled {
 #headings {
     position: sticky;
     top: 0; 
-    height: var(--min-header-height);
+    height: var(--sticky-header-height);
     width: 100%;
     display: grid;
     align-items: center;
@@ -1064,7 +1070,7 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
-    height: 90px;
+    height: var(--footer-height);
     display: flex;
     align-items: center;
     justify-content: center;
