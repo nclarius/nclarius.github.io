@@ -107,31 +107,79 @@ window.addEventListener("resize", updateScroll);
 window.addEventListener('mousemove', updateMouseMove);
 
 function updateScroll() {
-    // shadow header on scrolledness
-    indicateScrollednessHeader();
+  // shadow header on scrolledness
+  indicateScrolledness();
 
-    // highlight each section on activeness
-    document.querySelectorAll("section").forEach(indicateVisibilitySection);
+  // adjust size of headings
+  adjustHeadersize()
 
-    // update nav button visibility
-    updateMouseMove();
+  // highlight each section on activeness
+  document.querySelectorAll("section").forEach(indicateVisibilitySection);
 
-    // update scroll button visibility
-    updateVisibilityScrollButton();
+  // update nav button visibility
+  updateMouseMove();
+
+  // update scroll button visibility
+  updateVisibilityScrollButton();
 }
 
 function updateMouseMove() {
-    // update nav button visibility
-    updateVisibilityNavButtons(true);
+  // update nav button visibility
+  updateVisibilityNavButtons(true);
 }
 
-function indicateScrollednessHeader() {
-  const root = document.documentElement;
-  if (window.scrollY) {
-    root.classList.add("scrolled");
+function indicateScrolledness() {
+  const headerHeightDiff = window.innerWidth > 1000  ? 300 - 80
+                           : window.innerWidth > 600 ? 200 - 60
+                                                     : 60 - 60;
+  const header = document.getElementById("header");
+  if (window.scrollY + 1 >= headerHeightDiff) {
+    header.classList.add("scrolled");
   } else {
-    root.classList.remove("scrolled");
+    header.classList.remove("scrolled");
   }
+}
+
+function adjustHeadersize() {
+  // header
+  const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
+  const headerMaxHeight = window.innerWidth > 1000  ? 300
+                          : window.innerWidth > 600 ? 200
+                                                    : 60;
+  const headerHeight =
+      Math.max(headerMinHeight, headerMaxHeight - window.scrollY);
+  // headings div
+  const headings = document.getElementById("headings");
+  headings.style.top = window.scrollY + "px";
+  headings.style.height = headerHeight + "px";
+  // nav
+  const nav = document.getElementById("nav");
+  nav.style.top = headerHeight + "px";
+  // heading
+  const headingMinHeight = window.innerWidth > 1000  ? 1.75
+                           : window.innerWidth > 600 ? 1.25
+                                                     : 1.25;
+  const headingMaxHeight = window.innerWidth > 1000  ? 3
+                           : window.innerWidth > 600 ? 2
+                                                     : 1.25;
+  const heading = document.getElementById("heading");
+  heading.style.fontSize =
+      Math.max(headingMinHeight, headingMaxHeight - window.scrollY / 100) +
+      "em";
+  // subheading
+  const subheadingMinHeight = window.innerWidth > 1000  ? 1.25
+                              : window.innerWidth > 600 ? 1
+                                                        : 0;
+  const subheadingMaxHeight = window.innerWidth > 1000  ? 1.5
+                              : window.innerWidth > 600 ? 1.25
+                                                        : 0;
+  const subheading = document.getElementById("subheading");
+  subheading.style.fontSize =
+      Math.max(subheadingMinHeight,
+               subheadingMaxHeight - window.scrollY / 100) +
+      "em";
+  subheading.style.marginTop = "0px";
+  subheading.style.alignSelf = "start";
 }
 
 function indicateVisibilitySection(section) {
@@ -140,13 +188,10 @@ function indicateVisibilitySection(section) {
           .querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`)
           .parentElement;
   const geo = section.getBoundingClientRect();
-  const headerOffset = (window.scrollY ? 0 : 30)
-  if (geo.top + headerOffset + 1 < document.documentElement.clientHeight &&
-      geo.bottom + headerOffset >
-          document.getElementById("header").offsetHeight + 1) {
+  if (geo.top + 1 < document.documentElement.clientHeight &&
+      geo.bottom > document.getElementById("header").offsetHeight + 1) {
     li.classList.add("active");
-  }
-  else {
+  } else {
     li.classList.remove("active");
   }
 }
