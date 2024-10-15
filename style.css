@@ -62,7 +62,7 @@ html, body
 
 * {
     box-sizing: border-box;
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -79,7 +79,8 @@ body {
     background-color: var(--white);
 }
 
-body, body * {
+body,
+body * {
     transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
 }
 
@@ -277,7 +278,8 @@ a:hover .project-software * {
     text-decoration: underline;
 }
 
-p a[href^="#"]::after { /* internal link */
+p a[href^="#"]::after {
+    /* internal link */
     content: "open_in_new";
     font-family: "Material Symbols Outlined";
     font-weight: normal;
@@ -290,7 +292,8 @@ p a[href^="#"]::after { /* internal link */
 
 .footnote a:not([href^="#"])::after,
 .description a:not([href^="#"])::after,
-a:not([href^="#"]) .caption::after { /* external link */
+a:not([href^="#"]) .caption::after {
+    /* external link */
     content: "open_in_new";
     font-family: "Material Symbols Outlined";
     font-weight: normal;
@@ -307,7 +310,7 @@ button {
     color: var(--black);
     background: var(--white);
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -591,7 +594,7 @@ header.scrolled {
 
 #headings {
     position: sticky;
-    top: 0; 
+    top: 0;
     height: var(--sticky-header-height);
     width: 100%;
     display: grid;
@@ -688,13 +691,14 @@ section cv
     padding: 4px;
 }
 
-.timeline::after { /* vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: var(--darkgray);
+.timeline::after {
+    /* vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--darkgray);
 }
 
 .timepoint {
@@ -706,15 +710,16 @@ section cv
     margin-bottom: 15px;
 }
 
-.timepoint::after { /* squares */
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: var(--white);
-  border: 1px solid var(--darkgray);
-  border-radius: 0%;
-  z-index: 1;
+.timepoint::after {
+    /* squares */
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--darkgray);
+    border-radius: 0%;
+    z-index: 1;
 }
 
 .timepoint-current::after {
@@ -825,7 +830,7 @@ section teaching
 }
 
 @media only screen and (min-width: 1201px) {
-    .table-teaching td:nth-child(1) {  
+    .table-teaching td:nth-child(1) {
         text-align: right;
     }
 }
@@ -869,11 +874,11 @@ section software
 @media only screen and (min-width: 1201px) {
     #grid-software {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "logic education"
-        "plasma extensions"
-        "plasma shell"
-        "web shell";
+        grid-template-areas:
+            "logic education"
+            "plasma extensions"
+            "plasma shell"
+            "web shell";
         gap: 5px 50px;
     }
 }
@@ -881,7 +886,7 @@ section software
 @media only screen and (max-width: 1200px) {
     #grid-software {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
             "logic"
             "education"
             "plasma"
@@ -890,7 +895,7 @@ section software
             "web";
         /* max-width: 700px; */
     }
-    
+
 }
 
 .category-software {
@@ -1021,13 +1026,16 @@ section contact
     gap: 10px;
 }
 
-.icon-account, .icon-support {
+.icon-account,
+.icon-support {
     height: 1.125em;
     vertical-align: middle;
 }
 
 @media only screen and (max-width: 650px) {
-    .icon-account, .icon-support {
+
+    .icon-account,
+    .icon-support {
         height: 1.375em;
     }
 

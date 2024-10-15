@@ -201,27 +201,24 @@ function updateVisibilityNavButtons(timeout = true) {
     const navBtn = document.getElementById("btn-hamburger");
     const topBtn = document.getElementById("btn-top");
     const bottomBtn = document.getElementById("btn-bottom");
-    const naviBtns = [navBtn, topBtn, bottomBtn];
+    const naviBtns = [ navBtn, topBtn, bottomBtn ];
     naviBtns.forEach(btn => {
-        if (btn == navBtn || 
-            btn == topBtn && window.scrollY || 
-            btn == bottomBtn && window.scrollY + window.innerHeight < document.body.scrollHeight) {
-            btn.style.opacity = "100";
-        } else {
-            btn.style.opacity = "0";
-        }
+      if (btn == navBtn || btn == topBtn && window.scrollY ||
+          btn == bottomBtn && window.scrollY + window.innerHeight <
+                                  document.body.scrollHeight) {
+        btn.style.opacity = "100";
+      } else {
+        btn.style.opacity = "0";
+      }
     });
     if (timeout) {
-        window.clearTimeout(navBtnVisibilityTimeout);
-        navBtnVisibilityTimeout = window.setTimeout(() => {
-            if (!(document.getElementById("nav").classList.contains("open") ||
-                  naviBtns.some(btn => btn.matches(":hover")))) {
-                naviBtns.forEach(btn => {
-                            btn.style.opacity = "0";
-                    }
-                );
-            }
-        }, 2000);
+      window.clearTimeout(navBtnVisibilityTimeout);
+      navBtnVisibilityTimeout = window.setTimeout(() => {
+        if (!(document.getElementById("nav").classList.contains("open") ||
+              naviBtns.some(btn => btn.matches(":hover")))) {
+          naviBtns.forEach(btn => { btn.style.opacity = "0"; });
+        }
+      }, 2000);
     }
 }
 
