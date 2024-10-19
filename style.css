@@ -148,11 +148,11 @@ section:last-child {
 @media only screen and (max-width: 1000px) {
     section:not(last-child) {
         margin-bottom: 150px;
-        min-height: calc(100vh - var(--sticky-header-height) -1px - 150px);
+        min-height: calc(100vh - var(--sticky-header-height) - 1px - 150px);
     }
 
     section:last-child {
-        min-height: calc(100vh - var(--sticky-header-height) -1px - var(--footer-height) - 1px);
+        min-height: calc(100vh - var(--sticky-header-height) - 1px - var(--footer-height) - 1px);
     }
 }
 
