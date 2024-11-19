@@ -826,10 +826,6 @@ section teaching
     .table-teaching tr :nth-child(4) {
         width: 115px;
     }
-
-    .table-teaching td .tile-link {
-        width: 100%;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
