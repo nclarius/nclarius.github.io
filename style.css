@@ -274,6 +274,7 @@ h1 a:hover,
 a:hover .label-sec,
 p a:hover,
 .description a:hover,
+a:hover .caption-teaching,
 a:hover .tile-link *,
 a:hover .project-software * {
     text-decoration: underline;
