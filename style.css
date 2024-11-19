@@ -810,6 +810,28 @@ section teaching
     margin-bottom: 0.5ex;
 }
 
+@media only screen and (min-width: 1201px) {
+    .table-teaching tr :nth-child(1) {
+        width: 210px;
+    }
+
+    .table-teaching tr :nth-child(2) {
+        width: 750px;
+    }
+
+    .table-teaching tr :nth-child(3) {
+        width: 25px;
+    }
+
+    .table-teaching tr :nth-child(4) {
+        width: 115px;
+    }
+
+    .table-teaching td .tile-link {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .table-teaching {
         margin-right: 20px;
@@ -818,12 +840,16 @@ section teaching
 
     .table-teaching tr {
         display: table;
-        width: 100%;
         margin-bottom: 1em;
     }
 
-    .table-teaching td {
-        display: table-row;
+    .table-teaching tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table-teaching tr :nth-child(3) {
+        display: none;
     }
 
     .table-teaching td .tile-link {
