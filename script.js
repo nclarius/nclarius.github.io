@@ -95,8 +95,7 @@ function scrollDown() {
 
 /*
 =============================================
-highlight currently active section in navbar
-and shadow header on scrolledness
+trigger scroll effects
 =============================================
 */
 
@@ -121,6 +120,9 @@ function updateScroll() {
 
   // update scroll button visibility
   updateVisibilityScrollButton();
+
+  // disable hover effects while scrolling
+  suppressPointerEvents();
 }
 
 function updateMouseMove() {
@@ -227,6 +229,15 @@ function updateVisibilityScrollButton() {
     if (window.scrollY) {
         scrollBtn.style.display = "none";
     }
+}
+
+var pointerEventsTimeout = setTimeout(0);
+function suppressPointerEvents() {
+    clearTimeout(pointerEventsTimeout);
+    document.body.style.pointerEvents = "none";
+    pointerEventsTimeout = setTimeout(() => {
+        document.body.style.pointerEvents = "auto";
+    }, 250);
 }
 
 /*
