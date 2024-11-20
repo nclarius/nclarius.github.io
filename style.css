@@ -797,6 +797,7 @@ section teaching
 }
 
 .table-teaching td {
+    position: relative;
     padding: 3pt;
     border-right: 20px solid transparent;
 }
@@ -827,6 +828,30 @@ section teaching
     .table-teaching tr :nth-child(4) {
         width: 115px;
     }
+
+    .info-long {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        padding: 4px;
+        background-color: var(--white);
+        z-index: 1;
+        box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
+    }
+
+    .table-teaching tr :nth-child(3) .info-long {
+        width: 100px;
+    }
+
+    .table-teaching tr :nth-child(4) .info-long {
+        width: 280px;
+    }
+
+    .table-teaching tr :nth-child(3):hover .info-long,
+    .table-teaching tr :nth-child(4):hover .info-long {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -849,8 +874,8 @@ section teaching
         display: none;
     }
 
-    .table-teaching td .tile-link {
-        margin-top: 10px;
+    .info-short {
+        display: none;
     }
 }
 
