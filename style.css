@@ -821,15 +821,15 @@ section teaching
         width: 765px;
     }
 
-    .table-teaching tr :nth-child(3) {
+    .col-lang {
         width: 25px;
     }
 
-    .table-teaching tr :nth-child(4) {
+    .col-affil {
         width: 100px;
     }
 
-    .table-teaching tr :nth-child(4) .info-short::after,
+    .col-affil .info-short::after,
     p a[href^="#"]::after {
         /* hover box */
         content: "expand_content";
@@ -853,21 +853,21 @@ section teaching
         box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
     }
 
-    .table-teaching tr :nth-child(3) .info-long {
+    tr .col-lang .info-long {
         width: 100px;
     }
 
-    .table-teaching tr :nth-child(4) .info-long {
+    tr .col-affil .info-long {
         width: 280px;
     }
 
-    .table-teaching tr :nth-child(3):hover .info-short,
-    .table-teaching tr :nth-child(4):hover .info-short {
+    tr .col-lang:hover .info-short,
+    tr .col-affil:hover .info-short {
         text-decoration: underline;
     }
 
-    .table-teaching tr :nth-child(3):hover .info-long,
-    .table-teaching tr :nth-child(4):hover .info-long {
+    tr .col-lang:hover .info-long,
+    tr .col-affil:hover .info-long {
         display: block;
     }
 }
@@ -888,8 +888,8 @@ section teaching
         flex-direction: column;
     }
 
-    .table-teaching tr :nth-child(3),
-    .table-teaching tr :nth-child(4) {
+    .col-lang,
+    .col-affil {
         display: none;
     }
 
