@@ -883,7 +883,8 @@ section teaching
         flex-direction: column;
     }
 
-    .table-teaching tr :nth-child(3) {
+    .table-teaching tr :nth-child(3),
+    .table-teaching tr :nth-child(4) {
         display: none;
     }
 
