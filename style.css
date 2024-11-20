@@ -879,13 +879,16 @@ section teaching
     }
 
     .table-teaching tr {
-        display: table;
-        margin-bottom: 1em;
-    }
-
-    .table-teaching tr {
         display: flex;
         flex-direction: column;
+    }
+
+    tr .col-term, tr .col-title {
+        padding: 0px;
+    }
+
+    tr .col-title {
+        margin-bottom: 15px;
     }
 
     .col-lang,
