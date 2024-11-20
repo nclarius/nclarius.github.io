@@ -861,6 +861,11 @@ section teaching
         width: 280px;
     }
 
+    .table-teaching tr :nth-child(3):hover .info-short,
+    .table-teaching tr :nth-child(4):hover .info-short {
+        text-decoration: underline;
+    }
+
     .table-teaching tr :nth-child(3):hover .info-long,
     .table-teaching tr :nth-child(4):hover .info-long {
         display: block;
