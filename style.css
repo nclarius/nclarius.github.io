@@ -864,6 +864,10 @@ section teaching
         display: none;
     }
 
+    .col-lang {
+        display: none;
+    }
+
     tr .col-lang .info-long {
         width: 100px;
     }
