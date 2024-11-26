@@ -813,12 +813,16 @@ section teaching
 }
 
 @media only screen and (min-width: 1201px) {
-    .table-teaching tr :nth-child(1) {
-        width: 210px;
+    .table-teaching {
+        table-layout: fixed;
     }
 
-    .table-teaching tr :nth-child(2) {
-        width: 765px;
+    .col-term {
+        width: 190px;
+    }
+
+    .col-title {
+        width: 665px;
     }
 
     .col-lang {
