@@ -825,6 +825,10 @@ section teaching
         width: 25px;
     }
 
+    .col-level {
+        width: 45px;
+    }
+
     .col-affil {
         width: 100px;
     }
@@ -860,16 +864,22 @@ section teaching
         width: 100px;
     }
 
+    tr .col-level .info-long {
+        width: 180px;
+    }
+
     tr .col-affil .info-long {
         width: 280px;
     }
 
     tr .col-lang:hover .info-short,
+    tr .col-level:hover .info-short,
     tr .col-affil:hover .info-short {
         text-decoration: underline;
     }
 
     tr .col-lang:hover .info-long,
+    tr .col-level:hover .info-long,
     tr .col-affil:hover .info-long {
         display: block;
     }
