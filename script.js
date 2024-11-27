@@ -269,3 +269,16 @@ function setColor(dark) {
         colorBtn.setAttribute("title", "Switch to dark color scheme");
     }
 }
+
+/*
+=============================================
+set updated date
+=============================================
+*/
+
+document.addEventListener("DOMContentLoaded", setUpdatedDate);
+function setUpdatedDate() {
+    var date = new Date(document.lastModified).toISOString();
+    var dateStr = date.substr(8, 2) + "/" + date.substr(5, 2) + "/" + date.substr(0, 4);
+    document.getElementById("footer-updated").innerHTML = "Last updated: " + dateStr;
+  }
