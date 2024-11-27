@@ -913,6 +913,7 @@ section teaching
     }
 
     .col-lang,
+    .col-level,
     .col-affil {
         display: none;
     }
