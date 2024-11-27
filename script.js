@@ -131,11 +131,14 @@ function updateMouseMove() {
 }
 
 function indicateScrolledness() {
-  const headerHeightDiff = window.innerWidth > 1000  ? 300 - 80
-                           : window.innerWidth > 600 ? 200 - 60
-                                                     : 60 - 60;
+  const headerMaxHeight = window.innerWidth > 1000  ? 300
+                            : window.innerWidth > 600 ? 200
+                                                        : 60;
+  const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
+  const headerHeightDiff = headerMaxHeight - headerMinHeight;
   const header = document.getElementById("header");
-  if (window.scrollY + 1 >= headerHeightDiff) {
+  console.log(headerHeightDiff, window.scrollY);
+  if (window.scrollY > headerHeightDiff) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
