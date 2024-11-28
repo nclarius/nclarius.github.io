@@ -826,18 +826,18 @@ section teaching
     }
 
     .col-lang {
-        width: 25px;
+        width: 40px;
     }
 
     .col-level {
-        width: 45px;
+        width: 25px;
     }
 
     .col-affil {
         width: 100px;
     }
 
-    .col-affil .info-short::after {
+    tr .col-affil::after {
         /* hover box */
         content: "expand_content";
         font-family: "Material Symbols Outlined";
@@ -846,7 +846,7 @@ section teaching
         color: var(--darkgray);
         display: inline-block;
         vertical-align: baseline;
-        margin-left: 0.25ex;
+        margin-left: 10px;
     }
 
     .info-long {
@@ -858,10 +858,6 @@ section teaching
         background-color: var(--white);
         z-index: 1;
         box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
-    }
-
-    .col-lang {
-        display: none;
     }
 
     tr .col-lang .info-long {
