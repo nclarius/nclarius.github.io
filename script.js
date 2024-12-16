@@ -284,4 +284,8 @@ function setUpdatedDate() {
     var date = new Date(document.lastModified).toISOString();
     var dateStr = date.substr(8, 2) + "/" + date.substr(5, 2) + "/" + date.substr(0, 4);
     document.getElementById("footer-updated").innerHTML = "Last updated: " + dateStr;
+
+    var today = new Date().toISOString();
+    var yearStr = today.substr(0, 4);
+    document.getElementById("footer-year").innerHTML = yearStr;
   }
