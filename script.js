@@ -137,7 +137,6 @@ function indicateScrolledness() {
   const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
   const headerHeightDiff = headerMaxHeight - headerMinHeight;
   const header = document.getElementById("header");
-  console.log(headerHeightDiff, window.scrollY);
   if (window.scrollY > headerHeightDiff) {
     header.classList.add("scrolled");
   } else {
