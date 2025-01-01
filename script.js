@@ -281,7 +281,7 @@ set updated date
 document.addEventListener("DOMContentLoaded", setUpdatedDate);
 function setUpdatedDate() {
     var date = new Date(document.lastModified);
-    var dateStr = String(date.getDate()) + "/" + String(date.getMonth() + 1) + "/" + String(date.getFullYear());
+    var dateStr = String(date.getDate()).padStart(2, '0') + "/" + String(date.getMonth() + 1).padStart(2, '0') + "/" + String(date.getFullYear());
     document.getElementById("footer-updated").innerHTML = "Last updated: " + dateStr;
 
     var today = new Date();
