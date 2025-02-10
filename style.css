@@ -273,6 +273,7 @@ links and buttons
 h1 a:hover,
 a:hover .label-sec,
 p a:hover,
+.info a:hover,
 .description a:hover,
 a:hover .caption-teaching,
 a:hover .tile-link *,
@@ -294,6 +295,7 @@ p a[href^="#"]::after {
 }
 
 .footnote a:not([href^="#"])::after,
+.info a:not([href^="#"])::after,
 .description a:not([href^="#"])::after,
 a:not([href^="#"]) .caption::after {
     /* external link */
@@ -613,7 +615,7 @@ section about me
 */
 
 #sec-about {
-    max-width: 1050px;
+    max-width: 1000px;
 }
 
 #heading-about {
@@ -686,7 +688,7 @@ section cv
 */
 
 #sec-cv {
-    max-width: 1050px;
+    max-width: 1000px;
 }
 
 .timeline {
@@ -788,7 +790,7 @@ section teaching
 */
 
 #sec-teaching {
-    max-width: 1050px;
+    max-width: 1000px;
 }
 
 .table-teaching {
@@ -826,18 +828,18 @@ section teaching
     }
 
     .col-lang {
-        width: 40px;
+        width: 25px;
     }
 
     .col-level {
-        width: 25px;
+        width: 45px;
     }
 
     .col-affil {
         width: 100px;
     }
 
-    tr .col-affil::after {
+    .col-affil .info-short::after {
         /* hover box */
         content: "expand_content";
         font-family: "Material Symbols Outlined";
@@ -846,7 +848,7 @@ section teaching
         color: var(--darkgray);
         display: inline-block;
         vertical-align: baseline;
-        margin-left: 10px;
+        margin-left: 0.25ex;
     }
 
     .info-long {
@@ -858,6 +860,10 @@ section teaching
         background-color: var(--white);
         z-index: 1;
         box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
+    }
+
+    .col-lang {
+        display: none;
     }
 
     tr .col-lang .info-long {
@@ -909,7 +915,6 @@ section teaching
     }
 
     .col-lang,
-    .col-level,
     .col-affil {
         display: none;
     }
