@@ -814,7 +814,7 @@ section teaching
     margin-bottom: 0.5ex;
 }
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1451px) {
     .table-teaching {
         table-layout: fixed;
     }
@@ -893,9 +893,13 @@ section teaching
     .table-teaching td .tile-link {
         width: 100%;
     }
+
+    .table-teaching td:nth-child(1) {
+        text-align: right;
+    }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1450px) {
     .table-teaching {
         margin-right: 20px;
         width: 100%;
@@ -922,12 +926,6 @@ section teaching
 
     .info-short {
         display: none;
-    }
-}
-
-@media only screen and (min-width: 1201px) {
-    .table-teaching td:nth-child(1) {
-        text-align: right;
     }
 }
 
