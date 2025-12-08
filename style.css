@@ -767,6 +767,10 @@ section cv
     }
 }
 
+.timepoint * {
+    margin-right: 10px;
+}
+
 .timepoint-entry p {
     margin-top: 8px;
 }
