@@ -753,6 +753,7 @@ section cv
     .timepoint {
         grid-template-columns: 1fr;
         left: 21px;
+        max-width: calc(100% - 21px);
     }
 
     .timepoint::after { /* squares */
@@ -763,17 +764,14 @@ section cv
 
 .caption-position {
     font-weight: bold;
-    margin-right: 20px;
 }
 
 .info-position {
     display: block;
-    margin-right: 20px;
 }
 
 .description-position {
     margin-top: 8px;
-    margin-right: 20px;
 }
 
 #note-resume {
