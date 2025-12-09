@@ -693,6 +693,7 @@ section cv
 
 .timeline {
     position: relative;
+    padding: 4px;
 }
 
 .timeline::after {
@@ -708,8 +709,6 @@ section cv
 .timepoint {
     position: relative;
     display: grid;
-    width: calc(100% - 23px);
-    margin-left: 23px;
 }
 
 .timepoint:not(:last-child) {
@@ -720,9 +719,8 @@ section cv
     /* squares */
     content: '';
     position: absolute;
-    margin-left: 2px;
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     background-color: var(--white);
     border: 1px solid var(--darkgray);
     border-radius: 0%;
@@ -760,13 +758,17 @@ section cv
 
     .timepoint {
         grid-template-columns: 1fr;
+        left: 21px;
     }
 
     .timepoint::after {
         top: 7px;
         left: -25px;
     }
+}
 
+.timepoint * {
+    margin-right: 10px;
 }
 
 .timepoint-entry p {
