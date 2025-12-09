@@ -713,8 +713,8 @@ section cv
 .timepoint::after { /* squares */
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     background-color: var(--white);
     border: 1px solid var(--darkgray);
     border-radius: 0%;
