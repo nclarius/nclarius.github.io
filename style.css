@@ -773,10 +773,12 @@ section cv
 
 .caption-position {
     font-weight: bold;
+    margin-right: 20px;
 }
 
 .info-position {
     display: block;
+    margin-right: 20px;
 }
 
 #note-resume {
