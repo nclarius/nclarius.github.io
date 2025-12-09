@@ -162,10 +162,6 @@ paragraphs, lists, tables, tiles
 =======================
 */
 
-p {
-    margin-right: 20px;
-}
-
 p.footnote {
     padding: 8px 4px 8px;
     margin: 0px;
