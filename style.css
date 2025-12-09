@@ -72,7 +72,7 @@ html {
 body {
     position: relative;
     min-height: 100%;
-    margin: auto;
+    margin: 0;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     color: var(--black);
@@ -97,7 +97,6 @@ html {
 @media only screen and (max-width: 600px) {
     main {
         margin: auto 20px auto 20px;
-        max-width: calc(100vw - (2 * 20px));
     }
 }
 
