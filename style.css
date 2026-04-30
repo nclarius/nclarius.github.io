@@ -795,8 +795,6 @@ section teaching
 
 .table-teaching td {
     position: relative;
-    padding: 3pt;
-    border-right: 20px solid transparent;
 }
 
 .table-teaching ul {
@@ -812,6 +810,11 @@ section teaching
 @media only screen and (min-width: 1451px) {
     .table-teaching {
         table-layout: fixed;
+    }
+
+    .table-teaching td {
+        padding: 3pt;
+        border-right: 20px solid transparent;
     }
 
     .col-term {
@@ -874,6 +877,10 @@ section teaching
         width: 100px;
     }
 
+    tr .col-format .info-long {
+        width: 200px;
+    }
+
     tr .col-level .info-long {
         width: 200px;
     }
@@ -895,7 +902,6 @@ section teaching
     tr .col-affil:hover .info-long {
         display: block;
     }
-
     .table-teaching td .tile-link {
         width: 100%;
     }
@@ -912,22 +918,22 @@ section teaching
     }
 
     .table-teaching tr {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .table-teaching td {
+        padding: 0 3pt;
+        border-right: 20px solid transparent;
+    }
+
+    .table-teaching tr {
         display: flex;
         flex-direction: column;
     }
 
-    tr .col-term, tr .col-title {
-        padding: 0px;
-    }
-
-    tr .col-title {
-        margin-bottom: 15px;
-    }
-
     .col-lang,
-    .col-format,
-    .col-level,
-    .col-affil {
+    .col-level {
         display: none;
     }
 
