@@ -822,7 +822,7 @@ section teaching
     }
 
     #table-courses .col-title {
-        width: 565px;
+        width: 560px;
     }
 
     #table-talks .col-title,
@@ -831,7 +831,7 @@ section teaching
     }
 
     .col-details {
-        width: 145px;
+        width: 120px;
     }
 
     .col-lang {
