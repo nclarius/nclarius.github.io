@@ -818,12 +818,21 @@ section teaching
         width: 194px;
     }
 
-    .col-title {
-        width: 665px;
+    #table-courses .col-title {
+        width: 565px;
+    }
+
+    #table-talks .col-title,
+    #table-posts .col-title {
+        width: 810px;
     }
 
     .col-lang {
         width: 25px;
+    }
+
+    .col-format {
+        width: 100px;
     }
 
     .col-level {
@@ -874,12 +883,14 @@ section teaching
     }
 
     tr .col-lang:hover .info-short,
+    tr .col-format:hover .info-short,
     tr .col-level:hover .info-short,
     tr .col-affil:hover .info-short {
         text-decoration: underline;
     }
 
     tr .col-lang:hover .info-long,
+    tr .col-format:hover .info-long,
     tr .col-level:hover .info-long,
     tr .col-affil:hover .info-long {
         display: block;
@@ -914,6 +925,7 @@ section teaching
     }
 
     .col-lang,
+    .col-format,
     .col-level,
     .col-affil {
         display: none;
