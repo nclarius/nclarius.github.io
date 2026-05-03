@@ -207,7 +207,7 @@ h5,
 h5 a,
 nav li a,
 .caption-position,
-.caption-teaching {
+.caption-academia {
     color: var(--darkgray);
 }
 
@@ -271,7 +271,7 @@ a:hover .label-sec,
 p a:hover,
 .info a:hover,
 .description a:hover,
-a:hover .caption-teaching,
+a:hover .caption-academia,
 a:hover .tile-link *,
 a:hover .project-software * {
     text-decoration: underline;
@@ -780,39 +780,39 @@ section cv
 
 /*
 =======================
-section teaching
+section acamdeia
 =======================
 */
 
-#sec-teaching {
+#sec-academia {
     max-width: 1000px;
 }
 
-.table-teaching {
+.table-academia {
     width: 100%;
     border-collapse: collapse;
 }
 
-.table-teaching td {
+.table-academia td {
     position: relative;
 }
 
-.table-teaching ul {
+.table-academia ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 25px;
 }
 
-.table-teaching li:not(:last-child) {
+.table-academia li:not(:last-child) {
     margin-bottom: 0.5ex;
 }
 
 @media only screen and (min-width: 1451px) {
-    .table-teaching {
+    .table-academia {
         table-layout: fixed;
     }
 
-    .table-teaching td {
+    .table-academia td {
         padding: 3pt;
         border-right: 20px solid transparent;
     }
@@ -821,7 +821,7 @@ section teaching
         width: 194px;
     }
 
-    #table-courses .col-title {
+    #table-teaching .col-title {
         width: 535px;
     }
 
@@ -916,32 +916,32 @@ section teaching
         display: block;
     }
 
-    .table-teaching td .tile-link {
+    .table-academia td .tile-link {
         width: 100%;
     }
 
-    .table-teaching td:nth-child(1) {
+    .table-academia td:nth-child(1) {
         text-align: right;
     }
 }
 
 @media only screen and (max-width: 1450px) {
-    .table-teaching {
+    .table-academia {
         margin-right: 20px;
         width: 100%;
     }
 
-    .table-teaching tr {
+    .table-academia tr {
         padding: 0;
         margin-bottom: 15px;
     }
 
-    .table-teaching td {
+    .table-academia td {
         padding: 0 3pt;
         border-right: 20px solid transparent;
     }
 
-    .table-teaching tr {
+    .table-academia tr {
         display: flex;
         flex-direction: column;
     }
@@ -957,7 +957,7 @@ section teaching
     }
 }
 
-.caption-teaching {
+.caption-academia {
     font-variant: normal;
     font-weight: bold;
     margin-top: 5px;
@@ -974,7 +974,7 @@ section teaching
     margin-top: 10px;
 }
 
-#table-teachings-footnote {
+#table-teaching-footnote {
     margin-top: 30px;
 }
 
