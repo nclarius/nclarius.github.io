@@ -187,9 +187,10 @@ function adjustHeadersize() {
 }
 
 function indicateVisibilitySection(section) {
+  const level = section.getAttribute("class").split("sub").length
   const li =
       document
-          .querySelector(`nav ul li a[href="#${section.getAttribute("id")}"]`)
+          .querySelector(`nav ` + `ul li `.repeat(level) + `[href="#${section.getAttribute("id")}"]`)
           .parentElement;
   const geo = section.getBoundingClientRect();
   if (geo.top + 1 < document.documentElement.clientHeight &&
