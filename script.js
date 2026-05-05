@@ -106,99 +106,99 @@ window.addEventListener("resize", updateScroll);
 window.addEventListener('mousemove', updateMouseMove);
 
 function updateScroll() {
-  // shadow header on scrolledness
-  indicateScrolledness();
+    // shadow header on scrolledness
+    indicateScrolledness();
 
-  // adjust size of headings
-  adjustHeadersize()
+    // adjust size of headings
+    adjustHeadersize()
 
-  // highlight each section on activeness
-  document.querySelectorAll("section").forEach(indicateVisibilitySection);
+    // highlight each section on activeness
+    document.querySelectorAll("section").forEach(indicateVisibilitySection);
 
-  // update nav button visibility
-  updateMouseMove();
+    // update nav button visibility
+    updateMouseMove();
 
-  // update scroll button visibility
-  updateVisibilityScrollButton();
+    // update scroll button visibility
+    updateVisibilityScrollButton();
 
-  // disable hover effects while scrolling
-  suppressPointerEvents();
+    // disable hover effects while scrolling
+    suppressPointerEvents();
 }
 
 function updateMouseMove() {
-  // update nav button visibility
-  updateVisibilityNavButtons(true);
+    // update nav button visibility
+    updateVisibilityNavButtons(true);
 }
 
 function indicateScrolledness() {
-  const headerMaxHeight = window.innerWidth > 1000  ? 300
+    const headerMaxHeight = window.innerWidth > 1000    ? 300
                             : window.innerWidth > 600 ? 200
                                                         : 60;
-  const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
-  const headerHeightDiff = headerMaxHeight - headerMinHeight;
-  const header = document.getElementById("header");
-  if (window.scrollY > headerHeightDiff) {
+    const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
+    const headerHeightDiff = headerMaxHeight - headerMinHeight;
+    const header = document.getElementById("header");
+    if (window.scrollY > headerHeightDiff) {
     header.classList.add("scrolled");
-  } else {
+    } else {
     header.classList.remove("scrolled");
-  }
+    }
 }
 
 function adjustHeadersize() {
-  // header
-  const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
-  const headerMaxHeight = window.innerWidth > 1000  ? 300
-                          : window.innerWidth > 600 ? 200
+    // header
+    const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
+    const headerMaxHeight = window.innerWidth > 1000    ? 300
+                            : window.innerWidth > 600 ? 200
                                                     : 60;
-  const headerHeight =
-      Math.max(headerMinHeight, headerMaxHeight - window.scrollY);
-  // headings div
-  const headings = document.getElementById("headings");
-  headings.style.top = window.scrollY + "px";
-  headings.style.height = headerHeight + "px";
-  // nav
-  const nav = document.getElementById("nav");
-  nav.style.top = headerHeight + "px";
-  // heading
-  const headingMinHeight = window.innerWidth > 1000  ? 1.75
-                           : window.innerWidth > 600 ? 1.25
+    const headerHeight =
+        Math.max(headerMinHeight, headerMaxHeight - window.scrollY);
+    // headings div
+    const headings = document.getElementById("headings");
+    headings.style.top = window.scrollY + "px";
+    headings.style.height = headerHeight + "px";
+    // nav
+    const nav = document.getElementById("nav");
+    nav.style.top = headerHeight + "px";
+    // heading
+    const headingMinHeight = window.innerWidth > 1000    ? 1.75
+                             : window.innerWidth > 600 ? 1.25
                                                      : 1.25;
-  const headingMaxHeight = window.innerWidth > 1000  ? 3
-                           : window.innerWidth > 600 ? 2
+    const headingMaxHeight = window.innerWidth > 1000    ? 3
+                             : window.innerWidth > 600 ? 2
                                                      : 1.25;
-  const heading = document.getElementById("heading");
-  heading.style.fontSize =
-      Math.max(headingMinHeight, headingMaxHeight - window.scrollY / 100) +
-      "em";
-  // subheading
-  const subheadingMinHeight = window.innerWidth > 1000  ? 1.25
-                              : window.innerWidth > 600 ? 1
+    const heading = document.getElementById("heading");
+    heading.style.fontSize =
+        Math.max(headingMinHeight, headingMaxHeight - window.scrollY / 100) +
+        "em";
+    // subheading
+    const subheadingMinHeight = window.innerWidth > 1000    ? 1.25
+                                : window.innerWidth > 600 ? 1
                                                         : 0;
-  const subheadingMaxHeight = window.innerWidth > 1000  ? 1.5
-                              : window.innerWidth > 600 ? 1.25
+    const subheadingMaxHeight = window.innerWidth > 1000    ? 1.5
+                                : window.innerWidth > 600 ? 1.25
                                                         : 0;
-  const subheading = document.getElementById("subheading");
-  subheading.style.fontSize =
-      Math.max(subheadingMinHeight,
-               subheadingMaxHeight - window.scrollY / 100) +
-      "em";
-  subheading.style.marginTop = "0px";
-  subheading.style.alignSelf = "start";
+    const subheading = document.getElementById("subheading");
+    subheading.style.fontSize =
+        Math.max(subheadingMinHeight,
+                 subheadingMaxHeight - window.scrollY / 100) +
+        "em";
+    subheading.style.marginTop = "0px";
+    subheading.style.alignSelf = "start";
 }
 
 function indicateVisibilitySection(section) {
-  const level = section.getAttribute("class").split("sub").length
-  const li =
-      document
-          .querySelector(`nav ` + `ul li `.repeat(level) + `[href="#${section.getAttribute("id")}"]`)
-          .parentElement;
-  const geo = section.getBoundingClientRect();
-  if (geo.top + 1 < document.documentElement.clientHeight &&
-      geo.bottom > document.getElementById("headings").offsetHeight + 1) {
+    const level = section.getAttribute("class").split("sub").length
+    const li =
+        document
+            .querySelector(`nav ` + `ul li `.repeat(level) + `[href="#${section.getAttribute("id")}"]`)
+            .parentElement;
+    const geo = section.getBoundingClientRect();
+    if (geo.top + 1 < document.documentElement.clientHeight &&
+        geo.bottom > document.getElementById("headings").offsetHeight + 1) {
     li.classList.add("active");
-  } else {
+    } else {
     li.classList.remove("active");
-  }
+    }
 }
 
 var navBtnVisibilityTimeout = window.setTimeout(2000);
@@ -208,22 +208,22 @@ function updateVisibilityNavButtons(timeout = true) {
     const bottomBtn = document.getElementById("btn-bottom");
     const naviBtns = [ navBtn, topBtn, bottomBtn ];
     naviBtns.forEach(btn => {
-      if (btn == navBtn || btn == topBtn && window.scrollY ||
-          btn == bottomBtn && window.scrollY + window.innerHeight <
-                                  document.body.scrollHeight) {
+        if (btn == navBtn || btn == topBtn && window.scrollY ||
+            btn == bottomBtn && window.scrollY + window.innerHeight <
+                                    document.body.scrollHeight) {
         btn.style.opacity = "100";
-      } else {
+        } else {
         btn.style.opacity = "0";
-      }
+        }
     });
     if (timeout) {
-      window.clearTimeout(navBtnVisibilityTimeout);
-      navBtnVisibilityTimeout = window.setTimeout(() => {
+        window.clearTimeout(navBtnVisibilityTimeout);
+        navBtnVisibilityTimeout = window.setTimeout(() => {
         if (!(document.getElementById("nav").classList.contains("open") ||
-              naviBtns.some(btn => btn.matches(":hover")))) {
-          naviBtns.forEach(btn => { btn.style.opacity = "0"; });
+                naviBtns.some(btn => btn.matches(":hover")))) {
+            naviBtns.forEach(btn => { btn.style.opacity = "0"; });
         }
-      }, 2000);
+        }, 2000);
     }
 }
 
@@ -288,4 +288,4 @@ function setUpdatedDate() {
     var today = new Date();
     var yearStr = today.getFullYear();
     document.getElementById("footer-year").innerHTML = yearStr;
-  }
+    }
