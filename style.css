@@ -421,6 +421,10 @@ nav > ul > li > ul > li.active > a
     nav > ul {
         margin-right: 40px;
     }
+    
+    nav > ul > li > ul > li {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
