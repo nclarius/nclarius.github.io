@@ -436,7 +436,7 @@ nav > ul > li > ul > li.active > a
     }
 
     nav.open {
-        width: 300px;
+        width: 280px;
     }
 
     nav.closed {
