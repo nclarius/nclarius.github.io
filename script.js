@@ -194,7 +194,7 @@ function indicateVisibilitySection(section) {
           .parentElement;
   const geo = section.getBoundingClientRect();
   if (geo.top + 1 < document.documentElement.clientHeight &&
-      geo.bottom > document.getElementById("header").offsetHeight + 1) {
+      geo.bottom > document.getElementById("headings").offsetHeight + 1) {
     li.classList.add("active");
   } else {
     li.classList.remove("active");
