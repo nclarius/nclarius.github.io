@@ -1119,6 +1119,14 @@ section contact
     word-break: break-word;
     border-collapse: collapse;
     margin: auto;
+    min-width: 545px;
+}
+
+#table-communication {
+    margin-bottom: 15px;
+}
+
+#table-contact {
     margin-bottom: 40px;
 }
 
@@ -1129,6 +1137,7 @@ section contact
 }
 
 .table-contact td:nth-of-type(1) {
+    width: 190px;
     border-right: 1em solid transparent;
 }
 
