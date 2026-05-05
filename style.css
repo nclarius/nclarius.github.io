@@ -436,7 +436,7 @@ nav > ul > li > ul > li.active > a
     }
 
     nav.open {
-        width: 265px;
+        width: 300px;
     }
 
     nav.closed {
@@ -445,6 +445,7 @@ nav > ul > li > ul > li.active > a
 
     nav > ul {
         margin-right: 60px;
+        padding-left: 0px;
     }
 }
 
