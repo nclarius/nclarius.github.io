@@ -361,14 +361,16 @@ nav {
     position: absolute;
     top: var(--sticky-header-height);
     right: 0;
-    height: calc(100% - var(--sticky-header-height) - var(--footer-height));
+    height: calc(100vh - var(--sticky-header-height) - var(--footer-height));
+    overflow-y: auto;
     text-align: right;
     z-index: 1;
 }
 
 nav > ul {
-    position: fixed;
+    position: relative;
     right: 0;
+    padding-left: 20;
 }
 
 nav.closed ul {
@@ -414,7 +416,7 @@ nav > ul > li > ul > li.active > a
 
 @media only screen and (min-width: 1001px) {
     nav {
-        width: 220px;
+        width: 320px;
         margin-left: 30px;
     }
 
@@ -432,7 +434,7 @@ nav > ul > li > ul > li.active > a
     }
 
     nav.open {
-        width: 280px;
+        width: 320px;
     }
 
     nav.closed {

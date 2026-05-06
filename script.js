@@ -131,10 +131,10 @@ function updateMouseMove() {
 }
 
 function indicateScrolledness() {
+    const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
     const headerMaxHeight = window.innerWidth > 1000    ? 300
                             : window.innerWidth > 600 ? 200
                                                         : 60;
-    const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
     const headerHeightDiff = headerMaxHeight - headerMinHeight;
     const header = document.getElementById("header");
     if (window.scrollY > headerHeightDiff) {
@@ -145,6 +145,11 @@ function indicateScrolledness() {
 }
 
 function adjustHeadersize() {
+    // client
+    const pageHeight = document.documentElement.clientHeight;
+    // footer
+    const footer = document.getElementById("footer");
+    const visibleFooterHeight = Math.max(0, (window.scrollY + window.innerHeight) - footer.offsetTop)
     // header
     const headerMinHeight = window.innerWidth > 1000 ? 80 : 60;
     const headerMaxHeight = window.innerWidth > 1000    ? 300
@@ -158,7 +163,9 @@ function adjustHeadersize() {
     headings.style.height = headerHeight + "px";
     // nav
     const nav = document.getElementById("nav");
-    nav.style.top = headerHeight + "px";
+    nav.style.top = headerHeight + window.scrollY + "px";
+    nav.style.height = pageHeight - headerHeight - visibleFooterHeight + "px";
+    console.log(nav.style.height, pageHeight - headerHeight - visibleFooterHeight);
     // heading
     const headingMinHeight = window.innerWidth > 1000    ? 1.75
                              : window.innerWidth > 600 ? 1.25
