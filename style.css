@@ -976,11 +976,8 @@ section acamdeia
 
     .col-lang,
     .col-format,
-    .col-level {
-        display: none;
-    }
-
-    .info-short {
+    .col-level,
+    .col-affil {
         display: none;
     }
 }
