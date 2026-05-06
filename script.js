@@ -165,7 +165,6 @@ function adjustHeadersize() {
     const nav = document.getElementById("nav");
     nav.style.top = headerHeight + window.scrollY + "px";
     nav.style.height = pageHeight - headerHeight - visibleFooterHeight + "px";
-    console.log(nav.style.height, pageHeight - headerHeight - visibleFooterHeight);
     // heading
     const headingMinHeight = window.innerWidth > 1000    ? 1.75
                              : window.innerWidth > 600 ? 1.25
