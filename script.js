@@ -157,14 +157,16 @@ function adjustHeadersize() {
                                                     : 60;
     const headerHeight =
         Math.max(headerMinHeight, headerMaxHeight - window.scrollY);
+    // nav
+    const oldNavTop = document.getElementById("nav").offsetTop;
+    const nav = document.getElementById("nav");
+    nav.style.top = headerHeight + window.scrollY + "px";
+    nav.style.height = pageHeight - headerHeight - visibleFooterHeight + "px";
+    console.log(oldNavTop, nav.offsetTop, oldNavTop > nav.offsetTop);
     // headings div
     const headings = document.getElementById("headings");
     headings.style.top = window.scrollY + "px";
     headings.style.height = headerHeight + "px";
-    // nav
-    const nav = document.getElementById("nav");
-    nav.style.top = headerHeight + window.scrollY + "px";
-    nav.style.height = pageHeight - headerHeight - visibleFooterHeight + "px";
     // heading
     const headingMinHeight = window.innerWidth > 1000    ? 1.75
                              : window.innerWidth > 600 ? 1.25
