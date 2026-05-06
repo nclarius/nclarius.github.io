@@ -109,7 +109,7 @@ html {
 @media only screen and (min-width: 1001px) {
     main {
         margin: auto;
-        width: calc(100% - 500px);
+        width: calc(100% - 2 * 270px);
     }
 }
 
@@ -370,7 +370,10 @@ nav {
 nav > ul {
     position: relative;
     right: 0;
-    padding-left: 20;
+}
+
+nav > ul > li > ul {
+    padding: 0;
 }
 
 nav.closed ul {
@@ -416,12 +419,13 @@ nav > ul > li > ul > li.active > a
 
 @media only screen and (min-width: 1001px) {
     nav {
-        width: 320px;
+        width: 240px;
         margin-left: 30px;
     }
 
     nav > ul {
         margin-right: 40px;
+        padding-left: 0;
     }
 }
 
@@ -434,7 +438,7 @@ nav > ul > li > ul > li.active > a
     }
 
     nav.open {
-        width: 320px;
+        width: 280px;
     }
 
     nav.closed {
@@ -443,7 +447,7 @@ nav > ul > li > ul > li.active > a
 
     nav > ul {
         margin-right: 60px;
-        padding-left: 0px;
+        padding-left: 20px;
     }
 }
 
