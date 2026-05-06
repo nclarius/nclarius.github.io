@@ -546,10 +546,10 @@ color button
 
 #btn-color {
     position: sticky;
-    top: calc(100% - 2 * 16px - 2 * 8px + 2px);
+    top: calc(100% - 2 * 19px);
     right: 0px;
     margin: 16px 0px;
-    padding: 8px;
+    padding: 1px;
     display: inline-block;
 }
 
