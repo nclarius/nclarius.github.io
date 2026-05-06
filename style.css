@@ -833,8 +833,11 @@ section acamdeia
     }
 
     .table-academia td {
-        padding: 3pt;
-        border-right: 20px solid transparent;
+        padding: 3pt 0px;
+    }
+
+    .table-academia td:not(:last-child) {
+        padding-right: 20px;
     }
 
     .col-term {
@@ -842,12 +845,13 @@ section acamdeia
     }
 
     #table-teaching .col-title {
-        width: 535px;
+        width: 561px;
     }
 
     #table-talks .col-title,
     #table-posts .col-title {
-        width: 810px;
+        width: 805px;
+        padding-right: 4px;
     }
 
     .col-details {
@@ -859,18 +863,20 @@ section acamdeia
     }
 
     .col-format {
-        width: 100px;
+        width: 95px;
     }
 
     .col-level {
-        width: 45px;
+        width: 90px;
     }
 
     .col-affil {
-        width: 100px;
+        width: 60px;
     }
 
-    .col-details .info-short::after, 
+    .col-lang .info-short::after,
+    .col-format .info-short::after,
+    .col-level .info-short::after,
     .col-affil .info-short::after {
         /* hover box */
         content: "expand_content";
@@ -894,9 +900,11 @@ section acamdeia
         box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
     }
 
-    .col-lang,
-    .col-format,
-    .col-level {
+    .col-lang {
+        display: none;
+    }
+
+    .col-details {
         display: none;
     }
 
