@@ -489,7 +489,7 @@ navigation buttons
     }
 
     #btn-top {
-        top: calc((var(--mheader-height)) + 4px);
+        top: calc((var(--sticky-header-height)) + 4px);
     }
 
     #btn-bottom {
