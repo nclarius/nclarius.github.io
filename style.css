@@ -850,8 +850,7 @@ section acamdeia
 
     #table-talks .col-title,
     #table-posts .col-title {
-        width: 805px;
-        padding-right: 4px;
+        width: 645px;
     }
 
     .col-details {
@@ -872,6 +871,11 @@ section acamdeia
 
     .col-affil {
         width: 60px;
+    }
+
+    #table-talks .col-affil,
+    #table-posts .col-affil {
+        width: 160px;
     }
 
     .col-lang .info-short::after,
