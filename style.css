@@ -842,6 +842,7 @@ section acamdeia
 
     .col-term {
         width: 194px;
+        text-align: right;
     }
 
     #table-teaching .col-title {
@@ -853,23 +854,25 @@ section acamdeia
         width: 645px;
     }
 
-    .col-details {
+    #table-teaching .col-details {
         width: 175px;
+        display: none;
     }
 
-    .col-lang {
+    #table-teaching .col-lang {
         width: 25px;
+        display: none;
     }
 
-    .col-format {
+    #table-teaching .col-format {
         width: 95px;
     }
 
-    .col-level {
+    #table-teaching .col-level {
         width: 90px;
     }
 
-    .col-affil {
+    #table-teaching .col-affil {
         width: 60px;
     }
 
@@ -902,14 +905,6 @@ section acamdeia
         background-color: var(--white);
         z-index: 1;
         box-shadow: 0px 3px 7px 0px var(--lightshadowgray);
-    }
-
-    .col-lang {
-        display: none;
-    }
-
-    .col-details {
-        display: none;
     }
 
     tr .col-details .info-long {
@@ -947,14 +942,6 @@ section acamdeia
     tr .col-affil:hover .info-long {
         display: block;
     }
-
-    .table-academia td .tile-link {
-        width: 100%;
-    }
-
-    .table-academia td:nth-child(1) {
-        text-align: right;
-    }
 }
 
 @media only screen and (max-width: 1450px) {
@@ -978,10 +965,10 @@ section acamdeia
         flex-direction: column;
     }
 
-    .col-lang,
-    .col-format,
-    .col-level,
-    .col-affil {
+    #table-teaching .col-lang,
+    #table-teaching .col-format,
+    #table-teaching .col-level,
+    #table-teaching .col-affil {
         display: none;
     }
 }
