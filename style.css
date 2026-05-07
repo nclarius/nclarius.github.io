@@ -964,6 +964,10 @@ section acamdeia
         display: flex;
         flex-direction: column;
     }
+    
+    td .expandable {
+        margin-top: 10px;
+    }
 
     #table-teaching .col-lang,
     #table-teaching .col-format,
@@ -971,6 +975,7 @@ section acamdeia
     #table-teaching .col-affil {
         display: none;
     }
+
 }
 
 .caption-academia {
