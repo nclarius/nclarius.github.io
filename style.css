@@ -362,7 +362,6 @@ nav {
     right: 0;
     top: var(--sticky-header-height);
     height: calc(100% - var(--sticky-header-height) - var(--footer-height));
-    overflow-y: auto;
     text-align: right;
     z-index: 1;
 }
@@ -370,6 +369,7 @@ nav {
 nav > ul {
     position: fixed;
     right: 0;
+    overflow-y: auto;
 }
 
 nav > ul > li > ul {

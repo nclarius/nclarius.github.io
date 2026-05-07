@@ -160,7 +160,8 @@ function adjustHeadersize() {
     // nav
     const nav = document.getElementById("nav");
     nav.style.top = headerHeight + "px";
-    // color button
+    const navSections = document.getElementById("nav-sections");
+    navSections.style.height = (window.innerHeight - headerHeight - visibleFooterHeight - 90) + "px";
     const btnCol = document.getElementById("btn-color");
     btnCol.style.bottom = 4 + visibleFooterHeight + "px";
     // headings div
