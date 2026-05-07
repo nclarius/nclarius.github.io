@@ -359,16 +359,16 @@ nav
 
 nav {
     position: absolute;
-    top: var(--sticky-header-height);
     right: 0;
-    height: calc(100vh - var(--sticky-header-height) - var(--footer-height));
+    top: var(--sticky-header-height);
+    height: calc(100% - var(--sticky-header-height) - var(--footer-height));
     overflow-y: auto;
     text-align: right;
     z-index: 1;
 }
 
 nav > ul {
-    position: relative;
+    position: fixed;
     right: 0;
 }
 
@@ -549,8 +549,8 @@ color button
 */
 
 #btn-color {
-    position: sticky;
-    top: calc(100% - 2 * 19px);
+    position: fixed;
+    bottom: 4px;
     right: 0px;
     margin: 16px 0px;
     padding: 1px;

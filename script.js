@@ -159,8 +159,10 @@ function adjustHeadersize() {
         Math.max(headerMinHeight, headerMaxHeight - window.scrollY);
     // nav
     const nav = document.getElementById("nav");
-    nav.style.top = headerHeight + window.scrollY + "px";
-    nav.style.height = pageHeight - headerHeight - visibleFooterHeight + "px";
+    nav.style.top = headerHeight + "px";
+    // color button
+    const btnCol = document.getElementById("btn-color");
+    btnCol.style.bottom = 4 + visibleFooterHeight + "px";
     // headings div
     const headings = document.getElementById("headings");
     headings.style.top = window.scrollY + "px";
