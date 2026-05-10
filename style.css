@@ -156,6 +156,10 @@ sections
     }
 }
 
+.subsection {
+    padding-top: 10px;
+}
+
 /*
 =======================
 paragraphs, lists, tables, tiles
@@ -232,7 +236,7 @@ h2 {
 
 h3 {
     font-size: 1.25em;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -250,10 +254,6 @@ hr {
     width: 250px;
     border: none;
     border-top: 1px solid var(--darkgray);
-}
-
-hr.heading-underline {
-    margin-bottom: 27px;
 }
 
 hr.footer-overline {
