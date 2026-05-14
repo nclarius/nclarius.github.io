@@ -751,7 +751,7 @@ section cv
     }
 
     .timepoint {
-        grid-template-columns: 166px 1fr;
+        grid-template-columns: 170px 1fr;
         column-gap: 40px;
     }
 
